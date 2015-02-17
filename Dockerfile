@@ -35,28 +35,29 @@ RUN git clone -b docker-markdown-merge https://github.com/SvenDowideit/mkdocs \
 	&& ./setup.py install
 
 COPY . /docs
-COPY MAINTAINERS /docs/sources/humans.txt
+#### COPY MAINTAINERS /docs/sources/humans.txt
 WORKDIR /docs
 
-RUN VERSION=$(cat VERSION) \
-	&& MAJOR_MINOR="${VERSION%.*}" \
-	&& for i in $(seq $MAJOR_MINOR -0.1 1.0); do \
-		echo "<li><a class='version' href='/v$i'>Version v$i</a></li>"; \
-	done > sources/versions.html_fragment \
-	&& GIT_BRANCH=$(cat GIT_BRANCH) \
-	&& GITCOMMIT=$(cat GITCOMMIT) \
-	&& AWS_S3_BUCKET=$(cat AWS_S3_BUCKET) \
-	&& BUILD_DATE=$(date) \
-	&& sed -i "s/\$VERSION/$VERSION/g" theme/mkdocs/base.html \
-	&& sed -i "s/\$MAJOR_MINOR/v$MAJOR_MINOR/g" theme/mkdocs/base.html \
-	&& sed -i "s/\$GITCOMMIT/$GITCOMMIT/g" theme/mkdocs/base.html \
-	&& sed -i "s/\$GIT_BRANCH/$GIT_BRANCH/g" theme/mkdocs/base.html \
-	&& sed -i "s/\$BUILD_DATE/$BUILD_DATE/g" theme/mkdocs/base.html \
-	&& sed -i "s/\$AWS_S3_BUCKET/$AWS_S3_BUCKET/g" theme/mkdocs/base.html
+####RUN VERSION=$(cat VERSION) \
+#	&& MAJOR_MINOR="${VERSION%.*}" \
+#	&& for i in $(seq $MAJOR_MINOR -0.1 1.0); do \
+#		echo "<li><a class='version' href='/v$i'>Version v$i</a></li>"; \
+#	done > sources/versions.html_fragment \
+#	&& GIT_BRANCH=$(cat GIT_BRANCH) \
+#	&& GITCOMMIT=$(cat GITCOMMIT) \
+#	&& AWS_S3_BUCKET=$(cat AWS_S3_BUCKET) \
+#	&& BUILD_DATE=$(date) \
+#	&& sed -i "s/\$VERSION/$VERSION/g" theme/mkdocs/base.html \
+#	&& sed -i "s/\$MAJOR_MINOR/v$MAJOR_MINOR/g" theme/mkdocs/base.html \
+#	&& sed -i "s/\$GITCOMMIT/$GITCOMMIT/g" theme/mkdocs/base.html \
+#	&& sed -i "s/\$GIT_BRANCH/$GIT_BRANCH/g" theme/mkdocs/base.html \
+#	&& sed -i "s/\$BUILD_DATE/$BUILD_DATE/g" theme/mkdocs/base.html \
+#	&& sed -i "s/\$AWS_S3_BUCKET/$AWS_S3_BUCKET/g" theme/mkdocs/base.html
 
 EXPOSE 8000
 
-RUN cd sources && rgrep --files-with-matches '{{ include ".*" }}' | xargs sed -i~ 's/{{ include "\(.*\)" }}/cat include\/\1/ge'
+# fails when there are none!
+### RUN cd sources && rgrep --files-with-matches '{{ include ".*" }}' | xargs sed -i~ 's/{{ include "\(.*\)" }}/cat include\/\1/ge'
 
 CMD ["mkdocs", "serve"]
 
