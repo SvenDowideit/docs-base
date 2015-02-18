@@ -13,12 +13,6 @@ DOCKER_ENVS := \
 	-e TIMEOUT
 # note: we _cannot_ add "-e DOCKER_BUILDTAGS" here because even if it's unset in the shell, that would shadow the "ENV DOCKER_BUILDTAGS" set in our Dockerfile, which is very important for our official builds
 
-# to allow `make BIND_DIR=. shell` or `make BIND_DIR= test`
-# (default to no bind mount if DOCKER_HOST is set)
-# note: BINDDIR is supported for backwards-compatibility here
-BIND_DIR := $(if $(BINDDIR),$(BINDDIR),$(if $(DOCKER_HOST),,bundles))
-DOCKER_MOUNT := $(if $(BIND_DIR),-v "$(CURDIR)/$(BIND_DIR):/go/src/github.com/docker/docker/$(BIND_DIR)")
-
 # to allow `make DOCSDIR=docs docs-shell` (to create a bind mount in docs)
 DOCS_MOUNT := $(if $(DOCSDIR),-v $(CURDIR)/$(DOCSDIR):/$(DOCSDIR))
 
@@ -27,7 +21,7 @@ DOCSPORT := 8000
 
 GIT_BRANCH := $(shell git rev-parse --abbrev-ref HEAD 2>/dev/null)
 DOCKER_IMAGE := docker$(if $(GIT_BRANCH),:$(GIT_BRANCH))
-DOCKER_DOCS_IMAGE := docker-docs$(if $(GIT_BRANCH),:$(GIT_BRANCH))
+DOCKER_DOCS_IMAGE := docker-docs-base$(if $(GIT_BRANCH),:$(GIT_BRANCH))
 
 DOCKER_RUN_DOCS := docker run --rm -it $(DOCS_MOUNT) -e AWS_S3_BUCKET -e NOCACHE
 
