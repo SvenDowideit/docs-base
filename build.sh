@@ -19,8 +19,20 @@ MAJOR_MINOR="${VERSION%.*}"
 for i in $(seq $MAJOR_MINOR -0.1 1.0); do
       echo "<li><a class='version' href='/v$i'>Version v$i</a></li>";
 done > sources/versions.html_fragment
-GIT_BRANCH=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
-GITCOMMIT=$(git rev-parse --short HEAD 2>/dev/null)
+
+# TODO: need to run these from the src dir - if its there
+if [[ -e "/src/.git" ]]; then
+	pushd .
+	cd /src
+	echo "getting branch and hash from $(pwd)"
+	GIT_BRANCH=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
+	GITCOMMIT=$(git rev-parse --short HEAD 2>/dev/null)
+	popd
+else
+	echo "getting branch and hash from /doc"
+	GIT_BRANCH=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
+	GITCOMMIT=$(git rev-parse --short HEAD 2>/dev/null)
+fi
 BUILD_DATE=$(date)
 sed -i "s/\$VERSION/$VERSION/g" theme/mkdocs/base.html
 sed -i "s/\$MAJOR_MINOR/v$MAJOR_MINOR/g" theme/mkdocs/base.html
