@@ -81,13 +81,15 @@ do
 		if [[ "$lastmenu" != "" && "$lastmenu" != "$menu" ]]
 		then
 			# insert extra elements here
-			for extra in "${extralines[@]}"
+			for i in "${!extralines[@]}"
 			do
+				extra=${extralines[$i]}
 				#echo "EXTRA $extra"
 				extramenu=$(echo $extra | sed "s/^- \['\([^']*\)', '\([^']*\)'.*/\2/")
 				if [[ "$extramenu" == "$lastmenu" ]]
 				then
 					echo "$extra" >> mkdocs.yml
+					extralines[$i]=""
 				fi
 			done
 			#echo "# JUST FINISHED $lastmenu"
@@ -98,4 +100,10 @@ do
 
 done < <(cat "mkdocs.yml.bak")
 
-
+for extra in "${extralines[@]}"
+do
+	if [[ "$extra" != "" ]]
+	then
+		echo "$extra" >> mkdocs.yml
+	fi
+done
