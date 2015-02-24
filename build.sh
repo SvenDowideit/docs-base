@@ -29,9 +29,15 @@ if [[ -e "/src/.git" ]]; then
 	GITCOMMIT=$(git rev-parse --short HEAD 2>/dev/null)
 	popd
 else
-	echo "getting branch and hash from /doc"
-	GIT_BRANCH=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
-	GITCOMMIT=$(git rev-parse --short HEAD 2>/dev/null)
+	if [[ -e "/src/GIT_BRANCH" ]]; then
+		echo "getting git info from /src/GIT_BRANCH files"
+		GIT_BRANCH=$(cat /src/GIT_BRANCH)
+		GITCOMMIT=$(cat /src/GITCOMMIT)
+	else
+		echo "getting branch and hash from /doc"
+		GIT_BRANCH=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
+		GITCOMMIT=$(git rev-parse --short HEAD 2>/dev/null)
+	fi
 fi
 BUILD_DATE=$(date)
 sed -i "s/\$VERSION/$VERSION/g" theme/mkdocs/base.html

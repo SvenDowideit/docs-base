@@ -43,8 +43,8 @@ docs-test: docs-build
 	$(DOCKER_RUN_DOCS) "$(DOCKER_DOCS_IMAGE)" ./test.sh
 
 docs-build:
-	( git remote | grep -v upstream ) || git diff --name-status upstream/release..upstream/docs ./ > ./changed-files
-	echo "$(GIT_BRANCH)" > GIT_BRANCH
-	echo "$(AWS_S3_BUCKET)" > AWS_S3_BUCKET
-	echo "$(GITCOMMIT)" > GITCOMMIT
+#	( git remote | grep -v upstream ) || git diff --name-status upstream/release..upstream/docs ./ > ./changed-files
+#	echo "$(GIT_BRANCH)" > GIT_BRANCH
+#	echo "$(AWS_S3_BUCKET)" > AWS_S3_BUCKET
+#	echo "$(GITCOMMIT)" > GITCOMMIT
 	docker build -t "$(DOCKER_DOCS_IMAGE)" .
