@@ -340,6 +340,62 @@ pre {
   font-weight: bold;
 }
 
+/* Tables */
+.content-body table {
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  width: 100%;
+  word-break: normal;
+}
+
+.content-body thead {
+  background-color: #e8e8e8;
+}
+
+.content-body tr {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+}
+
+.content-body tr:nth-child(2n) {
+  background-color:#f8f8f8;
+}
+
+.content-body th,
+.content-body td
+{
+  padding: 6px 13px;
+}
+
+.content-body td {
+  border: 1px solid #ddd;
+}
+
+.content-body th {
+  background-color: #c0c0c0;
+  border: 1px solid #c0c0c0;
+  text-align: left;
+}
+
+/*
+ * Table used for showing code and CLI output, not using borders
+ * font-styling and background-color is the same as <pre> blocks.
+ */
+.content-body table.code {
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+  font-size: 11px;
+}
+
+.content-body table.code,
+.content-body table.code tr,
+.content-body table.code th,
+.content-body table.code td
+{
+  background-color: #FCFCFC;
+  border: none;
+  font-weight: normal;
+}
+
 /* Logged-in/out header */
 .topmostnav_loggedin {
   display: none;
