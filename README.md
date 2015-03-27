@@ -11,7 +11,7 @@ It can be used to view and check the changes to your repository's
 documentation in preparation for merging into the Official Docker
 documentation.
 
-## How to set use it in your repository
+## How to use it in your repository
 
 This tooling is currently used by:
 
