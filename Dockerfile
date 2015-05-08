@@ -39,9 +39,15 @@ EXPOSE 8000
 CMD ["mkdocs", "serve"]
 
 
+COPY . /src
 COPY . /docs
 
+# Use the local docs-base/README.md as the example index.md documentation
+# when running `make docs` from a docs-base clone.
 COPY README.md /docs/sources/index.md
+
+# reset the /docs dir so the meta-data comes from the new documentation files.
+ONBUILD RUN rm -rf /docs ; cp -r /src /docs
 
 RUN ./build.sh
 
