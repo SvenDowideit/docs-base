@@ -1,36 +1,70 @@
-page_title: About the Docker documentation tools
-page_description: Introduction to the Docker documentation tools
-page_keywords: docker, introduction, documentation, about, technology, understanding, Dockerfile
+# Docker documentation theme
 
-# Docker documentation tools
+Docker uses [the Hugo static generator](http://gohugo.io/overview/introduction/) to convert project Markdown files to a static HTML site. This repository contains the HTML theme and Hugo configuration for building the [the Docker documentation site](https://docs.docker.com).  
 
-This repository contains the HTML theme, and the build tools for
-generating [the Docker documentation site](https://docs.docker.com).
+Together, the theme and the structure form the `docs-base` image. Each project repository uses this base image to generate localized documentation for review during development. 
 
-It can be used to view and check the changes to your repository's
-documentation in preparation for merging into the Official Docker
-documentation.
 
 ## How to use it in your repository
 
-This tooling is currently used by:
+To use this this in your own repository, you need to have `make` installed on your system.  Then, do the following:
 
-- [Docker](https://github.com/docker/docker)
-- [Docker Compose](https://github.com/docker/fig)
+1. Create a `docs` subdirectory in your project.
+
+2. Create a `docs/Dockerfile` with the following structure:
+
+        FROM docs-base:hugo
+        MAINTAINER YOUR NAME <YOUR_EMAIL> (@yourgithubhandle)
+
+        # to get the git info for this repo
+        COPY . /src
+
+        COPY . /docs/content/PROJECTNAME/
+
+        RUN find /docs/content/PROJECTNAME -type f -name "*.md" -exec sed -i.old  -e '/^<!.*metadata]>/g' -e '/^<!.*end-metadata.*>/g' {} \;
+        
+     The `sed` line in this file removes the Hugo metadata from the content.
+     
+3. Copy [a Makefile from a sub project](https://github.com/docker/swarm/blob/master/docs/Makefile).
+
+4. Make changes to the content in the project.
+
+5. Commit your changes.
+
+6. In the `PROJECT/docs` directory run the `make docs` command.
+
+        $ make docs
+        docker build -t "docs-base:test-tooling" .
+        Sending build context to Docker daemon 65.54 kB
+        Sending build context to Docker daemon 
+        Step 0 : FROM docs-base:hugo
+         ---> 353c49564399
+        ...snip...
+        Successfully built f2c701b7b47b
+        docker run --rm -it  -e AWS_S3_BUCKET -e NOCACHE -p 8000:8000 -e DOCKERHOST "docs-base:test-tooling" hugo server --port=8000 --baseUrl=192.168.59.103 --bind=0.0.0.0
+        0 of 4 drafts rendered
+        0 future content 
+        11 pages created
+        0 paginator pages created
+        0 tags created
+        0 categories created
+        in 40 ms
+        Serving pages from /docs/public
+        Web Server is available at http://0.0.0.0:8000/
+        Press Ctrl+C to stop
+        
+7. Open the browser to the root of your docs.
+
+### Example of projects using this image 
+
+- [Docker Engine](https://github.com/docker/docker)
+- [Docker Compose](https://github.com/docker/compose)
 - [Docker Machine](https://github.com/docker/machine)
 - [Docker Swarm](https://github.com/docker/swarm)
+- [Docker Distribution](https://github.com/docker/distribution)
 
-So there are working examples you can compare with.
+## Contribute to this repository
 
-Each project uses a documentation specific `Dockerfile` to import the markdown
-files and images into the Docker image's `/docs/source` directory.
+You can contribute to this repository just as would any other Docker repository.  
 
-Then there is a `mkdocs.yml` file, which is placed into the `/docs/` directory.
-For the base project, `docker/docker`, it will replace the default
-`/dos/mkdocs.yml` file, and for all projects that are going to be added to that
-`https://docs.docker.com` documentation set, should be renamed as
-`/docs/mkdocs-<project>.yml` so that it can be imported into the main site.
 
-The repositories with a `Makefile` will build using `make docs`, the others have
-either a `script/docs` or `docs/build.sh` script to build a preview of their local
-documentation.
