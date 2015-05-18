@@ -1,0 +1,198 @@
+baseurl = "http://localhost/"
+contentdir = "content"
+languageCode = "en-us"
+title = "Docker Docs"
+theme = "hugo-bootswatch"
+
+# Menu configuration should come last in this file; 
+# leave at least one blank line at the end
+#
+# INSTALL Menu	
+#
+[[menu.main]]
+	name = "Install"
+	identifier = "mn_install"
+	weight = 1
+[[menu.main]]
+	name = "Docker Engine"
+	identifier = "smn_engine"
+	parent = "mn_install"		
+[[menu.main]]
+	name = "Cloud"
+	identifier = "smn_cloud"
+	parent = "smn_engine"
+[[menu.main]]
+	name = "Linux"
+	identifier = "smn_linux"
+	parent = "smn_engine"
+[[menu.main]]
+	name = "Orchestration tools"
+	identifier = "smn_install_orchestration"
+	parent = "mn_install"	
+[[menu.main]]
+	name = "Kitematic"
+	identifier = "smn_kitematic"
+	parent = "mn_install"			
+#
+# UNDERSTAND Menu	
+#
+[[menu.main]]
+	name = "Understand Docker"
+	identifier = "mn_understand"
+	weight = 2
+[[menu.main]]
+	name = "Learn Docker Fundamentals"
+	identifier = "smn_fundamentals"
+	parent = "mn_understand"
+	weight = 2	
+#
+# PLATFORM Menu	
+#	
+[[menu.main]]
+	name = "Docker Platform"
+	identifier = "mn_platform"
+	weight = 3
+[[menu.main]]
+	name = "Engine on Windows & OSX"
+	identifier = "smn_win_osx"
+	parent = "mn_platform"
+	weight = 2	
+[[menu.main]]
+	name = "Use Kitematic"
+	identifier = "smn_workw_kitematic"
+	parent = "mn_platform"
+	weight = 3	
+[[menu.main]]
+	name = "Work with Docker Images"
+	identifier = "smn_images"
+	parent = "mn_platform"
+	weight = 4			
+[[menu.main]]
+	name = "Automatically Start Containers"
+	identifier = "smn_autostart"
+	parent = "mn_platform"
+	weight = 5		
+[[menu.main]]
+	name = "Orchestrate Docker"
+	identifier = "smn_workw_orchestrate"
+	parent = "mn_platform"
+	weight = 6	
+[[menu.main]]
+	name = "Docker Compose"
+	identifier = "smn_workw_compose"
+	parent = "smn_workw_orchestrate"
+	weight = 2	
+[[menu.main]]
+	name = "Docker Swarm"
+	identifier = "smn_workw_swarm"
+	parent = "smn_workw_orchestrate"
+	weight = 3	
+[[menu.main]]
+	name = "Applied Docker"
+	identifier = "smn_applied"
+	parent = "mn_platform"
+	weight = 7
+#
+# HUB Menu	
+#		
+[[menu.main]]
+	name = "Image repositories"
+  identifier = "mn_docker_hub"
+	weight = 4
+[[menu.main]]
+	name = "Docker Hub Enterprise"
+	identifier = "smn_dhe"
+	parent = "mn_docker_hub"
+	weight = 2
+[[menu.main]]
+	name = "The Public Hub"
+	identifier = "smn_pubhub"
+	parent = "mn_docker_hub"
+	weight = 1	
+[[menu.main]]
+	name = "Docker Registry"
+	identifier = "smn_registry"
+	parent = "mn_docker_hub"
+	weight = 3		
+#
+#   Administrate Docker
+#
+[[menu.main]]
+	name = "Adminstrate Docker"
+	identifier = "mn_administrate"
+	weight = 5			
+[[menu.main]]
+	name = "Applications and Services"
+	identifier = "smn_apps_servs"
+	parent = "mn_administrate"
+	weight = 1	
+[[menu.main]]
+	name = "Integrate with Third-party Tools"
+	identifier = "smn_third-party"
+	parent = "mn_administrate"
+	weight = 1	
+#
+# Command and API Reference
+#		
+[[menu.main]]
+	name = "Command and API reference"
+	identifier = "mn_reference"
+	weight = 7
+[[menu.main]]
+	name = "Docker Remote API"
+	identifier = "smn_remoteapi"
+	parent = "mn_reference"
+	weight = 1
+[[menu.main]]
+	name = "Docker Hub"
+	identifier = "smn_hub"
+	parent = "mn_reference"
+	weight = 2
+[[menu.main]]
+	name = "Orchestration Tool Reference"
+	identifier = "smn_orchestrate_ref"
+	parent = "mn_reference"
+	weight = 3
+#
+# Open source at Docker
+#		
+[[menu.main]]
+	name = "Open Source at Docker"
+	identifier = "mn_opensource"
+	weight = 8
+[[menu.main]]
+	name = "Configure Development Environment"
+	identifier = "smn_develop"
+	parent = "mn_opensource"
+	weight = 1
+[[menu.main]]
+	name = "Contribute walkthrough"
+	identifier = "smn_contribute"
+	parent = "mn_opensource"
+	weight = 2
+#
+# Version
+#		
+[[menu.main]]
+	name = "Get older docs"
+	identifier = "mn_versions"
+	weight = 9
+[[menu.main]]
+	name = "Version 1.5"
+	identifier = "smn_fifteen"
+	parent = "mn_versions"
+	url = "http://docs.docker.com/v1.5/"
+	weight = 1
+[[menu.main]]
+	name = "Version 1.4"
+	identifier = "smn_fourteen"
+	parent = "mn_versions"
+	url = "http://docs.docker.com/v1.4/"
+	weight = 2
+#
+# Help
+#	
+[[menu.main]]
+	name = "Help"
+	identifier = "mn_help"
+	weight = 10

@@ -5,32 +5,22 @@ page_keywords: docker, introduction, documentation, about, technology, understan
 # Docker documentation tools
 
 This repository contains the HTML theme, and the build tools for
-generating [the Docker documentation site](https://docs.docker.com).
-
-It can be used to view and check the changes to your repository's
-documentation in preparation for merging into the Official Docker
-documentation.
+generating [the Docker documentation site](https://docs.docker.com).  The theme and the structures form the `docs-base` image. Product repositories, such as docker/docker, docker/compose, and so forth use this base image in their local documentation builds.
 
 ## How to use it in your repository
 
 This tooling is currently used by:
 
 - [Docker](https://github.com/docker/docker)
-- [Docker Compose](https://github.com/docker/fig)
+- [Docker Compose](https://github.com/docker/compose)
 - [Docker Machine](https://github.com/docker/machine)
 - [Docker Swarm](https://github.com/docker/swarm)
+- [Docker Swarm](https://github.com/docker/distribution)
 
 So there are working examples you can compare with.
 
 Each project uses a documentation specific `Dockerfile` to import the markdown
 files and images into the Docker image's `/docs/source` directory.
 
-Then there is a `mkdocs.yml` file, which is placed into the `/docs/` directory.
-For the base project, `docker/docker`, it will replace the default
-`/dos/mkdocs.yml` file, and for all projects that are going to be added to that
-`https://docs.docker.com` documentation set, should be renamed as
-`/docs/mkdocs-<project>.yml` so that it can be imported into the main site.
-
 The repositories with a `Makefile` will build using `make docs`, the others have
-either a `script/docs` or `docs/build.sh` script to build a preview of their local
-documentation.
+either a `script/docs` or `docs/build.sh` script to build a preview of their local documentation.

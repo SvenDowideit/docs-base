@@ -19,9 +19,21 @@ DOCS_MOUNT := $(if $(DOCSDIR),-v $(CURDIR)/$(DOCSDIR):/$(DOCSDIR))
 # to allow `make DOCSPORT=9000 docs`
 DOCSPORT := 8000
 
+# Get the IP ADDRESS
+#HUGO_BASE_URL=$(echo ${(DOCKER_HOST):6:14})
+BASE_URL=localhost
+#HUGO_BASE_URL=$(shell echo $${DOCKER_HOST:6:14})
+
+#HUGO_BASE_URL=$(if $(shell echo $DOCKER_HOST),$(shell echo $${DOCKER_HOST:6:14}),$(BASE_URL))
+HUGO_BASE_URL=$(if $(shell echo $(DOCKER_HOST)),$(shell echo $${DOCKER_HOST:6:14}),$(info $(BASE_URL)))
+
+$(info $(BASE_URL) is the base)
+$(info $(HUGO_BASE_URL) is the hugo base)
+
 GIT_BRANCH := $(shell git rev-parse --abbrev-ref HEAD 2>/dev/null)
 DOCKER_IMAGE := docker$(if $(GIT_BRANCH),:$(GIT_BRANCH))
-DOCKER_DOCS_IMAGE := docker-docs-base$(if $(GIT_BRANCH),:$(GIT_BRANCH))
+DOCKER_DOCS_IMAGE := docs-base$(if $(GIT_BRANCH),:$(GIT_BRANCH))
+
 
 DOCKER_RUN_DOCS := docker run --rm -it $(DOCS_MOUNT) -e AWS_S3_BUCKET -e NOCACHE
 
@@ -31,7 +43,7 @@ GITCOMMIT := $(shell git rev-parse --short HEAD 2>/dev/null)
 default: docs
 
 docs: docs-build
-	$(DOCKER_RUN_DOCS) -p $(if $(DOCSPORT),$(DOCSPORT):)8000 "$(DOCKER_DOCS_IMAGE)" mkdocs serve
+	$(DOCKER_RUN_DOCS) -p $(if $(DOCSPORT),$(DOCSPORT):)8000 -e DOCKERHOST "$(DOCKER_DOCS_IMAGE)" hugo server --port=8000 --baseUrl=$(HUGO_BASE_URL)
 
 docs-shell: docs-build
 	$(DOCKER_RUN_DOCS) -p $(if $(DOCSPORT),$(DOCSPORT):)8000 "$(DOCKER_DOCS_IMAGE)" bash
