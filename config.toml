@@ -1,5 +1,5 @@
 baseurl = "http://localhost/"
-contentdir = "content"
+contentdir = "sources/examples"
 languageCode = "en-us"
 title = "Docker Docs"
 theme = "hugo-bootswatch"
@@ -22,7 +22,7 @@ theme = "hugo-bootswatch"
 	name = "Linux"
 	identifier = "smn_linux"
 	parent = "smn_engine"	
-	weight = 5	
+	weight = 80	
 [[menu.main]]
 	name = "Cloud"
 	identifier = "smn_cloud"
@@ -61,27 +61,27 @@ theme = "hugo-bootswatch"
 	name = "Engine on Windows & OSX"
 	identifier = "smn_win_osx"
 	parent = "mn_platform"
-	weight = 2	
+	weight = 1	
 [[menu.main]]
 	name = "Use Kitematic"
 	identifier = "smn_workw_kitematic"
 	parent = "mn_platform"
-	weight = 3	
+	weight = 2	
 [[menu.main]]
 	name = "Work with Docker Images"
 	identifier = "smn_images"
 	parent = "mn_platform"
-	weight = 4			
+	weight = 3			
 [[menu.main]]
 	name = "Automatically Start Containers"
 	identifier = "smn_autostart"
 	parent = "mn_platform"
-	weight = 5		
+	weight = 4		
 [[menu.main]]
 	name = "Orchestrate Docker"
 	identifier = "smn_workw_orchestrate"
 	parent = "mn_platform"
-	weight = 6	
+	weight = 5	
 [[menu.main]]
 	name = "Docker Compose"
 	identifier = "smn_workw_compose"
@@ -96,7 +96,7 @@ theme = "hugo-bootswatch"
 	name = "Applied Docker"
 	identifier = "smn_applied"
 	parent = "mn_platform"
-	weight = 7
+	weight = 6
 #
 # HUB Menu	
 #		
