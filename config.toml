@@ -17,22 +17,27 @@ theme = "hugo-bootswatch"
 	name = "Docker Engine"
 	identifier = "smn_engine"
 	parent = "mn_install"		
+	weight = 1
+[[menu.main]]
+	name = "Linux"
+	identifier = "smn_linux"
+	parent = "smn_engine"	
+	weight = 5	
 [[menu.main]]
 	name = "Cloud"
 	identifier = "smn_cloud"
 	parent = "smn_engine"
-[[menu.main]]
-	name = "Linux"
-	identifier = "smn_linux"
-	parent = "smn_engine"
+	weight = 99	
 [[menu.main]]
 	name = "Orchestration tools"
 	identifier = "smn_install_orchestration"
 	parent = "mn_install"	
+	weight = 3
 [[menu.main]]
 	name = "Kitematic"
 	identifier = "smn_kitematic"
-	parent = "mn_install"			
+	parent = "mn_install"		
+	weight = 2	
 #
 # UNDERSTAND Menu	
 #
@@ -96,7 +101,7 @@ theme = "hugo-bootswatch"
 # HUB Menu	
 #		
 [[menu.main]]
-	name = "Image repositories"
+	name = "Manage images"
   identifier = "mn_docker_hub"
 	weight = 4
 [[menu.main]]
