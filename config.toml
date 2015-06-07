@@ -1,5 +1,5 @@
 baseurl = "http://localhost/"
-contentdir = "sources/examples"
+contentdir = "content"
 languageCode = "en-us"
 title = "Docker Docs"
 theme = "hugo-bootswatch"
@@ -29,81 +29,96 @@ theme = "hugo-bootswatch"
 	parent = "smn_engine"
 	weight = 99	
 [[menu.main]]
-	name = "Orchestration tools"
-	identifier = "smn_install_orchestration"
+	name = "Docker Machine"
+	identifier = "smn_install_machine"
+	parent = "mn_install"	
+	weight = 3
+[[menu.main]]
+	name = "Docker Compose"
+	identifier = "smn_install_compose"
 	parent = "mn_install"	
 	weight = 3
 [[menu.main]]
 	name = "Kitematic"
-	identifier = "smn_kitematic"
+	identifier = "smn_install_kitematic"
 	parent = "mn_install"		
 	weight = 2	
 #
-# UNDERSTAND Menu	
-#
-[[menu.main]]
-	name = "Understand Docker"
-	identifier = "mn_understand"
-	weight = 2
-[[menu.main]]
-	name = "Learn Docker Fundamentals"
-	identifier = "smn_fundamentals"
-	parent = "mn_understand"
-	weight = 2	
-#
-# PLATFORM Menu	
+# Use Docker Menu	
 #	
 [[menu.main]]
-	name = "Docker Platform"
-	identifier = "mn_platform"
-	weight = 3
-[[menu.main]]
-	name = "Engine on Windows & OSX"
-	identifier = "smn_win_osx"
-	parent = "mn_platform"
-	weight = 1	
-[[menu.main]]
-	name = "Use Kitematic"
-	identifier = "smn_workw_kitematic"
-	parent = "mn_platform"
+	name = "Docker Fundamentals"
+	identifier = "mn_fun_docker"
 	weight = 2	
 [[menu.main]]
 	name = "Work with Docker Images"
 	identifier = "smn_images"
-	parent = "mn_platform"
-	weight = 3			
+	parent = "mn_fun_docker"
+	weight = 1
 [[menu.main]]
-	name = "Automatically Start Containers"
-	identifier = "smn_autostart"
-	parent = "mn_platform"
-	weight = 4		
+	name = "Work with Docker Containers"
+	identifier = "smn_containers"
+	parent = "mn_fun_docker"
+	weight = 3
 [[menu.main]]
-	name = "Orchestrate Docker"
-	identifier = "smn_workw_orchestrate"
-	parent = "mn_platform"
+	name = "Use the Kitematic GUI"
+	identifier = "smn_workw_kitematic"
+	parent = "mn_fun_docker"
 	weight = 5	
 [[menu.main]]
-	name = "Docker Compose"
-	identifier = "smn_workw_compose"
-	parent = "smn_workw_orchestrate"
-	weight = 2	
+	name = "Docker on Windows & OSX"
+	identifier = "smn_win_osx"
+	parent = "mn_fun_docker"
+	weight = 4	
+#
+#  Build, Ship, Run
+#
 [[menu.main]]
-	name = "Docker Swarm"
-	identifier = "smn_workw_swarm"
-	parent = "smn_workw_orchestrate"
+	name = "Use Docker"
+	identifier = "mn_use_docker"
 	weight = 3	
+[[menu.main]]
+	name = "Provision & set up Docker hosts"
+	identifier = "smn_workw_machine"
+	parent = "mn_use_docker"
+	weight = 2		
+[[menu.main]]
+	name = "Create multi-container applications"
+	identifier = "smn_workw_compose"
+	parent = "mn_use_docker"
+	weight = 3	
+[[menu.main]]
+	name = "Cluster Docker containers"
+	identifier = "smn_workw_swarm"
+	parent = "mn_use_docker"
+	weight = 4	
 [[menu.main]]
 	name = "Applied Docker"
 	identifier = "smn_applied"
-	parent = "mn_platform"
-	weight = 6
+	parent = "mn_use_docker"
+	weight = 8	
+[[menu.main]]
+	name = "Adminstrate Docker"
+	identifier = "smn_administrate"
+	parent = "mn_use_docker"
+	weight = 6			
+[[menu.main]]
+	name = "Applications and Services"
+	identifier = "smn_apps_servs"
+	parent = "smn_administrate"
+	weight = 100	
+[[menu.main]]
+	name = "Integrate with Third-party Tools"
+	identifier = "smn_third_party"
+	parent = "smn_administrate"
+	weight = 101
 #
 # HUB Menu	
 #		
 [[menu.main]]
-	name = "Manage images"
+	name = "Manage image repositories"
   identifier = "mn_docker_hub"
-	weight = 4
+	weight = 5
 [[menu.main]]
 	name = "Docker Hub Enterprise"
 	identifier = "smn_dhe"
@@ -119,23 +134,6 @@ theme = "hugo-bootswatch"
 	identifier = "smn_registry"
 	parent = "mn_docker_hub"
 	weight = 3		
-#
-#   Administrate Docker
-#
-[[menu.main]]
-	name = "Adminstrate Docker"
-	identifier = "mn_administrate"
-	weight = 5			
-[[menu.main]]
-	name = "Applications and Services"
-	identifier = "smn_apps_servs"
-	parent = "mn_administrate"
-	weight = 1	
-[[menu.main]]
-	name = "Integrate with Third-party Tools"
-	identifier = "smn_third-party"
-	parent = "mn_administrate"
-	weight = 1	
 #
 # Command and API Reference
 #		
@@ -154,10 +152,20 @@ theme = "hugo-bootswatch"
 	parent = "mn_reference"
 	weight = 2
 [[menu.main]]
-	name = "Orchestration Tool Reference"
-	identifier = "smn_orchestrate_ref"
+	name = "Docker Compose Reference"
+	identifier = "smn_compose_ref"
 	parent = "mn_reference"
 	weight = 3
+[[menu.main]]
+	name = "Docker Machine Reference"
+	identifier = "smn_machine_ref"
+	parent = "mn_reference"
+	weight = 4
+[[menu.main]]
+	name = "Docker Swarm Reference"
+	identifier = "smn_swarm_ref"
+	parent = "mn_reference"
+	weight = 5
 #
 # Open source at Docker
 #		
@@ -176,12 +184,49 @@ theme = "hugo-bootswatch"
 	parent = "mn_opensource"
 	weight = 2
 #
+# About
+#	
+[[menu.main]]
+	name = "About"
+	identifier = "mn_about"
+	weight = 9
+[[menu.main]]
+	name = "Getting Support"
+	identifier = "smn_support"
+	parent = "mn_about"
+	weight = 2
+[[menu.main]]
+	name = "Release Notes"
+	identifier = "smn_release_notes"
+	parent = "mn_about"
+	weight = 1
+[[menu.main]]
+	name = "Kitematic"
+	identifier = "smn_release_kitematic"
+	parent = "smn_release_notes"		
+	weight = 2		
+[[menu.main]]
+	name = "Docker Machine"
+	identifier = "smn_release_machine"
+	parent = "smn_release_notes"	
+	weight = 3
+[[menu.main]]
+	name = "Docker Compose"
+	identifier = "smn_release_compose"
+	parent = "smn_release_notes"	
+	weight = 4
+[[menu.main]]
+	name = "Docker Registry"
+	identifier = "smn_release_registry"
+	parent = "smn_release_notes"	
+	weight = 6
+#
 # Version
 #		
 [[menu.main]]
 	name = "Get older docs"
 	identifier = "mn_versions"
-	weight = 9
+	weight = 10
 [[menu.main]]
 	name = "Version 1.5"
 	identifier = "smn_fifteen"
@@ -194,10 +239,3 @@ theme = "hugo-bootswatch"
 	parent = "mn_versions"
 	url = "http://docs.docker.com/v1.4/"
 	weight = 2
-#
-# Help
-#	
-[[menu.main]]
-	name = "Help"
-	identifier = "mn_help"
-	weight = 10
