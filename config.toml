@@ -173,6 +173,11 @@ theme = "hugo-bootswatch"
 	identifier = "smn_contribute"
 	parent = "mn_opensource"
 	weight = 2
+[[menu.main]]
+	name = "Governance"
+	identifier = "smn_governance"
+	parent = "mn_opensource"
+	weight = 2
 #
 # About
 #	
