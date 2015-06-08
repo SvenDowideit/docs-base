@@ -28,21 +28,6 @@ theme = "hugo-bootswatch"
 	identifier = "smn_cloud"
 	parent = "smn_engine"
 	weight = 99	
-[[menu.main]]
-	name = "Docker Machine"
-	identifier = "smn_install_machine"
-	parent = "mn_install"	
-	weight = 3
-[[menu.main]]
-	name = "Docker Compose"
-	identifier = "smn_install_compose"
-	parent = "mn_install"	
-	weight = 3
-[[menu.main]]
-	name = "Kitematic"
-	identifier = "smn_install_kitematic"
-	parent = "mn_install"		
-	weight = 2	
 #
 # Use Docker Menu	
 #	
@@ -120,7 +105,7 @@ theme = "hugo-bootswatch"
   identifier = "mn_docker_hub"
 	weight = 5
 [[menu.main]]
-	name = "Docker Hub Enterprise"
+	name = "Docker Trusted Registry"
 	identifier = "smn_dhe"
 	parent = "mn_docker_hub"
 	weight = 2
@@ -148,7 +133,7 @@ theme = "hugo-bootswatch"
 	weight = 1
 [[menu.main]]
 	name = "Docker Hub"
-	identifier = "smn_hub"
+	identifier = "smn_hub_ref"
 	parent = "mn_reference"
 	weight = 2
 [[menu.main]]
@@ -166,6 +151,11 @@ theme = "hugo-bootswatch"
 	identifier = "smn_swarm_ref"
 	parent = "mn_reference"
 	weight = 5
+[[menu.main]]
+	name = "Docker Registry Reference"
+	identifier = "smn_registry_ref"
+	parent = "mn_reference"
+	weight = 6
 #
 # Open source at Docker
 #		
