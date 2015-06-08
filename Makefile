@@ -20,15 +20,9 @@ DOCS_MOUNT := $(if $(DOCSDIR),-v $(CURDIR)/$(DOCSDIR):/$(DOCSDIR))
 DOCSPORT := 8000
 
 # Get the IP ADDRESS
-#HUGO_BASE_URL=$(echo ${(DOCKER_HOST):6:14})
-BASE_URL=localhost
-#HUGO_BASE_URL=$(shell echo $${DOCKER_HOST:6:14})
-
-#HUGO_BASE_URL=$(if $(shell echo $DOCKER_HOST),$(shell echo $${DOCKER_HOST:6:14}),$(BASE_URL))
-HUGO_BASE_URL=$(if $(shell echo $(DOCKER_HOST)),$(shell echo $${DOCKER_HOST:6:14}),$(info $(BASE_URL)))
-
-$(info $(BASE_URL) is the base)
-$(info $(HUGO_BASE_URL) is the hugo base)
+DOCKER_IP=$(shell python -c "import urlparse ; print urlparse.urlparse('$(DOCKER_HOST)').hostname or ''")
+HUGO_BASE_URL=$(shell test -z "$(DOCKER_IP)" && echo localhost || echo "$(DOCKER_IP)")
+HUGO_BIND_IP=0.0.0.0
 
 GIT_BRANCH := $(shell git rev-parse --abbrev-ref HEAD 2>/dev/null)
 DOCKER_IMAGE := docker$(if $(GIT_BRANCH),:$(GIT_BRANCH))
@@ -43,16 +37,15 @@ GITCOMMIT := $(shell git rev-parse --short HEAD 2>/dev/null)
 default: docs
 
 docs: docs-build
-	$(DOCKER_RUN_DOCS) -p $(if $(DOCSPORT),$(DOCSPORT):)8000 -e DOCKERHOST "$(DOCKER_DOCS_IMAGE)" hugo server --port=8000 --baseUrl=$(HUGO_BASE_URL)
+	$(DOCKER_RUN_DOCS) -p $(if $(DOCSPORT),$(DOCSPORT):)8000 -e DOCKERHOST "$(DOCKER_DOCS_IMAGE)" hugo server --port=$(DOCSPORT) --baseUrl=$(HUGO_BASE_URL) --bind=$(HUGO_BIND_IP)
+
+docs-draft: docs-build
+	$(DOCKER_RUN_DOCS) -p $(if $(DOCSPORT),$(DOCSPORT):)8000 -e DOCKERHOST "$(DOCKER_DOCS_IMAGE)" hugo server --buildDrafts="true" --port=$(DOCSPORT) --baseUrl=$(HUGO_BASE_URL) --bind=$(HUGO_BIND_IP)
+
 
 docs-shell: docs-build
 	$(DOCKER_RUN_DOCS) -p $(if $(DOCSPORT),$(DOCSPORT):)8000 "$(DOCKER_DOCS_IMAGE)" bash
 
-docs-release: docs-build
-	$(DOCKER_RUN_DOCS) -e OPTIONS -e BUILD_ROOT -e DISTRIBUTION_ID "$(DOCKER_DOCS_IMAGE)" ./release.sh
-
-docs-test: docs-build
-	$(DOCKER_RUN_DOCS) "$(DOCKER_DOCS_IMAGE)" ./test.sh
 
 docs-build:
 #	( git remote | grep -v upstream ) || git diff --name-status upstream/release..upstream/docs ./ > ./changed-files
