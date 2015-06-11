@@ -1,14 +1,18 @@
 {{ partial "header.html" . }}
-{{ partial "navbar.html" . }}
+<div class="row content">
+    <div class="large-3 columns">
+        {{ partial "navbar.html" . }}
+    </div>
 
-    <div class="container">
-        <div class="page">
-            {{ .Content }}
-        </div>
-
-        {{ partial "container-footer.html" . }}
- 
-     </div>
-     
+    <div class="large-9 columns">
+        <section id="main">
+			<h1 id="title">{{ .Title }}</h1>
+			<article id="content">
+				{{ .Content }}
+			</article>
+		</section>
+    </div>
+</div>
 {{ partial "buildinfo.html" . }}
+{{ partial "container-footer.html" . }}
 {{ partial "footer.html" . }}
