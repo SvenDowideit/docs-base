@@ -2,7 +2,7 @@
 
 Docker uses [the Hugo static generator](http://gohugo.io/overview/introduction/) to convert project Markdown files to a static HTML site. This repository contains the HTML theme and Hugo configuration for building the [the Docker documentation site](https://docs.docker.com).  
 
-Together, the theme and the structure form the `docs-base` image. Each project repository uses this base image to generate localized documentation for review during development. 
+Together, the theme and the structure form the `docs-base` image. Each project repository uses this base image to generate localized documentation for review during development.  this is a test. 
 
 
 ## How to use it in your repository
