@@ -1,6 +1,8 @@
 # Docker documentation theme
 
-This repository contains the HTML theme and Hugo configuration for building the [the Docker documentation site](https://docs.docker.com).  The theme and the structures form the `docs-base` image. Each project repository uses this base image to generate localized documentation for review during development. 
+Docker uses [the Hugo static generator](http://gohugo.io/overview/introduction/) to convert project Markdown files to a static HTML site. This repository contains the HTML theme and Hugo configuration for building the [the Docker documentation site](https://docs.docker.com).  
+
+Together, the theme and the structure form the `docs-base` image. Each project repository uses this base image to generate localized documentation for review during development. 
 
 
 ## How to use it in your repository
@@ -53,12 +55,16 @@ To use this this in your own repository, you need to have `make` installed on yo
         
 7. Open the browser to the root of your docs.
 
-## Example of projects using this image 
+### Example of projects using this image 
 
 - [Docker](https://github.com/docker/docker)
 - [Docker Compose](https://github.com/docker/compose)
 - [Docker Machine](https://github.com/docker/machine)
 - [Docker Swarm](https://github.com/docker/swarm)
 - [Docker Distribution](https://github.com/docker/distribution)
+
+## Contribute to this repository
+
+You can contribute to this repository just as would any other Docker repository.  
 
 
