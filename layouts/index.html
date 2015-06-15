@@ -1,14 +1,17 @@
 {{ partial "header.html" . }}
-{{ partial "navbar.html" . }}
-
-    <div class="container">
-        {{ range where .Data.Pages "Title" "Home" }}
-                    <p>{{ .Content }}</p>
-        {{ end }}
-
-        {{ partial "container-footer.html" . }}
+<div class="row content">
+    <div class="large-3 columns">
+        {{ partial "navbar.html" . }}
     </div>
-    
-{{ partial "buildinfo.html" .}}
-{{ partial "footer.html" . }}
 
+    <div class="large-9 columns">
+        <div class="tabs-content">
+            {{ range where .Data.Pages "Title" "Home" }}
+                <p>{{ .Content }}</p>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ partial "buildinfo.html" . }}
+{{ partial "container-footer.html" . }}
+{{ partial "footer.html" . }}

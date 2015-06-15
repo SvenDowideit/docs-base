@@ -2,7 +2,7 @@ baseurl = "http://localhost/"
 contentdir = "content"
 languageCode = "en-us"
 title = "Docker Docs"
-theme = "hugo-bootswatch"
+theme = "hugo-foundation"
 
 # Menu configuration should come last in this file; 
 # leave at least one blank line at the end
