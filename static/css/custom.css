@@ -59,6 +59,10 @@ nav ul.tab.fourth-level a {
 
 /* Requirements */
 
+#multiple {
+  margin-top: 2rem;
+}
+
 [data-accordion] [data-content] {
   overflow: hidden;
   max-height: 0;
@@ -111,13 +115,13 @@ nav ul.tab.fourth-level a {
   content: "";
   position: absolute;
   right: 10px;
-  top: 12px;
+  top: 18px;
   font-size: 25px;
   font-weight: 200;
   color: #444;
   height: 15px;
   width: 24px;
-  /*background: url('../images/down.png') center center no-repeat;*/
+  background: url('../images/down.png') center center no-repeat;
   background-size: 50%;
 }
 
