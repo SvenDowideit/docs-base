@@ -15,19 +15,19 @@
                       {{if .HasChildren}}
                         <a data-link>{{ .Pre }} {{ .Name }}</a>
                       {{else}}
-                        <a data-link>{{ .Pre }} {{ .Name }}</a>
+                        <a data-link href="{{ .Url }}">{{ .Pre }} {{ .Name }}</a>
                       {{end}}
                     {{end}}
                   </div>
                 </article>
               {{else}}
-                <a data-link>{{ .Pre }} {{ .Name }}</a>
+                <a data-link href="{{ .Url }}">{{ .Pre }} {{ .Name }}</a>
               {{end}}
             {{end}}
           </div>
         </article>
       {{else}}
-        <a data-link>{{ .Pre }} {{ .Name }}</a>
+        <a data-link href="{{ .Url }}">{{ .Pre }} {{ .Name }}</a>
       {{end}} 
     </section>
   {{end}}
