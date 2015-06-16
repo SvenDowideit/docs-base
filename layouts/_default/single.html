@@ -1,15 +1,14 @@
 {{ partial "header.html" . }}
-<div class="row content">
+<div class="row">
     <div class="large-3 columns">
         {{ partial "navbar.html" . }}
     </div>
-
     <div class="large-9 columns">
-        <section id="main">
-			<article id="content">
-				{{ .Content }}
-			</article>
-		</section>
+      <section id="main">
+        <article id="content">
+          {{ .Content }}
+        </article>
+		  </section>
     </div>
 </div>
 {{ partial "buildinfo.html" . }}
