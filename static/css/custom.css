@@ -68,6 +68,12 @@ div#buildinfo {
   color: #59C9EF;
 }
 
+[data-accordion] [data-link].active {
+  font-weight: 500;
+  color: #556473;
+  cursor: default;
+}
+
 [data-accordion] > [data-control]:after {
   content: "";
   position: absolute;

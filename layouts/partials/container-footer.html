@@ -123,6 +123,8 @@
 </script>
 <script>
 
+;(function ( $, window, document, undefined ) {
+
     var pluginName = 'accordion',
         defaults = {
             transitionSpeed: 300,
@@ -409,6 +411,8 @@
             }
         });
     }
+
+})( jQuery, window, document );
 
 $(document).ready(function() {
   $('#multiple [data-accordion]').accordion({
