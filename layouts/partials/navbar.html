@@ -1,0 +1,102 @@
+<section id="multiple" data-accordion-group>
+  {{ $currentNode := . }}
+  {{ range .Site.Menus.main }}
+    <section data-accordion>
+      {{ if .HasChildren }}
+        <article data-accordion>
+          <button data-control>{{ .Pre }} {{ .Name }}</button>
+          <div data-content>
+            {{ range .Children }}
+              {{if .HasChildren}}
+                <article data-accordion>
+                  <button data-control>{{ .Pre }} {{ .Name }}</button>
+                  <div data-content>
+                    {{ range .Children }}
+                      {{if .HasChildren}}
+                        <a data-link>{{ .Pre }} {{ .Name }}</a>
+                      {{else}}
+                        <a data-link>{{ .Pre }} {{ .Name }}</a>
+                      {{end}}
+                    {{end}}
+                  </div>
+                </article>
+              {{else}}
+                <a data-link>{{ .Pre }} {{ .Name }}</a>
+              {{end}}
+            {{end}}
+          </div>
+        </article>
+      {{else}}
+        <a data-link>{{ .Pre }} {{ .Name }}</a>
+      {{end}} 
+    </section>
+  {{end}}
+</section>
+
+<!--
+
+<section id="multiple" data-accordion-group>
+  
+    <button data-control>Accordion 1</button>
+    <div data-content>
+      <article>Item</article>
+      <article data-accordion>
+        <button data-control>2nd Level</button>
+        <div data-content>
+          <article>Item</article>
+          <article>Hoodie ennui Godard aesthetic, art party whatever trust fund slow-carb kogi tattooed single-origin coffee banjo. Deep v tote bag brunch, artisan distillery chillwave Williamsburg sartorial. Mustache blog wayfarers Carles, forage biodiesel butcher street art. Hashtag small batch bitters deep v gluten-free. Semiotics butcher blog, paleo asymmetrical narwhal selvage pug Pitchfork DIY artisan Wes Anderson put a bird on it drinking vinegar whatever. Artisan McSweeney's Shoreditch, wolf yr Marfa street art locavore craft beer aesthetic 90's gentrify. Yr hella fingerstache, Echo Park VHS +1 church-key XOXO Vice selvage gastropub readymade literally wayfarers.</article>
+          <article>Item</article>
+          <article>Item</article>
+          <article>Item</article>
+          <article>Item</article>
+        </div>
+      </article>
+      <article data-accordion>
+        <button data-control>2nd Level</button>
+        <div data-content>
+          <article>Item</article>
+          <article>Item</article>
+          <article data-accordion>
+            <button data-control>3rd Level</button>
+            <div data-content>
+              <article>Item</article>
+              <article>Item</article>
+              <article>Item</article>
+              <article>Item</article>
+              <article>Item</article>
+              <article>Item</article>
+            </div>
+          </article>
+          <article data-accordion>
+            <button data-control>3rd Level</button>
+            <div data-content>
+              <article>Item</article>
+              <article>Item</article>
+              <article>Item</article>
+              <article>Item</article>
+              <article>Item</article>
+              <article>Item</article>
+            </div>
+          </article>
+        </div>
+      </article>
+      <article>Item</article>
+      <article>Item</article>
+      <article>Item</article>
+    </div>
+  </section>
+
+  <section data-accordion>
+    <button data-control>Accordion 2</button>
+    <div data-content>
+      <article>Item</article>
+      <article>Item</article>
+      <article>Item</article>
+      <article>Item</article>
+      <article>Item</article>
+      <article>Item</article>
+    </div>
+  </section>
+</section>
+
+-->
