@@ -2,3 +2,88 @@ div#buildinfo {
     visibility: hidden;
 }
 
+#multiple {
+  margin-top: 2rem;
+}
+
+[data-accordion] [data-content] {
+  overflow: hidden;
+  max-height: 0;
+  margin-left: 1rem;
+}
+
+/* Basic Theme */
+
+[data-accordion] {
+  line-height: 1;
+}
+
+[data-control],
+[data-content] > * {
+  /*padding: 10px;*/
+}
+
+/*[data-content] [data-accordion] {
+  border: 0;
+  padding: 0;
+}*/
+
+[data-accordion] [data-control] {
+  color: #556473;
+  width: 100%;
+  outline: 0;
+  text-align: left;
+  font-size: 16px;
+  background-color: #E6EDF4;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  padding: 0.8rem;
+  font-weight: 400;
+  border-radius: 4px;
+  transition: none;
+}
+
+[data-accordion] [data-control]:hover {
+  background-color: #ECF1F5;
+}
+
+
+[data-accordion] [data-link] {
+  display: block;
+  color: #24B8EB;
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  /*background-color: #E6EDF4;*/
+  margin: 0;
+  margin-bottom: 0.5rem;
+  padding: 0.8rem;
+  font-weight: 400;
+  border-radius: 4px;
+  transition: none;
+  line-height: 1.5rem;
+}
+
+[data-accordion] [data-link]:hover {
+  color: #59C9EF;
+}
+
+[data-accordion] > [data-control]:after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 16px;
+  font-size: 25px;
+  font-weight: 200;
+  color: #444;
+  height: 15px;
+  width: 24px;
+  background: url('../images/down.png') center center no-repeat;
+  background-size: 50%;
+}
+
+[data-accordion].open > [data-control]:after {
+  -webkit-transform: rotate(-180deg); 
+  -ms-transform: rotate(-180deg); 
+  transform: rotate(-180deg); 
+}
