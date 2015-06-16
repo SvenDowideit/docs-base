@@ -2,3 +2,127 @@ div#buildinfo {
     visibility: hidden;
 }
 
+/*nav ul.tab li {
+  list-style: none;
+  position: relative;
+}
+
+nav ul.tab li > ul {
+  transition: max-height 0.5s ease-out;
+  max-height: 0px;
+  overflow: hidden;
+}
+
+nav ul.tab li:hover > ul {
+  max-height: 500px;
+  transition: max-height 0.6s ease-in;
+}
+
+nav ul.tab li a {
+  color: #556473;
+  border-bottom: 1px solid #EDF0F4;
+  display: block;	
+  line-height: 20px;
+  padding: 10px 15px;
+  transition: background 300ms ease;
+}
+
+nav ul.tab li a:last-child {
+  border-bottom: none;
+}
+
+nav ul.tab li a:hover {
+  background-color: #242424;
+}
+
+nav ul.tab.second-level, nav ul.tab.third-level, nav ul.tab.fourth-level {
+  max-height: 0;
+}
+
+nav ul.tab.second-level a {
+  border: 1px solid #EDF0F4;
+}
+
+nav ul.tab.third-level a {
+  background-color: #2b5c78;
+}
+
+nav ul.tab.fourth-level a {
+  background-color: #3f6f8a;
+}*/
+
+/*!
+ * jQuery Accordion 0.0.1
+ * (c) 2014 Victor Fernandez <victor@vctrfrnndz.com>
+ * MIT Licensed.
+ */
+
+/* Requirements */
+
+[data-accordion] [data-content] {
+  overflow: hidden;
+  max-height: 0;
+  margin-left: 1rem;
+}
+
+/* Basic Theme */
+
+[data-accordion] {
+  line-height: 1;
+}
+
+[data-control],
+[data-content] > * {
+  /*padding: 10px;*/
+}
+
+/*[data-content] [data-accordion] {
+  border: 0;
+  padding: 0;
+}*/
+
+[data-accordion] [data-control] {
+  color: #556473;
+  width: 100%;
+  outline: 0;
+  text-align: left;
+  font-size: 16px;
+  background-color: #E6EDF4;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  font-weight: 400;
+}
+
+[data-accordion] [data-link] {
+  display: block;
+  color: #556473;
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  background-color: #E6EDF4;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  font-weight: 400;
+}
+
+[data-accordion] > [data-control]:after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  font-size: 25px;
+  font-weight: 200;
+  color: #444;
+  height: 15px;
+  width: 24px;
+  /*background: url('../images/down.png') center center no-repeat;*/
+  background-size: 50%;
+}
+
+[data-accordion].open > [data-control]:after {
+  -webkit-transform: rotate(-180deg); 
+  -ms-transform: rotate(-180deg); 
+  transform: rotate(-180deg); 
+}
