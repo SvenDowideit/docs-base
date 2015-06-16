@@ -5,9 +5,9 @@
     </div>
     <div class="large-9 columns">
         <div class="tabs-content">
-            {{ range where .Data.Pages "Title" "Home" }}
+    {{ range where .Data.Pages "Title" "Welcome to the Docker Documentation" }}
                 <p>{{ .Content }}</p>
-            {{ end }}
+      {{ end }}
         </div>
     </div>
 </div>
