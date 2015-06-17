@@ -167,17 +167,17 @@ theme = "hugo-foundation"
 	name = "Configure Development Environment"
 	identifier = "smn_develop"
 	parent = "mn_opensource"
-	weight = 1
+	weight = 2
 [[menu.main]]
-	name = "Contribute walkthrough"
+	name = "Contribution Workflow"
 	identifier = "smn_contribute"
 	parent = "mn_opensource"
-	weight = 2
+	weight = 3
 [[menu.main]]
 	name = "Governance"
 	identifier = "smn_governance"
 	parent = "mn_opensource"
-	weight = 2
+	weight = 9
 #
 # About
 #	

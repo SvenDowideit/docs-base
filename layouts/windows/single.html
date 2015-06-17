@@ -1,0 +1,13 @@
+{{ partial "header.html" . }}
+{{ partial "windows-navbar.html" . }}
+
+    <div class="container">
+        <div class="windows" style="margin-top:80px">
+            {{ .Content }}
+        </div>
+
+        {{ partial "container-footer.html" . }}
+
+     </div>
+     
+  {{ partial "footer.html" . }}
