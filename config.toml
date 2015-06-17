@@ -177,7 +177,7 @@ theme = "hugo-foundation"
 	name = "Governance"
 	identifier = "smn_governance"
 	parent = "mn_opensource"
-	weight = 500
+	weight = 9
 #
 # About
 #	
