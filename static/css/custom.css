@@ -93,3 +93,147 @@ div#buildinfo {
   -ms-transform: rotate(-180deg); 
   transform: rotate(-180deg); 
 }
+
+.tutorial  {border-collapse:collapse;border-spacing:0;}
+.tutorial td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tutorial th{font-family:Arial, sans-serif;font-size:14px;font-weight:emphasis;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+
+a {
+  color: #24B8EB;
+}
+
+a:hover {
+  color: #24B8EB;
+}
+
+h1 {
+  color: #24B8EB;
+  font-weight: 300;
+  font-size: 36px;
+  margin-top: 2rem;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 24px;
+  margin-top: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 1.15rem;
+  margin-bottom: .5rem;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5rem;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+
+}
+
+ul {
+  font-size: 16px;
+  line-height: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+ol {
+  font-size: 16px;
+  line-height: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+strong {
+  font-weight: 500;
+}
+
+/* begin dockerfile_tutorial.css */
+
+pre {
+    background-color: #ffe0c0;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px 4px 4px 4px;
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 10px;
+    padding: 9.5px;
+    white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+code {
+  background-color: #ffe0c0;
+  border-color: #ffcb94;
+  border-style: solid;
+  border-width: 1px;
+  color: #333333;
+  font-family: Consolas,"Liberation Mono",Courier,monospace;
+  font-weight: normal;
+  padding: 0.125rem 0.3125rem 0.0625rem;
+}
+
+code, pre {
+    border-radius: 3px 3px 3px 3px;
+    color: #323C4A; 
+    font-family: Monaco,Menlo,Consolas,"Courier New",monospace;
+    font-size: 14px;
+    padding: 0 3px 2px;
+    
+}
+
+.terminal {
+	color: #AAAAAA;
+	background-color: black;
+}
+
+.terminal  span.command {
+	color: white;
+	font-weight: bold;
+}
+
+.error_input {
+    border-color: #B94A48 !important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset !important;
+}
+
+input.level {
+    width: 150px;
+    height: 2.5em;
+    display: inline-block;
+}
+div.level_error {
+    width: 300px;
+    display: inline-block;
+    padding: 7px 12px;
+}
+.alert {
+    text-align:center;
+}
+#check_level_questions {
+    margin-top: 10px;
+}
+.form-inline input.l_fill {
+    height: 20px;
+    border-radius: 0;
+    width: 90px;
+    margin-right: 0;
+    padding: 0 0 2px 0;
+}
+.dockerfile.back {
+    display: block;
+    margin-top: 5px;
+}
+
+pre.prettyprint{
+    width: auto;
+    overflow: auto;
+    max-height: 600px
+}
+
+/* End dockerfile_tutorial.css */

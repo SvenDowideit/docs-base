@@ -169,7 +169,7 @@ theme = "hugo-foundation"
 	parent = "mn_opensource"
 	weight = 1
 [[menu.main]]
-	name = "Contribute walkthrough"
+	name = "Contribution Workflow"
 	identifier = "smn_contribute"
 	parent = "mn_opensource"
 	weight = 2
