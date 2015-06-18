@@ -5,7 +5,6 @@ title = "Docker Docs"
 theme = "hugo-foundation"
 
 [blackfriday]
-  angledQuotes = true
   fractions = false
   plainIdAnchors = true
 
@@ -195,26 +194,6 @@ theme = "hugo-foundation"
 	identifier = "smn_release_notes"
 	parent = "mn_about"
 	weight = 1
-[[menu.main]]
-	name = "Kitematic"
-	identifier = "smn_release_kitematic"
-	parent = "smn_release_notes"		
-	weight = 2		
-[[menu.main]]
-	name = "Docker Machine"
-	identifier = "smn_release_machine"
-	parent = "smn_release_notes"	
-	weight = 3
-[[menu.main]]
-	name = "Docker Compose"
-	identifier = "smn_release_compose"
-	parent = "smn_release_notes"	
-	weight = 4
-[[menu.main]]
-	name = "Docker Registry"
-	identifier = "smn_release_registry"
-	parent = "smn_release_notes"	
-	weight = 6
 #
 # Version
 #		
@@ -223,14 +202,20 @@ theme = "hugo-foundation"
 	identifier = "mn_versions"
 	weight = 10
 [[menu.main]]
+	name = "Version 1.6"
+	identifier = "smn_sixteen"
+	parent = "mn_versions"
+	url = "http://docs.docker.com/v1.6/"
+	weight = 1
+[[menu.main]]
 	name = "Version 1.5"
 	identifier = "smn_fifteen"
 	parent = "mn_versions"
 	url = "http://docs.docker.com/v1.5/"
-	weight = 1
+	weight = 2
 [[menu.main]]
 	name = "Version 1.4"
 	identifier = "smn_fourteen"
 	parent = "mn_versions"
 	url = "http://docs.docker.com/v1.4/"
-	weight = 2
+	weight = 3

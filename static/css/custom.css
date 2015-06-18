@@ -94,40 +94,43 @@ div#buildinfo {
   transform: rotate(-180deg); 
 }
 
-.tutorial  {border-collapse:collapse;border-spacing:0;}
-.tutorial td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tutorial th{font-family:Arial, sans-serif;font-size:14px;font-weight:emphasis;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tutorialTable  {border-collapse:collapse;border-spacing:0;}
+.tutorialTable td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tutorialTable th{font-family:Arial, sans-serif;font-size:14px;font-weight:emphasis;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
 
-a {
-  color: #24B8EB;
+
+.tutorial a {
+  color: #FF992E;
 }
 
-a:hover {
-  color: #24B8EB;
+.tutorial a:hover {
+  color: #FF992E;
 }
 
-h1 {
+.tutorial h1 {
   color: #24B8EB;
   font-weight: 300;
   font-size: 36px;
   margin-top: 2rem;
 }
 
-h2 {
+.tutorial h2 {
+  color: #556473;
   font-weight: 500;
   font-size: 24px;
   margin-top: 1.25rem;
   margin-bottom: 1rem;
 }
 
-h3 {
+.tutorial h3 {
+  color: #556473;
   font-weight: 500;
   font-size: 20px;
   margin-top: 1.15rem;
   margin-bottom: .5rem;
 }
 
-p {
+.tutorial p {
   font-size: 16px;
   line-height: 1.5rem;
   margin-top: .5rem;
@@ -135,21 +138,28 @@ p {
 
 }
 
-ul {
+.tutorial ul {
   font-size: 16px;
   line-height: 2.5rem;
   margin-bottom: 2rem;
 }
 
-ol {
+.tutorial ol {
   font-size: 16px;
   line-height: 2.5rem;
   margin-bottom: 2rem;
 }
 
-strong {
+.tutorial strong {
   font-weight: 500;
 }
+
+/* Tutorial Menu */
+
+.tutmenu thing {
+
+}
+
 
 /* Styling for splash */
 table#splashTable{

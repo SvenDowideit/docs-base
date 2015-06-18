@@ -1,0 +1,69 @@
+<section id="multiple" data-accordion-group>
+  {{ $currentNode := . }}
+  {{ range .Site.Menus.linux }}
+    <section data-accordion>
+      {{ if .HasChildren }}
+        <article data-accordion>
+          <button data-control>{{ .Pre }} {{ .Name }}</button>
+          <div data-content>
+            {{ range .Children }}
+              {{if .HasChildren}}
+                <article data-accordion>
+                  <button data-control>{{ .Pre }} {{ .Name }}</button>
+                  <div data-content>
+                    {{ range .Children }}
+                      {{if .HasChildren}}
+                        <article data-accordion>
+                          <button data-control>{{ .Pre }} {{ .Name }}</button>
+                          <div data-content>
+                            {{ range .Children }}
+                            {{if .HasChildren}} 
+                            	<li class="panel panel-default{{if $currentNode.HasMenuCurrent .Identifier . }} active{{end}}" id="dropdown">
+																	<a data-toggle="collapse" href="#{{.Identifier}}-sub">{{ .Pre }} </span> {{ .Name }} <span class="caret"></span></a>	
+																	<!-- Dropdown level 2 -->		
+																	<div id="{{.Identifier}}-sub" class="panel-collapse collapse">
+																		<div class="panel-body">
+																				<ul class="nav navbar-nav">
+																				{{ range .Children }}
+																				{{if .HasChildren}} 
+																					<li class="panel panel-default{{if $currentNode.HasMenuCurrent .Identifier . }} active{{end}}" id="dropdown">
+																							<a data-toggle="collapse" href="#{{.Identifier}}-sub">{{ .Pre }} </span> {{ .Name }} <span class="caret"></span></a>	
+																							<!-- Dropdown level 3 -->		
+																							<div id="{{.Identifier}}-sub" class="panel-collapse collapse">
+																								<div class="panel-body">
+																										<ul class="nav navbar-nav">
+																												{{ range .Children }}
+																													<li{{if $currentNode.IsMenuCurrent "main" . }} class="active"{{end}}><a href="{{.Url}}"> {{ .Name }}</a>
+																												{{ end }}
+																												</li>
+																										</ul>
+																								</div>	
+																							</div>	
+																				{{else}} 
+																							<li{{if $currentNode.IsMenuCurrent "main" . }} class="active"{{end}}><a href="{{.Url}}"> {{ .Name }} </a> 
+																				{{end}}
+																				</li>
+																				{{ end }}
+																				</ul>
+																		</div>	
+																	</div>	
+                            {{else}} 
+                                  <li{{if $currentNode.IsMenuCurrent "main" . }} class="active"{{end}}><a href="{{.Url}}"> {{ .Name }} </a> 
+                            {{end}}
+                            </li>
+                						{{ end }}
+                        </ul>
+                    </div>
+                </div>
+          {{else}} 
+               <!-- item is not a list -->  
+               <li> <a class="" href="{{.Url}}">{{ .Pre }}{{ .Name }}</a>
+          {{end}} 
+            </li> <!-- 1st level item -->
+				  {{end}}
+        </ul> <!-- 1st level list -->
+    </div><!-- /.navbar-collapse -->
+</nav>
+    
+    </div>
+</div>
