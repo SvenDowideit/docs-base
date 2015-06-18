@@ -4,6 +4,11 @@ languageCode = "en-us"
 title = "Docker Docs"
 theme = "hugo-foundation"
 
+[blackfriday]
+  angledQuotes = true
+  fractions = false
+  plainIdAnchors = true
+
 # Menu configuration should come last in this file; 
 # leave at least one blank line at the end
 #
