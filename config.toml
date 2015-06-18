@@ -5,7 +5,6 @@ title = "Docker Docs"
 theme = "hugo-foundation"
 
 [blackfriday]
-  angledQuotes = true
   fractions = false
   plainIdAnchors = true
 
