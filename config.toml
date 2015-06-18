@@ -105,7 +105,7 @@ theme = "hugo-foundation"
   identifier = "mn_docker_hub"
 	weight = 5
 [[menu.main]]
-	name = "Docker Trusted Registry"
+	name = "Docker Hub Enterprise"
 	identifier = "smn_dhe"
 	parent = "mn_docker_hub"
 	weight = 2
@@ -185,11 +185,6 @@ theme = "hugo-foundation"
 	name = "About"
 	identifier = "mn_about"
 	weight = 9
-[[menu.main]]
-	name = "Getting Support"
-	identifier = "smn_support"
-	parent = "mn_about"
-	weight = 2
 [[menu.main]]
 	name = "Release Notes"
 	identifier = "smn_release_notes"
