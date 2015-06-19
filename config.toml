@@ -194,26 +194,6 @@ theme = "hugo-foundation"
 	identifier = "smn_release_notes"
 	parent = "mn_about"
 	weight = 1
-[[menu.main]]
-	name = "Kitematic"
-	identifier = "smn_release_kitematic"
-	parent = "smn_release_notes"		
-	weight = 2		
-[[menu.main]]
-	name = "Docker Machine"
-	identifier = "smn_release_machine"
-	parent = "smn_release_notes"	
-	weight = 3
-[[menu.main]]
-	name = "Docker Compose"
-	identifier = "smn_release_compose"
-	parent = "smn_release_notes"	
-	weight = 4
-[[menu.main]]
-	name = "Docker Registry"
-	identifier = "smn_release_registry"
-	parent = "smn_release_notes"	
-	weight = 6
 #
 # Version
 #		
