@@ -218,4 +218,4 @@ theme = "hugo-foundation"
 	identifier = "smn_fourteen"
 	parent = "mn_versions"
 	url = "http://docs.docker.com/v1.4/"
-	weight = 2
+	weight = 3
