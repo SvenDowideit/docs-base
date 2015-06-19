@@ -202,11 +202,17 @@ theme = "hugo-foundation"
 	identifier = "mn_versions"
 	weight = 10
 [[menu.main]]
+	name = "Version 1.6"
+	identifier = "smn_sixteen"
+	parent = "mn_versions"
+	url = "http://docs.docker.com/v1.6/"
+	weight = 1
+[[menu.main]]
 	name = "Version 1.5"
 	identifier = "smn_fifteen"
 	parent = "mn_versions"
 	url = "http://docs.docker.com/v1.5/"
-	weight = 1
+	weight = 2
 [[menu.main]]
 	name = "Version 1.4"
 	identifier = "smn_fourteen"
