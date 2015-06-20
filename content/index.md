@@ -1,4 +1,5 @@
 +++
+aliases = [ "/installation/#installation", "/installation"]
 title = "Welcome to the Docker Docs!"
 description = "Home page for Docker's documentation"
 keywords = ["Docker, documentation, manual, guide, reference, api"]
@@ -12,16 +13,48 @@ keywords = ["Docker, documentation, manual, guide, reference, api"]
 </style>
 <table id="splashTable">
   <tr>
-    <td class="splash-031e"><p>Docker Engine or "Docker" <a href="/userguide">creates and runs Docker containers</a>.</p></td>
-    <td class="splash-031e"><p>Kitematic is the <a href="/kitematic">desktop GUI for Docker</a>.</p></td>
-    <td class="splash-031e"><p>Docker Hub is our <a href="/docker-hub">hosted registry service</a>.<p></td>
-    <td class="splash-031e"><p>Docker Hub Enterprise is a <a href="/docker-hub-enterprise">private dedicated image registry</a>.</p> </td>
+    <td class="splash-031e">
+    <p>
+    **Docker Engine** or "Docker" creates and runs Docker containers.Install Docker
+    on <a href="/installation/ubuntulinux/"/>Ubuntu</a>, <a href="/installation/mac"/>Mac OS
+    X</a>, or <a href="/installation/windows"/>Windows</a>. Or use the **Install** menu to choose
+    from others.
+    </p> </td>
+    <td class="splash-031e"><p>**Kitematic** is the desktop GUI for Docker. <a href="/kitematic/"/>Install Kitematic<a>.</p></td>
+</tr> 
+<tr>
+    <td class="splash-031e"><p>
+    **Docker Hub** is our hosted registry service for managing your images. There
+    is nothing to install. You just <a
+    href="https://hub.docker.com/account/signup/">sign up</a>!
+    <p></td>
+    <td class="splash-031e"><p>
+    **Docker Hub Enterprise**(DHE) supplies a private dedicated image registry. To learn about DHE
+for your team, see the <a href="/docker-hub-enterprise/install/">installation guide</a>.
+    </p> </td>
   </tr>
   <tr>
-    <td class="splash-031e"><p>Docker Machine <a href="/machine">automate container provisioning</a>.<p></td>
-    <td class="splash-031e"><p>Docker Swarm is used to host <a href="/swarm">clustering and container scheduling</a>.</p></td>
-    <td class="splash-031e"><p>Docker Compose <a href="/compose">defines multi-container applications</a>.<p></td>
-    <td class="splash-031e"><p>Docker Registry provides open source <a href="/registry">Docker image distribution</a>.</P></td>
+    <td class="splash-031e"><p>
+    **Docker Machine** automates container provisioning on your network or in
+    the cloud. Install machine on <a href="/machine/install-machine/">Windows, Mac OS
+    X, or Linux</a>.<p>
+    </td>
+    <td class="splash-031e"><p>
+    **Docker Swarm** is used to host clustering and container scheduling. <a
+    href="/swarm/install-w-machine/">Deploy your own "swarm"</a> today in just a
+    few short steps.
+    </p></td>
+  </tr>
+<tr>  
+    <td class="splash-031e"><p>
+    **Docker Compose** defines multi-container applications. You can install
+    Docker Compose <a href="/compose/install/">on Ubuntu, Mac OS X, and other
+    sytems</a>.<p></td>
+    <td class="splash-031e"><p>
+    **Docker Registry** provides open source Docker image distribution. See the
+    <a href="/deploying/">registry deployment documentation</a> for more
+    information.
+    </P></td>
   </tr>
 </table>
 
