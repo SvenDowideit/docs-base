@@ -52,7 +52,7 @@ for your team, see the <a href="/docker-hub-enterprise/install/">installation gu
     sytems</a>.<p></td>
     <td class="splash-031e"><p>
     **Docker Registry** provides open source Docker image distribution. See the
-    <a href="/deploying/">registry deployment documentation</a> for more
+    <a href="/registry/deploying/">registry deployment documentation</a> for more
     information.
     </P></td>
   </tr>
