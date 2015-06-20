@@ -63,4 +63,4 @@ for your team, see the <a href="/docker-hub-enterprise/install/">installation gu
 You also may find a few broken links or other wonkiness. We are working on fixing
 these things. We appreciate your patience while we go through our growing pains.
 
-![](/images/docker-friends.png)
+![](https://docs.docker.com/images/docker-friends.png)
