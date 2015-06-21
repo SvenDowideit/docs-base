@@ -58,6 +58,7 @@ div#buildinfo {
   margin: 0;
   margin-bottom: 0.3rem;
   padding: 0.3rem;
+  padding-left: 0.8rem;
   font-weight: 400;
   border-radius: 4px;
   transition: none;
