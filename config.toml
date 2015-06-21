@@ -131,6 +131,10 @@ theme = "hugo-foundation"
 	identifier = "mn_reference"
 	weight = 7
 [[menu.main]]
+	name = "Commandline Commands"
+	identifier = "smn_cli"
+	parent = "mn_reference"
+[[menu.main]]
 	name = "Docker Remote API"
 	identifier = "smn_remoteapi"
 	parent = "mn_reference"
