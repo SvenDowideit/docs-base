@@ -131,7 +131,7 @@ theme = "hugo-foundation"
 	identifier = "mn_reference"
 	weight = 7
 [[menu.main]]
-	name = "Commandline reference"
+	name = "Command line reference"
 	identifier = "smn_cli"
 	parent = "mn_reference"
 [[menu.main]]
