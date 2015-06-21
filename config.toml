@@ -130,10 +130,11 @@ theme = "hugo-foundation"
 	name = "Command and API reference"
 	identifier = "mn_reference"
 	weight = 7
-[[menu.main]]
-	name = "Command line reference"
-	identifier = "smn_cli"
-	parent = "mn_reference"
+# Add in when pr-14079 passes
+# [[menu.main]]
+#	name = "Command line reference"
+#	identifier = "smn_cli"
+#	parent = "mn_reference"
 [[menu.main]]
 	name = "Docker Remote API"
 	identifier = "smn_remoteapi"
