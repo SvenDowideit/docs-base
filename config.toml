@@ -194,11 +194,6 @@ theme = "hugo-foundation"
 	name = "About"
 	identifier = "mn_about"
 	weight = 9
-[[menu.main]]
-	name = "Release Notes"
-	identifier = "smn_release_notes"
-	parent = "mn_about"
-	weight = 1
 #
 # Version
 #		
