@@ -18,7 +18,7 @@ of these Docker product releases are detailed in the following Docker blog posts
 * [Networking Receives an Upgrade](http://blog.docker.com/2015/06/networking-receives-an-upgrade)
 * [Compose 1.3, Swarm 0.3, Machine 0.3](http://blog.docker.com/2015/06/compose-1-3-swarm-0-3-machine-0-3)
 * [Open Container Project Foundation](http://blog.docker.com/2015/06/open-container-project-foundation)
-* [Open Container Project Runtime](http://blog.docker.com/2015/06/open-container-project-runtime/)
+* [Open Container Project Runtime](http://blog.docker.com/2015/06/runc/)
 
 ## Docker Engine 1.7.0 
 
@@ -52,7 +52,7 @@ documentation here](https://docs.docker.com/swarm/).
 ## Docker Machine 0.3
 
 You'll find the [release for download on
-GitHub](https://github.com/docker/machine/releases). The releases page also
+GitHub](https://github.com/docker/machine/releases). This page also
 includes a list of the features provided in the release. For a complete list of
 machine changes see [the changelog in the project
 repository](https://github.com/docker/machine/blob/master/CHANGES.md).
