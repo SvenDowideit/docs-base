@@ -205,17 +205,17 @@ theme = "hugo-foundation"
 	name = "Version 1.6"
 	identifier = "smn_sixteen"
 	parent = "mn_versions"
-	url = "http://docs.docker.com/v1.6/"
+	url = "http://beta-docs.docker.io/v1.6/"
 	weight = 1
 [[menu.main]]
 	name = "Version 1.5"
 	identifier = "smn_fifteen"
 	parent = "mn_versions"
-	url = "http://docs.docker.com/v1.5/"
+	url = "http://beta-docs.docker.io/v1.5/"
 	weight = 2
 [[menu.main]]
 	name = "Version 1.4"
 	identifier = "smn_fourteen"
 	parent = "mn_versions"
-	url = "http://docs.docker.com/v1.4/"
+	url = "http://beta-docs.docker.io/v1.4/"
 	weight = 3
