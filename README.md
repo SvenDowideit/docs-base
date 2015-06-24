@@ -57,7 +57,7 @@ To use this this in your own repository, you need to have `make` installed on yo
 
 ### Example of projects using this image 
 
-- [Docker](https://github.com/docker/docker)
+- [Docker Engine](https://github.com/docker/docker)
 - [Docker Compose](https://github.com/docker/compose)
 - [Docker Machine](https://github.com/docker/machine)
 - [Docker Swarm](https://github.com/docker/swarm)
