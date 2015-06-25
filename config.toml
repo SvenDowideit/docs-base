@@ -90,7 +90,11 @@ theme = "hugo-foundation"
 	name = "Adminstrate Docker"
 	identifier = "smn_administrate"
 	parent = "mn_use_docker"
-	weight = 6			
+	weight = 6	
+[[menu.main]]
+	name = "Use logging drivers"
+	identifier = "smn_logging"
+	parent = "smn_administrate"			
 [[menu.main]]
 	name = "Applications and Services"
 	identifier = "smn_apps_servs"
@@ -127,12 +131,9 @@ theme = "hugo-foundation"
 # Command and API Reference
 #		
 [[menu.main]]
-	name = "Command and API reference"
+	name = "Command and API references"
 	identifier = "mn_reference"
 	weight = 7
-[[menu.main]]
-	name = "Logging drivers"
-	identifier = "smn_logging"
 [[menu.main]]
   name = "Command line reference"
   identifier = "smn_cli"
