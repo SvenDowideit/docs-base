@@ -130,6 +130,9 @@ theme = "hugo-foundation"
 	name = "Command and API reference"
 	identifier = "mn_reference"
 	weight = 7
+[[menu.main]]
+	name = "Logging drivers"
+	identifier = "smn_logging"
 # Add in when pr-14079 passes
 # [[menu.main]]
 #	name = "Command line reference"
