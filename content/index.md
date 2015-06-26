@@ -29,8 +29,8 @@ keywords = ["Docker, documentation, manual, guide, reference, api"]
     href="https://hub.docker.com/account/signup/">sign up</a>!
     <p></td>
     <td class="splash-031e"><p>
-    **Docker Hub Enterprise**(DHE) supplies a private dedicated image registry. To learn about DHE
-for your team, see the <a href="/docker-hub-enterprise/install/">installation guide</a>.
+    **Docker Trusted Registry**(DTR) supplies a private dedicated image registry. To learn about DTR
+for your team, see the <a href="/docker-trusted-registry/">overview</a>.
     </p> </td>
   </tr>
   <tr>
