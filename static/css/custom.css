@@ -1,3 +1,32 @@
+h1, h2, h3, h4, h5, h6 {
+  color: #0296C9;
+  font-weight: 400;
+}
+
+a {
+  color: #EC7900;
+  font-weight: 300;
+  font-variant-ligatures: common-ligatures;
+}
+
+pre {
+    margin-bottom: 1.5rem;
+}
+body {
+  color: #050E1A; !important
+  text-shadow:0 0 5px transparent;
+  font-variant-ligatures: common-ligatures;
+}
+
+code {
+  background-color: #f8f8f8;
+}
+
+blockquote, blockquote p {
+  line-height: 1.6;
+  color: #0296C9;
+}
+
 div#buildinfo {
     visibility: hidden;
 }
@@ -50,7 +79,7 @@ div#buildinfo {
 
 [data-accordion] [data-link] {
   display: block;
-  color: #24B8EB;
+  color: #0296C9;
   width: 100%;
   text-align: left;
   font-size: 16px;
