@@ -3,6 +3,27 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+.row {
+  max-width: 90rem;
+}
+
+#toc {
+  position: absolute;
+  margin-top: 1.8rem;
+  left: 70rem;
+  background-color: #F4F8FB;
+  border-left: #E6EDF4;
+  border-left-style: outset;
+}
+
+nav#TableOfContents ul{
+  list-style: none;
+}
+
+nav#TableOfContents li{
+  line-height:1.5rem;
+}
+
 a {
   color: #EC7900;
   font-weight: 300;
