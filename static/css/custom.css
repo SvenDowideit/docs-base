@@ -10,7 +10,8 @@ div#docs.row {
 #toc {
   position: absolute;
   margin-top: 1.8rem;
-  left: 70rem;
+  z-index:10;
+  right: 0;
   background-color: #F4F8FB;
   border-left: #E6EDF4;
   border-left-style: outset;
