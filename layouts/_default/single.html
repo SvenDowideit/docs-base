@@ -1,0 +1,19 @@
+{{ partial "header.html" . }}
+<div id="docs" class="row">
+    <div class="large-3 columns">
+        {{ partial "navbar.html" . }}
+    </div>
+    <div class="large-6 columns">
+      <section id="main">
+        <article id="content">
+          {{ .Content }}
+        </article>
+		  </section>
+    </div>
+    <div id="toc" class="large-3 columns toc {{ if gt (len .TableOfContents) 2500 }}compact{{ end }}">
+     On this page:
+        {{ .TableOfContents }}
+    </div>
+</div>
+{{ partial "container-footer.html" . }}
+{{ partial "footer.html" . }}
