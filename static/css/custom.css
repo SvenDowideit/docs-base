@@ -249,3 +249,62 @@ table#splashTable tr.even, table tr.alt, table tr:nth-of-type(even) {
   border-style: none:
 }
 
+/* Tables */
+article#content table {
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  width: 100%;
+  word-break: normal;
+    border-collapse:collapse;
+  border-spacing:0;
+}
+
+article#content thead {
+  background-color: #e8e8e8;
+}
+
+article#content tr {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+}
+
+article#content tr:nth-child(2n) {
+  background-color:#f8f8f8;
+}
+
+article#content th,
+article#content td
+{
+  padding: 6px 13px;
+  vertical-align: top;
+}
+
+article#content td {
+  border: 1px solid #ddd;
+}
+
+article#content th {
+  background-color: #c0c0c0;
+  border: 1px solid #c0c0c0;
+  text-align: left;
+}
+
+/*
+ * Table used for showing code and CLI output, not using borders
+ * font-styling and background-color is the same as <pre> blocks.
+ */
+article#content table.code {
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+  font-size: 11px;
+}
+
+article#content table.code,
+article#content table.code tr,
+article#content table.code th,
+article#content table.code td
+{
+  background-color: #FCFCFC;
+  border: none;
+  font-weight: normal;
+}
+
