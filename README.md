@@ -7,7 +7,7 @@ Together, the theme and the structure form the `docs-base` image. Each project r
 
 ## How to use it in your repository
 
-To use this this in your own repository, you need to have `make` installed on your system.  Then, do the following:
+To use this in your own repository, you need to have `make` installed on your system.  Then, do the following:
 
 1. Create a `docs` subdirectory in your project.
 
@@ -65,6 +65,6 @@ To use this this in your own repository, you need to have `make` installed on yo
 
 ## Contribute to this repository
 
-You can contribute to this repository just as would any other Docker repository.  
+You can contribute to this repository just as you would any other Docker repository.
 
 
