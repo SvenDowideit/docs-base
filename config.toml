@@ -87,7 +87,7 @@ theme = "hugo-foundation"
 	parent = "mn_use_docker"
 	weight = 8	
 [[menu.main]]
-	name = "Adminstrate Docker"
+	name = "Administrate Docker"
 	identifier = "smn_administrate"
 	parent = "mn_use_docker"
 	weight = 6	
