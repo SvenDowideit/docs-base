@@ -3,6 +3,8 @@ contentdir = "content"
 languageCode = "en-us"
 title = "Docker Docs"
 theme = "hugo-foundation"
+canonifyurls = false
+relativeURLs = true
 
 [blackfriday]
   fractions = false
