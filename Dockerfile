@@ -14,6 +14,7 @@ RUN apt-get update \
 		python-dev \
 		python-pip \
 		python-setuptools \
+		subversion-tools\
 		vim-tiny \
 		curl
 
