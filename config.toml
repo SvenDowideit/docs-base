@@ -84,11 +84,6 @@ relativeURLs = true
 	parent = "mn_use_docker"
 	weight = 4	
 [[menu.main]]
-	name = "Applied Docker"
-	identifier = "smn_applied"
-	parent = "mn_use_docker"
-	weight = 8	
-[[menu.main]]
 	name = "Administrate Docker"
 	identifier = "smn_administrate"
 	parent = "mn_use_docker"
