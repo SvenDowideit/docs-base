@@ -88,11 +88,6 @@ relativeURLs = true
 	identifier = "smn_administrate"
 	parent = "mn_use_docker"
 	weight = 6	
-# Undo when logging is ready
-# [[menu.main]]
-#	name = "Use logging drivers"
-#	identifier = "smn_logging"
-#	parent = "smn_administrate"			
 [[menu.main]]
 	name = "Applications and Services"
 	identifier = "smn_apps_servs"
@@ -199,7 +194,7 @@ relativeURLs = true
 # Version
 #		
 [[menu.main]]
-	name = "Get older docs"
+	name = "Get archived docs"
 	identifier = "mn_versions"
 	weight = 10
 [[menu.main]]
