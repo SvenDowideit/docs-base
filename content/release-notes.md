@@ -7,55 +7,48 @@ parent = "mn_about"
 +++
 
 # Release notes 
-(2015-06-22)
+(2015-08-11)
 
-On June, 22 2015 Docker released Docker Engine (1.7.0), Docker Compose 1.3,
-Docker Swarm 0.3, and Docker Machine 0.3 to the public. Features and highlights
-of these Docker product releases are detailed in the following Docker blog posts:
+On August, 11 2015 Docker released Docker Engine (1.8.0), Docker Compose 1.4.0,
+Docker Swarm 0.4.0, and Docker Machine 0.4.0 to the public.
 
-* [Extending Docker with Plugins](http://blog.docker.com/2015/06/extending-docker-with-plugins)
-* [Announcing Docker 1.7 Multi-host Networking Plugins and Orchestration Updates](http://blog.docker.com/2015/06/announcing-docker-1-7-multi-host-networking-plugins-and-orchestration-updates)
-* [Networking Receives an Upgrade](http://blog.docker.com/2015/06/networking-receives-an-upgrade)
-* [Compose 1.3, Swarm 0.3, Machine 0.3](http://blog.docker.com/2015/06/compose-1-3-swarm-0-3-machine-0-3)
-* [Open Container Project Foundation](http://blog.docker.com/2015/06/open-container-project-foundation)
-* [Open Container Project Runtime](http://blog.docker.com/2015/06/runc/)
-
-## Docker Engine 1.7.0 
+## Docker Engine 1.8.0 
 
 For a complete list of engine patches, fixes, and other improvements, see the
-[merge PR on GitHub](https://github.com/docker/docker/pull/13528). You'll also
-find [a changelog in the project
-repository](https://github.com/docker/docker/blob/master/CHANGELOG.md).
+[release page on GitHub](https://github.com/docker/docker/releases). You'll also
+find <a href="https://github.com/docker/docker/blob/master/CHANGELOG.md"> a changelog in the project repository</a>.
 
 Beginning with this release, Docker Engine maintains an on-going experimental
-build.  To learn more about the build and try it for yourself, see [the
+build.  To learn more about the build and try it for yourself, see <a href="https://github.com/docker/docker/tree/master/experimental> the
 experimental directory in the Docker
-project](https://github.com/docker/docker/tree/master/experimental).
+project</a>.
 
 
-## Docker Compose 1.3
+## Docker Compose 1.4
 
 For a complete list of compose patches, fixes, and other improvements, see the
-[changelog in the project
-repository](https://github.com/docker/compose/blob/master/CHANGES.md). The
-project also makes a [set of release
-notes](https://github.com/docker/compose/releases/tag/1.3.0) on the project.
+You'll also find <a
+href="https://github.com/docker/compose/blob/master/CHANGES.md"> a changelog in
+the project repository</a>. The project also makes a [set of release
+notes](https://github.com/docker/compose/releases/tag/1.4.0) on the project.
 
 
-## Docker Swarm 0.3
+## Docker Swarm 0.4.0
+
+You'll find <a href="https://github.com/docker/swarm/blob/master/CHANGELOG.md">
+a changelog in the project repository</a> for a list of changes. You'll find the
+[release for download on
+GitHub](https://github.com/docker/swarm/releases/tag/v0.4.0).
+
+
+## Docker Machine 0.4.0
 
 You'll find the [release for download on
-GitHub](https://github.com/docker/swarm/releases/tag/v0.3.0-rc3) and [the
-documentation here](https://docs.docker.com/swarm/). 
-
-
-## Docker Machine 0.3
-
-You'll find the [release for download on
-GitHub](https://github.com/docker/machine/releases). This page also
-includes a list of the features provided in the release. For a complete list of
-machine changes see [the changelog in the project
-repository](https://github.com/docker/machine/blob/master/CHANGES.md).
+GitHub](https://github.com/docker/machine/releases). This page also includes a
+list of the features provided in the release. For a complete list of machine
+changes see <a
+href="https://github.com/docker/machine/blob/master/CHANGELOG.md"> a changelog
+in the project repository</a>.
 
 Beginning with this release, Docker Machine provides you with a set of
 experimental features to try out.  To learn more about the build and try it for
