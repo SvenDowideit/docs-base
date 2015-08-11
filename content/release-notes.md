@@ -19,10 +19,17 @@ For a complete list of engine patches, fixes, and other improvements, see the
 find <a href="https://github.com/docker/docker/blob/master/CHANGELOG.md"> a changelog in the project repository</a>.
 
 Beginning with this release, Docker Engine maintains an on-going experimental
-build.  To learn more about the build and try it for yourself, see <a href="https://github.com/docker/docker/tree/master/experimental> the
-experimental directory in the Docker
-project</a>.
+build. To learn more about the build and try it for yourself, see [the
+experimental
+directory](https://github.com/docker/docker/tree/master/experimental) in the
+Docker project.
 
+## Docker Swarm 0.4.0
+
+You'll find <a href="https://github.com/docker/swarm/blob/master/CHANGELOG.md">
+a changelog in the project repository</a> for a list of changes. You'll find the
+[release for download on
+GitHub](https://github.com/docker/swarm/releases/tag/v0.4.0).
 
 ## Docker Compose 1.4
 
@@ -31,14 +38,6 @@ You'll also find <a
 href="https://github.com/docker/compose/blob/master/CHANGES.md"> a changelog in
 the project repository</a>. The project also makes a [set of release
 notes](https://github.com/docker/compose/releases/tag/1.4.0) on the project.
-
-
-## Docker Swarm 0.4.0
-
-You'll find <a href="https://github.com/docker/swarm/blob/master/CHANGELOG.md">
-a changelog in the project repository</a> for a list of changes. You'll find the
-[release for download on
-GitHub](https://github.com/docker/swarm/releases/tag/v0.4.0).
 
 
 ## Docker Machine 0.4.0
