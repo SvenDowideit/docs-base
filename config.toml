@@ -199,7 +199,7 @@ relativeURLs = true
 	weight = 10
 [[menu.main]]
 	name = "Version 1.7"
-	identifier = "smn_fourteen"
+	identifier = "smn_seventeen"
 	parent = "mn_versions"
 	url = "http://docs.docker.com/v1.7/"
 	weight = -1	
