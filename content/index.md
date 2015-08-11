@@ -26,7 +26,7 @@ keywords = ["Docker, documentation, manual, guide, reference, api"]
     <td class="splash-031e"><p>
     **Docker Hub** is our hosted registry service for managing your images. There
     is nothing to install. You just <a
-    href="https://hub.docker.com/account/signup/">sign up</a>!
+    href="https://hub.docker.com/">sign up</a>!
     <p></td>
     <td class="splash-031e"><p>
     **Docker Trusted Registry**(DTR) supplies a private dedicated image registry. To learn about DTR
