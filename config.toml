@@ -10,10 +10,10 @@ relativeURLs = true
   fractions = false
   plainIdAnchors = true
 
-# Menu configuration should come last in this file; 
+# Menu configuration should come last in this file;
 # leave at least one blank line at the end
 #
-# INSTALL Menu	
+# INSTALL Menu
 #
 [[menu.main]]
 	name = "Install"
@@ -22,25 +22,25 @@ relativeURLs = true
 [[menu.main]]
 	name = "Docker Engine"
 	identifier = "smn_engine"
-	parent = "mn_install"		
+	parent = "mn_install"
 	weight = 1
 [[menu.main]]
 	name = "Linux"
 	identifier = "smn_linux"
-	parent = "smn_engine"	
-	weight = 80	
+	parent = "smn_engine"
+	weight = 80
 [[menu.main]]
 	name = "Cloud"
 	identifier = "smn_cloud"
 	parent = "smn_engine"
-	weight = 99	
+	weight = 99
 #
-# Use Docker Menu	
-#	
+# Use Docker Menu
+#
 [[menu.main]]
 	name = "Docker Fundamentals"
 	identifier = "mn_fun_docker"
-	weight = 2	
+	weight = 2
 [[menu.main]]
 	name = "Work with Docker Images"
 	identifier = "smn_images"
@@ -55,81 +55,86 @@ relativeURLs = true
 	name = "Use the Kitematic GUI"
 	identifier = "smn_workw_kitematic"
 	parent = "mn_fun_docker"
-	weight = 5	
+	weight = 5
 [[menu.main]]
 	name = "Docker on Windows & OSX"
 	identifier = "smn_win_osx"
 	parent = "mn_fun_docker"
-	weight = 4	
+	weight = 4
 #
 #  Build, Ship, Run
 #
 [[menu.main]]
 	name = "Use Docker"
 	identifier = "mn_use_docker"
-	weight = 3	
+	weight = 3
 [[menu.main]]
 	name = "Provision & set up Docker hosts"
 	identifier = "smn_workw_machine"
 	parent = "mn_use_docker"
-	weight = 2		
+	weight = 2
 [[menu.main]]
 	name = "Create multi-container applications"
 	identifier = "smn_workw_compose"
 	parent = "mn_use_docker"
-	weight = 3	
+	weight = 3
 [[menu.main]]
 	name = "Cluster Docker containers"
 	identifier = "smn_workw_swarm"
 	parent = "mn_use_docker"
-	weight = 4	
+	weight = 4
 [[menu.main]]
 	name = "Administrate Docker"
 	identifier = "smn_administrate"
 	parent = "mn_use_docker"
-	weight = 6	
+	weight = 6
 [[menu.main]]
 	name = "Applications and Services"
 	identifier = "smn_apps_servs"
 	parent = "smn_administrate"
-	weight = 100	
+	weight = 100
 [[menu.main]]
 	name = "Integrate with Third-party Tools"
 	identifier = "smn_third_party"
 	parent = "smn_administrate"
 	weight = 101
 #
-# HUB Menu	
-#		
+# HUB Menu
+#
 [[menu.main]]
 	name = "Manage image repositories"
-  identifier = "mn_docker_hub"
+	identifier = "mn_docker_hub"
 	weight = 5
+[[menu.main]]
+	name = "The Public Hub"
+	identifier = "smn_pubhub"
+	parent = "mn_docker_hub"
+	weight = 1
 [[menu.main]]
 	name = "Docker Trusted Registry"
 	identifier = "smn_dhe"
 	parent = "mn_docker_hub"
 	weight = 2
 [[menu.main]]
-	name = "The Public Hub"
-	identifier = "smn_pubhub"
-	parent = "mn_docker_hub"
-	weight = 1	
+	name = "DTR APIs"
+	identifier = "smn_dtrapi"
+	parent = "smn_dhe"
+	weight = 99
 [[menu.main]]
 	name = "Docker Registry"
 	identifier = "smn_registry"
 	parent = "mn_docker_hub"
-	weight = 3		
+	weight = 3
 #
 # Command and API Reference
-#		
+#
 [[menu.main]]
 	name = "Command and API references"
 	identifier = "mn_reference"
 	weight = 7
 [[menu.main]]
-  name = "Command line reference"
-  identifier = "smn_cli"
+	name = "Command line reference"
+	identifier = "smn_cli"
  	parent = "mn_reference"
 [[menu.main]]
 	name = "Docker Remote API"
@@ -163,7 +168,7 @@ relativeURLs = true
 	weight = 6
 #
 # Open source at Docker
-#		
+#
 [[menu.main]]
 	name = "Open Source at Docker"
 	identifier = "mn_opensource"
@@ -185,14 +190,14 @@ relativeURLs = true
 	weight = 9
 #
 # About
-#	
+#
 [[menu.main]]
 	name = "About"
 	identifier = "mn_about"
 	weight = 9
 #
 # Version
-#		
+#
 [[menu.main]]
 	name = "Docs archive"
 	identifier = "mn_versions"
@@ -202,7 +207,7 @@ relativeURLs = true
 	identifier = "smn_seventeen"
 	parent = "mn_versions"
 	url = "http://docs.docker.com/v1.7/"
-	weight = -1	
+	weight = -1
 [[menu.main]]
 	name = "Version 1.6"
 	identifier = "smn_sixteen"
