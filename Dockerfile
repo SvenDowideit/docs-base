@@ -16,6 +16,7 @@ RUN apt-get update \
 		python-setuptools \
 		subversion-tools\
 		vim-tiny \
+		ssed \
 		curl
 
 # Required to publish the documentation.
