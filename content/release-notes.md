@@ -9,10 +9,11 @@ parent = "mn_about"
 # Release notes 
 (2015-08-11)
 
-On August, 11 2015 Docker released Docker Engine (1.8.0), Docker Compose 1.4.0,
-Docker Swarm 0.4.0, and Docker Machine 0.4.0 to the public.
+On August 11, 2015 Docker released Docker Engine (1.8.0) and on August 12, 2015
+(1.8.1). On August 11, 2015 Docker Compose 1.4.0, Docker Swarm 0.4.0, and Docker Machine 0.4.0 to
+the public. 
 
-## Docker Engine 1.8.0 
+## Docker Engine 1.8.0, 1.8.1
 
 For a complete list of engine patches, fixes, and other improvements, see the
 [release page on GitHub](https://github.com/docker/docker/releases). You'll also
