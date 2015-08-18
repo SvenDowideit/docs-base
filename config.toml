@@ -106,7 +106,7 @@ relativeURLs = true
 	identifier = "mn_docker_hub"
 	weight = 5
 [[menu.main]]
-	name = "The Public Hub"
+	name = "Docker Hub"
 	identifier = "smn_pubhub"
 	parent = "mn_docker_hub"
 	weight = 1
