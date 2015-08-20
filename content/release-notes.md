@@ -17,7 +17,7 @@ the public.
 
 For a complete list of engine patches, fixes, and other improvements, see the
 [release page on GitHub](https://github.com/docker/docker/releases). You'll also
-find <a href="https://github.com/docker/docker/blob/master/CHANGELOG.md"> a changelog in the project repository</a>.
+find <a href="https://github.com/docker/docker/blob/v1.8.1/CHANGELOG.md"> a changelog in the project repository</a>.
 
 Beginning with this release, Docker Engine maintains an on-going experimental
 build. To learn more about the build and try it for yourself, see [the
@@ -27,7 +27,7 @@ Docker project.
 
 ## Docker Swarm 0.4.0
 
-You'll find <a href="https://github.com/docker/swarm/blob/master/CHANGELOG.md">
+You'll find <a href="https://github.com/docker/swarm/blob/v0.4.0/CHANGELOG.md">
 a changelog in the project repository</a> for a list of changes. You'll find the
 [release for download on
 GitHub](https://github.com/docker/swarm/releases/tag/v0.4.0).
@@ -36,7 +36,7 @@ GitHub](https://github.com/docker/swarm/releases/tag/v0.4.0).
 
 For a complete list of compose patches, fixes, and other improvements, see the
 You'll also find <a
-href="https://github.com/docker/compose/blob/master/CHANGES.md"> a changelog in
+href="https://github.com/docker/compose/blob/1.4.0/CHANGES.md"> a changelog in
 the project repository</a>. The project also makes a [set of release
 notes](https://github.com/docker/compose/releases/tag/1.4.0) on the project.
 
@@ -47,7 +47,7 @@ You'll find the [release for download on
 GitHub](https://github.com/docker/machine/releases). This page also includes a
 list of the features provided in the release. For a complete list of machine
 changes see <a
-href="https://github.com/docker/machine/blob/master/CHANGELOG.md"> a changelog
+href="https://github.com/docker/machine/blob/v0.4.0/CHANGELOG.md"> a changelog
 in the project repository</a>.
 
 Beginning with this release, Docker Machine provides you with a set of
