@@ -32,11 +32,10 @@ a changelog in the project repository</a> for a list of changes. You'll find the
 [release for download on
 GitHub](https://github.com/docker/swarm/releases/tag/v0.4.0).
 
-## Docker Compose 1.4
+## Docker Compose 1.4.0
 
-For a complete list of compose patches, fixes, and other improvements, see the
-You'll also find <a
-href="https://github.com/docker/compose/blob/1.4.0/CHANGES.md"> a changelog in
+For a complete list of compose patches, fixes, and other improvements, see <a
+href="https://github.com/docker/compose/blob/1.4.0/CHANGES.md">the changelog in
 the project repository</a>. The project also makes a [set of release
 notes](https://github.com/docker/compose/releases/tag/1.4.0) on the project.
 
@@ -46,8 +45,8 @@ notes](https://github.com/docker/compose/releases/tag/1.4.0) on the project.
 You'll find the [release for download on
 GitHub](https://github.com/docker/machine/releases). This page also includes a
 list of the features provided in the release. For a complete list of machine
-changes see <a
-href="https://github.com/docker/machine/blob/v0.4.0/CHANGELOG.md"> a changelog
+changes, see <a
+href="https://github.com/docker/machine/blob/v0.4.0/CHANGELOG.md"> the changelog
 in the project repository</a>.
 
 Beginning with this release, Docker Machine provides you with a set of
