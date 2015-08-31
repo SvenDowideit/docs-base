@@ -14,7 +14,7 @@ keywords = ["Docker, documentation, manual, guide, reference, api"]
   <tr>
     <td class="splash-031e">
     <p>
-    **Docker Engine** or "Docker" creates and runs Docker containers.Install Docker
+    **Docker Engine** or "Docker" creates and runs Docker containers. Install Docker
     on <a href="/installation/ubuntulinux/"/>Ubuntu</a>, <a href="/installation/mac"/>Mac OS
     X</a>, or <a href="/installation/windows"/>Windows</a>. Or use the **Install** menu to choose
     from others.
@@ -28,7 +28,7 @@ keywords = ["Docker, documentation, manual, guide, reference, api"]
     href="https://hub.docker.com/">sign up</a>!
     <p></td>
     <td class="splash-031e"><p>
-    **Docker Trusted Registry**(DTR) supplies a private dedicated image registry. To learn about DTR
+    **Docker Trusted Registry** (DTR) supplies a private dedicated image registry. To learn about DTR
 for your team, see the <a href="/docker-trusted-registry/">overview</a>.
     </p> </td>
   </tr>
@@ -48,7 +48,7 @@ for your team, see the <a href="/docker-trusted-registry/">overview</a>.
     <td class="splash-031e"><p>
     **Docker Compose** defines multi-container applications. You can install
     Docker Compose <a href="/compose/install/">on Ubuntu, Mac OS X, and other
-    sytems</a>.<p></td>
+    systems</a>.<p></td>
     <td class="splash-031e"><p>
     **Docker Registry** provides open source Docker image distribution. See the
     <a href="/registry/deploying/">registry deployment documentation</a> for more
