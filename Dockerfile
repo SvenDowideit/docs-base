@@ -37,8 +37,5 @@ COPY . /docs
 
 EXPOSE 8000
 
-
-
-
-
-
+# default to validating the docs build
+CMD ["/docs/validate.sh"]

@@ -53,3 +53,8 @@ docs-build:
 #	echo "$(AWS_S3_BUCKET)" > AWS_S3_BUCKET
 #	echo "$(GITCOMMIT)" > GITCOMMIT
 	docker build -t "$(DOCKER_DOCS_IMAGE)" .
+
+leeroy: docs-build
+	# the jenkins task also bind mounts in the current dir into `/src`, so we don't need different Dockerfiles for each repo
+	docker run --rm -t --name docs-pr$BUILD_NUMBER \
+		"$(DOCKER_DOCS_IMAGE)"
