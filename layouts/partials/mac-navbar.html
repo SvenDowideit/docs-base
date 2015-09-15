@@ -17,25 +17,25 @@
                           <button data-control>{{ .Pre }} {{ .Name }}</button>
                           <div data-content>
                             {{ range .Children }}
-                                <a data-link href="{{ .Url }}" class="{{if $currentNode.IsMenuCurrent "mac" . }} active{{end}}">{{ .Pre }} {{ .Name }}</a>
+                                <a data-link href="{{ .URL }}" class="{{if $currentNode.IsMenuCurrent "mac" . }} active{{end}}">{{ .Pre }} {{ .Name }}</a>
                             {{ end }}
                            </div>
                          </article> 
                       {{else}}
-                        <a data-link href="{{ .Url }}" class="{{if $currentNode.IsMenuCurrent "mac" . }} active{{end}}">{{ .Pre }} {{ .Name }}</a>
+                        <a data-link href="{{ .URL }}" class="{{if $currentNode.IsMenuCurrent "mac" . }} active{{end}}">{{ .Pre }} {{ .Name }}</a>
                       {{end}}
                       
                     {{end}}
                   </div>
                 </article>
               {{else}}
-                <a data-link href="{{ .Url }}" class="{{if $currentNode.IsMenuCurrent "mac" . }} active{{end}}">{{ .Pre }} {{ .Name }}</a>
+                <a data-link href="{{ .URL }}" class="{{if $currentNode.IsMenuCurrent "mac" . }} active{{end}}">{{ .Pre }} {{ .Name }}</a>
               {{end}}
             {{end}}
           </div>
         </article>
       {{else}}
-        <a data-link href="{{ .Url }}" class="{{if $currentNode.IsMenuCurrent "mac" . }} active{{end}}">{{ .Pre }} {{ .Name }}</a>
+        <a data-link href="{{ .URL }}" class="{{if $currentNode.IsMenuCurrent "mac" . }} active{{end}}">{{ .Pre }} {{ .Name }}</a>
       {{end}} 
     </section>
   {{end}}
