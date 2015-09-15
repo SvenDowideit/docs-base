@@ -34,6 +34,7 @@ RUN curl -sSL https://github.com/spf13/hugo/releases/download/v${HUGO_VERSION}/h
 #######################
 WORKDIR /docs
 COPY . /docs
+RUN chmod 755 /docs/validate.sh
 
 EXPOSE 8000
 
