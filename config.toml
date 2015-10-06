@@ -2,7 +2,7 @@ baseurl = "http://localhost/"
 contentdir = "content"
 languageCode = "en-us"
 title = "Docker Docs"
-theme = "hugo-foundation"
+theme = "docker-docs"
 canonifyurls = false
 relativeURLs = true
 
