@@ -1,0 +1,65 @@
+table {
+    border: none;
+    background: transparent;
+}
+
+.gsc-search-box {
+    position: relative;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+div.gsc-input-box {
+    background: transparent;
+    border: none;
+    height: auto;
+    &.gsc-input-box-hover,
+    &.gsc-input-box-focus {
+        border: none;
+        box-shadow: none !important;
+        width: 100% !important;
+    }
+}
+
+input.gsc-search-button {
+    padding: 1rem !important;
+    margin: 0 !important;
+    border: none !important;
+    background: transparent url(/dist/assets/images/icon-search.svg) 0 0 no-repeat !important;
+    position: absolute !important;
+    top: 50% !important;
+    right: 50px !important;
+    margin-top: -20px !important;
+    width: 20px !important;
+    height: 20px !important;
+    @extend %primary-transition;
+    outline: none !important;
+    &:focus,
+    &:hover {
+        transform: scale(1.25, 1.25);
+        background-color: transparent !important;
+        border-color: transparent !important;
+        box-shadow: none !important;
+    }
+}
+
+.gsc-input {
+    input.gsc-input {
+        margin: 0 !important;
+        height: 3rem !important;
+        width: 100% !important;
+        padding-left: 1rem !important;
+        &:focus {
+            border: none !important;
+        }
+    }
+}
+
+.gsib_a {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.gsib_b {
+    display: none;
+}

@@ -1,0 +1,22 @@
+{{ partial "header.html" . }}
+<div id="docs" class="row">
+	<div class="large-3 columns">
+		{{ partial "navbar.html" . }}
+	</div>
+	<div class="large-9 columns">
+    <section class="hero">
+      <h1 class="text-center">Search Results</h1>
+      <div class="row">
+        <div class="medium-8 large-6 small-centered columns">
+          <div class="search-box">
+            <gcse:searchbox resultsUrl="/search" enableAutoComplete="true"></gcse:searchbox>
+          </div>
+        </div>
+      </section>
+      <section class="search-results">
+        <gcse:searchresults resultsUrl="/search" enableAutoComplete="true"></gcse:searchresults>
+      </section>
+    </div>
+  </div>
+</div>
+{{ partial "footer.html" . }}
