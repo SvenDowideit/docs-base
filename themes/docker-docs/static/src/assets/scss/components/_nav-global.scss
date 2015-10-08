@@ -1,12 +1,13 @@
 .nav-global {
 	@include inline-list;
-	float: right;
-	margin-bottom: 0;
-	@media #{$small-only} {display: none;}
-	@media #{$medium-only} {display: none;}
-	
-	li {margin-left: 1rem;}
-	a {
+  float: right;
+  margin-bottom: 0;
+  @media #{$small-only} {display: none;}
+  @media #{$medium-only} {display: none;}
+
+  li {margin-left: 1rem;}
+  a {
+    font-family: $font-family-sans-serif-secondary;
 		font-size: rem-calc(14);
 		font-weight: 300;
 		color: $body-font-color;

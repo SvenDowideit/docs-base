@@ -1,5 +1,6 @@
 .nav-main {
 	@include inline-list;
+  font-family: ;
 	float: right;
 	margin-bottom: 0;
 	overflow: visible;
@@ -19,6 +20,7 @@
 			float: left;
 			display: none;
 			a {
+        font-family: $font-family-sans-serif-secondary;
 				display: block;
 				font-size: rem-calc(13);
 				background: #fff;
