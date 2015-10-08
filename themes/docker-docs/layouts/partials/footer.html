@@ -12,6 +12,14 @@
 <!-- End Google Tag Manager -->
 
 <script>
+  var addPlaceholder = function() {
+    $('input.gsc-input').attr("placeholder", "Search for Anything");
+  };
+
+  window.__gcse = {
+    callback: addPlaceholder
+  };
+
   (function() {
     var cx = '009004887876484247268:b76oyobm1um';
     var gcse = document.createElement('script');
