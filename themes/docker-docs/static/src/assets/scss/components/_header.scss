@@ -1,13 +1,12 @@
 .main-header {
-	padding: 20px 0;
+	padding: 12px 0;
 	overflow: visible;
 	position: relative;
 	z-index: 90;
 	background: #fff;
 	.logo {
 		margin-top: 20px;
-		
-		// Chnage this later
+		max-width: 200px;
 		@media #{$small-only} {
 			display: block;
 			margin: auto;
