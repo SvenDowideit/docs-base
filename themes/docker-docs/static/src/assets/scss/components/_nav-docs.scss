@@ -56,7 +56,7 @@
         color: #444;
         height: 15px;
         width: 24px;
-        background: url('/images/down.png') center center no-repeat;
+        background: url('/dist/assets/images/arrow.svg') center center no-repeat;
         background-size: 50%;
     }
     [data-accordion].open > [data-control]:after {
