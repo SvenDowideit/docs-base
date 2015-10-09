@@ -20,14 +20,14 @@
         }
         article > div > article > button {
             background: lighten(#575759, 10);
-            padding-left: 2rem;
+            padding-left: 2.5rem;
             font-weight: 300 !important;
         }
         article {
             a {
                 font-size: rem-calc(14);
                 display: block;
-                padding: rem-calc(10) rem-calc(10) rem-calc(10) 4rem;
+                padding: rem-calc(10) rem-calc(10) rem-calc(10) 3.5rem;
                 color: white;
                 font-weight: 100;
                 &.active {
