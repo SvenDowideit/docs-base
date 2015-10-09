@@ -1,16 +1,16 @@
 {{ partial "header.html" . }}
-<div id="docs" class="row">
+<div id="docs" class="row collapse">
 
-	<div class="large-3 columns">
+	<div class="large-2 columns">
 		{{ partial "navbar.html" . }}
 	</div>
 
-	<div class="large-9 columns">
+	<div class="large-10 columns">
     <section class="hero">
       <h1 class="text-center">Welcome Friends to the Docker Docs!</h1>
       <aside class="cta">
         <div class="row">
-          <div class="medium-8 large-6 small-centered columns">
+          <div class="medium-8 small-centered columns">
             <div class="row">
               <div class="small-12 medium-6 columns">
                 <h3>New to Docker?</h3>
@@ -19,6 +19,8 @@
                 <a class="button" href="/mac/started/">Get Started</a>
               </div>
             </div>
+          </div>
+          <div class="small-12 medium-8 medium-centered columns">
             <gcse:searchbox-only  resultsUrl="/search" enableAutoComplete="true"></gcse:searchbox-only>
           </div>
         </div>
@@ -106,4 +108,5 @@
 
   </div>
 </div>
+{{ partial "container-footer.html" . }}
 {{ partial "footer.html" . }}
