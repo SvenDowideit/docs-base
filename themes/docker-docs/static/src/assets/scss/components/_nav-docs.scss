@@ -1,14 +1,13 @@
 #docs {
-  .nav-docs {
-    @media #{$small-only} {
-      display: none;
+    .nav-docs {
+        @media #{$small-only} {
+            display: none;
+        }
+        @media #{$medium-only} {
+            display: none;
+        }
     }
-    @media #{$medium-only} {
-      display: none;
-    }
-  }
 }
-
 
 .nav-docs {
     background: #575759;
@@ -16,11 +15,9 @@
     padding-right: 0;
     #multiple {
         margin-top: 0;
-
         section {
-          border-bottom: 1px solid #9c9d9f;
+            border-bottom: 1px solid #9c9d9f;
         }
-
         article > div > article > button {
             background: lighten(#575759, 10);
             padding-left: 2rem;
@@ -28,19 +25,19 @@
         }
         article {
             a {
-                font-size: 14px;
+                font-size: rem-calc(14);
                 display: block;
-                padding: rem-calc(10) rem-calc(10) rem-calc(10) 20%;
+                padding: rem-calc(10) rem-calc(10) rem-calc(10) 4rem;
                 color: white;
                 font-weight: 100;
                 &.active {
-                  color: $docker-blue;
-                  font-weight: 400 !important;
+                    color: $docker-blue;
+                    font-weight: 400 !important;
                 }
             }
         }
         button {
-            font-size: 14px;
+            font-size: rem-calc(14);
             background: #575759;
             outline: none;
             font-weight: 100 !important;
@@ -66,5 +63,19 @@
         -webkit-transform: rotate(-180deg);
         -ms-transform: rotate(-180deg);
         transform: rotate(-180deg);
+    }
+}
+
+&.nav-tutorials {
+    a {
+        font-size: rem-calc(14);
+        display: block;
+        padding: rem-calc(20);
+        color: white;
+        font-weight: 100;
+        &.active {
+            color: $docker-blue;
+            font-weight: 400 !important;
+        }
     }
 }

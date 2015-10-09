@@ -1,55 +1,57 @@
-<section id="multiple" class="tutmenu" data-accordion-group>
-  {{ $currentNode := . }}
-  {{ range .Site.Menus.mac }}
+<aside class="nav-docs nav-tutorials">
+  <nav id="multiple" data-accordion-group>
+    {{ $currentNode := . }}
+    {{ range .Site.Menus.mac }}
     <section data-accordion>
       {{ if .HasChildren }}
-        <article data-accordion>
-          <button data-control>{{ .Pre }} {{ .Name }}</button>
-          <div data-content>
-            {{ range .Children }}
+      <article data-accordion>
+        <button data-control>{{ .Pre }} {{ .Name }}</button>
+        <div data-content>
+          {{ range .Children }}
+          {{if .HasChildren}}
+          <article data-accordion>
+            <button data-control>{{ .Pre }} {{ .Name }}</button>
+            <div data-content>
+              {{ range .Children }}
               {{if .HasChildren}}
-                <article data-accordion>
-                  <button data-control>{{ .Pre }} {{ .Name }}</button>
-                  <div data-content>
-                    {{ range .Children }}
-                      {{if .HasChildren}}
-                        <article data-accordion>
-                          <button data-control>{{ .Pre }} {{ .Name }}</button>
-                          <div data-content>
-                            {{ range .Children }}
-                                <a data-link href="{{ .URL }}" class="{{if $currentNode.IsMenuCurrent "mac" . }} active{{end}}">{{ .Pre }} {{ .Name }}</a>
-                            {{ end }}
-                           </div>
-                         </article> 
-                      {{else}}
-                        <a data-link href="{{ .URL }}" class="{{if $currentNode.IsMenuCurrent "mac" . }} active{{end}}">{{ .Pre }} {{ .Name }}</a>
-                      {{end}}
-                      
-                    {{end}}
-                  </div>
-                </article>
+              <article data-accordion>
+                <button data-control>{{ .Pre }} {{ .Name }}</button>
+                <div data-content>
+                  {{ range .Children }}
+                  <a data-link href="{{ .URL }}" class="{{if $currentNode.IsMenuCurrent "mac" . }} active{{end}}">{{ .Pre }} {{ .Name }}</a>
+                  {{ end }}
+                </div>
+              </article>
               {{else}}
-                <a data-link href="{{ .URL }}" class="{{if $currentNode.IsMenuCurrent "mac" . }} active{{end}}">{{ .Pre }} {{ .Name }}</a>
+              <a data-link href="{{ .URL }}" class="{{if $currentNode.IsMenuCurrent "mac" . }} active{{end}}">{{ .Pre }} {{ .Name }}</a>
               {{end}}
-            {{end}}
-          </div>
-        </article>
+
+              {{end}}
+            </div>
+          </article>
+          {{else}}
+          <a data-link href="{{ .URL }}" class="{{if $currentNode.IsMenuCurrent "mac" . }} active{{end}}">{{ .Pre }} {{ .Name }}</a>
+          {{end}}
+          {{end}}
+        </div>
+      </article>
       {{else}}
-        <a data-link href="{{ .URL }}" class="{{if $currentNode.IsMenuCurrent "mac" . }} active{{end}}">{{ .Pre }} {{ .Name }}</a>
-      {{end}} 
+      <a data-link href="{{ .URL }}" class="{{if $currentNode.IsMenuCurrent "mac" . }} active{{end}}">{{ .Pre }} {{ .Name }}</a>
+      {{end}}
     </section>
-  {{end}}
-</section>
+    {{end}}
+  </nav>
+</aside>
 
 <script>
-$(document).ready(function () {
-  var $activeLink = $('#multiple [data-link].active');
-  var $accordions = $activeLink.parents('article[data-accordion]');
-  $($accordions.get().reverse()).each(function (index, accordion) {
-    var $accordion = $(accordion);
-    var $content = $accordion.find('[data-content]');
-    $accordion.addClass('open');
-    $content.css({'max-height': '100%'});
+  $(document).ready(function () {
+    var $activeLink = $('#multiple [data-link].active');
+    var $accordions = $activeLink.parents('article[data-accordion]');
+    $($accordions.get().reverse()).each(function (index, accordion) {
+      var $accordion = $(accordion);
+      var $content = $accordion.find('[data-content]');
+      $accordion.addClass('open');
+      $content.css({'max-height': '100%'});
+    });
   });
-});
 </script>
