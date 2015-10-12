@@ -7,5 +7,19 @@
       <h2>On this page:</h2>
       {{ .TableOfContents }}
     </div>
+    <button class="toggle-nav-size">Toggle Nav Size</button>
   </div>
 </aside>
+
+<script>
+  $(document).ready(function() {
+
+    var docsContainer = $('#docs');
+    $('.nav-page-content').on('click', '.toggle-nav-size', function(event) {
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      docsContainer.toggleClass('table-of-contents-nav-collapsed');
+    });
+
+  });
+</script>

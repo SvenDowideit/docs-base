@@ -67,6 +67,23 @@
     -ms-transform: rotate(-180deg);
     transform: rotate(-180deg);
   }
+  .toggle-nav-size {
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+    font-size: 0 !important;
+    &:after {
+      content: "";
+      position: absolute;
+      right: 1rem;
+      bottom: 1rem;
+      margin: auto;
+      color: #444;
+      height: 30px;
+      width: 30px;
+      background: url('/dist/assets/images/expand-arrow.svg') center center no-repeat;
+      background-size: 0.75rem;
+    }
+  }
 }
 
 &.nav-tutorials {
@@ -80,5 +97,60 @@
       color: $docker-blue;
       font-weight: 400 !important;
     }
+  }
+}
+
+.docs-nav-collapsed {
+  @extend %primary-transition;
+  .nav-docs {
+    position: relative;
+    #multiple {
+      padding-bottom: 10rem;
+      .toggle-nav-size {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: transparent;
+        &:after {
+          top: auto;
+          right: 0;
+          bottom: 1rem;
+          left: 0;
+          transform: rotate(180deg);
+        }
+      }
+      section {
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+      }
+      button,
+      a {
+        font-size: 0;
+      }
+      .open > div {
+        display: none;
+      }
+      [data-accordion] > [data-control]:after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+      }
+    }
+  }
+  .large-3 {
+    &.nav-docs-wrapper {
+      @extend %primary-transition;
+      width: grid-calc(1, $total-columns);
+    }
+  }
+  .large-6 {
+    @extend %primary-transition;
+    width: grid-calc(10, $total-columns);
   }
 }
