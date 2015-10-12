@@ -1,0 +1,29 @@
+.table-of-contents-wrap {
+  border: 1px solid #9c9d9f;
+  .table-of-contents {
+    padding: 1rem 0.5rem;
+  }
+  h2 {
+    font-weight: 300;
+    color: $docker-gray;
+    font-size: rem-calc(20);
+  }
+}
+
+#TableOfContents {
+  a {
+    color: $secondary-color;
+    font-size: rem-calc(14);
+  }
+  li {
+    list-style: none;
+    line-height: 1.5;
+  }
+  > ul > li > ul > li {
+  }
+  > ul > li > ul > li > a {
+    color: $docker-gray;
+  }
+  > ul > li > ul > li > ul {
+  }
+}
