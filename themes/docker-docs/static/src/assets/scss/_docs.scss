@@ -44,6 +44,13 @@ nav ul.tabs {
     }
 }
 
+#docs.row {
+  max-width: 90rem;
+  .hero {
+    margin-left: -($column-gutter);
+  }
+}
+
 .row {
     &.content {
         max-width: 100%;
