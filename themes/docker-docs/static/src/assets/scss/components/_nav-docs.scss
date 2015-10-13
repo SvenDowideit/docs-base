@@ -143,6 +143,9 @@
       }
     }
   }
+  .large-9 {
+    width: grid-calc(11, $total-columns);
+  }
   .large-3 {
     &.nav-docs-wrapper {
       @extend %primary-transition;

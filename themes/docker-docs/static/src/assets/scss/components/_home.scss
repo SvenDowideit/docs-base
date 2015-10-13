@@ -22,14 +22,15 @@
     @include block-grid(4);
   }
   li {
-    margin-bottom: 0.5rem;
+    padding: 0;
+    margin-bottom: 4rem;
     text-align: center;
   }
 }
 
 .product-tile {
   display: block;
-  padding: 2rem 0.5rem;
+  padding: 0.5rem;
   @extend %primary-transition;
   border: 1px solid transparent;
   img {
