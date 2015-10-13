@@ -43,7 +43,7 @@ module.exports = function(grunt) {
         },
         files: {
           'dist/assets/css/app.css': 'src/assets/scss/app.scss'
-        }        
+        }
       }
     },
 
@@ -51,7 +51,7 @@ module.exports = function(grunt) {
       dist: {
         files: [
           {expand:true, cwd: 'src/assets/', src: ['**/*','!{scss,js}/**/*'], dest: 'dist/assets/', filter:'isFile'},
-          {expand:true, cwd: 'bower_components/modernizr/', src: 'modernizr.js', dest: 'dist/assets/js', filter:'isFile'}
+          {expand:true, cwd: 'bower_components/modernizr/', src: 'modernizr.js', dest: 'dist/assets/js/', filter:'isFile'}
         ]
       }
     },
@@ -67,9 +67,9 @@ module.exports = function(grunt) {
     clean: ['dist/'],
 
     watch: {
-      grunt: { 
+      grunt: {
         files: ['Gruntfile.js'],
-        tasks: ['build'] 
+        tasks: ['build']
       },
 
       sass: {
