@@ -15,6 +15,13 @@
   var addPlaceholder = function() {
     $('.search-large input.gsc-input').attr("placeholder", "Search for Anything");
     $('.search-small input.gsc-input').attr("placeholder", "Search");
+
+    $('.gsc-search-box').on('click', 'td.gsc-search-button', function(event) {
+      event.preventDefault();
+      $('input', this).trigger('click');
+    }).on('click', 'input.gsc-search-button', function(event) {
+      event.stopPropagation();
+    });
   };
 
   window.__gcse = {

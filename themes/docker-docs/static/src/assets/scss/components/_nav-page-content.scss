@@ -17,17 +17,13 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
     margin: 0;
-    &:after {
-      content: "";
+    svg {
+      color: $secondary-color;
+      width: rem-calc(20);
+      height: rem-calc(20);
       position: absolute;
-      left: 1rem;
       bottom: 1rem;
-      margin: auto;
-      color: #444;
-      height: 30px;
-      width: 30px;
-      background: url('/dist/assets/images/expand-arrow.svg') center center no-repeat;
-      background-size: 0.75rem;
+      left: 1rem;
       transform: rotate(180deg);
     }
   }
@@ -75,20 +71,13 @@
       background-color: transparent;
       width: 100%;
       font-size: 0 !important;
-      &:after {
-        content: "";
-        position: absolute;
-        left: 1rem;
-        bottom: 1rem;
-        margin: auto;
-        color: #444;
-        height: 30px;
-        width: 30px;
-        background: url('/dist/assets/images/expand-arrow.svg') center center no-repeat;
-        background-size: 0.75rem;
+      svg {
         transform: rotate(0deg);
       }
     }
+  }
+  .large-9 {
+    width: grid-calc(11, $total-columns);
   }
   .large-3 {
     &.nav-page-content {

@@ -71,17 +71,13 @@
     padding-top: 8rem;
     padding-bottom: 2rem;
     font-size: 0 !important;
-    &:after {
-      content: "";
+    svg {
+      color: $secondary-color;
+      width: rem-calc(20);
+      height: rem-calc(20);
       position: absolute;
       right: 1rem;
       bottom: 1rem;
-      margin: auto;
-      color: #444;
-      height: 30px;
-      width: 30px;
-      background: url('/dist/assets/images/expand-arrow.svg') center center no-repeat;
-      background-size: 0.75rem;
     }
   }
 }
@@ -114,11 +110,7 @@
         bottom: 0;
         left: 0;
         background: transparent;
-        &:after {
-          top: auto;
-          right: 0;
-          bottom: 1rem;
-          left: 0;
+        svg {
           transform: rotate(180deg);
         }
       }
