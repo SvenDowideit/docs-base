@@ -40,27 +40,10 @@
       {{end}}
     </section>
     {{end}}
-    <button class="toggle-nav-size">Toggle Nav Size</button>
+    <button class="toggle-nav-size">
+      <svg>
+        <use xlink:href="#expand-arrow"></use>
+      </svg>
+    </button>
   </nav>
 </aside>
-
-<script>
-  $(document).ready(function() {
-    var $activeLink = $('#multiple [data-link].active');
-    var $accordions = $activeLink.parents('article[data-accordion]');
-    $($accordions.get().reverse()).each(function(index, accordion) {
-      var $accordion = $(accordion);
-      var $content = $accordion.find('[data-content]');
-      $accordion.addClass('open');
-      $content.css({'max-height': '100%'});
-    });
-
-    var docsContainer = $('#docs');
-    $('.nav-docs-wrapper').on('click', '.toggle-nav-size', function(event) {
-      event.preventDefault();
-      event.stopImmediatePropagation();
-      docsContainer.toggleClass('docs-nav-collapsed');
-    });
-
-  });
-</script>
