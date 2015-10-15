@@ -1,16 +1,16 @@
 {{ partial "header.html" . }}
 <div id="docs" class="row">
-  <div class="large-3 nav-docs-wrapper columns">
+  <div class="nav-docs-wrapper columns">
     {{ partial "navbar.html" . }}
   </div>
-  <div class="large-6 columns">
+  <div class="content-wrapper columns">
     <section id="main">
       <article id="content">
         {{ .Content }}
       </article>
     </section>
   </div>
-  <div id="toc" class="large-3 nav-page-content columns">
+  <div id="toc" class="nav-page-content columns">
     {{ partial "nav-page-content.html" . }}
   </div>
 </div>

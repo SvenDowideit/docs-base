@@ -34,7 +34,7 @@
   @extend %primary-transition;
   border: 1px solid transparent;
   img {
-    max-width: 60%;
+    width: 60%;
   }
   &:hover {
     border: 1px solid darken($docker-bg, 8%);

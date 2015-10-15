@@ -135,17 +135,20 @@
       }
     }
   }
-  .large-9 {
-    width: grid-calc(11, $total-columns);
-  }
-  .large-3 {
-    &.nav-docs-wrapper {
+  .nav-docs-wrapper {
       @extend %primary-transition;
-      width: grid-calc(1, $total-columns);
-    }
+      width: 10%;
   }
-  .large-6 {
+  .content-wrapper {
     @extend %primary-transition;
-    width: grid-calc(10, $total-columns);
+    width: 80%;
+  }
+}
+
+#docs.single-sidebar {
+  &.docs-nav-collapsed {
+    .content-wrapper {
+      width: 90%;
+    }
   }
 }
