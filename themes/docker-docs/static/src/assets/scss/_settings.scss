@@ -209,7 +209,7 @@ $docker-teal: $docker-blue;
 
 // We use these to control header font styles
 // $header-font-family: $body-font-family;
-   $header-font-weight: 100;
+   $header-font-weight: 300;
 // $header-font-style: normal;
    $header-font-color: $primary-color;
 // $header-line-height: 1.4;
@@ -259,9 +259,9 @@ $docker-teal: $docker-blue;
 // $code-color: $oil;
 // $code-font-family: $font-family-monospace;
 // $code-font-weight: $font-weight-normal;
-// $code-background-color: scale-color($secondary-color, $lightness: 70%);
+$code-background-color: scale-color($docker-gray, $lightness: 90%);
 // $code-border-size: 1px;
-// $code-border-style: solid;
+$code-border-style: none;
 // $code-border-color: scale-color($code-background-color, $lightness: -10%);
 // $code-padding: rem-calc(2) rem-calc(5) rem-calc(1);
 

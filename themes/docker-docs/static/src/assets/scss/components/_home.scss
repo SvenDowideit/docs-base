@@ -1,8 +1,15 @@
 .hero {
   padding: rem-calc(50) 0 rem-calc(100) 0;
   text-align: center;
+  h1 {
+    font-weight: 400;
+  }
   .cta {
-    margin-top: 3rem;
+    margin-top: 1rem;
+    h3 {
+      font-size: rem-calc(36);
+      font-weight: 100;
+    }
     .button {
       background: $secondary-color;
     }

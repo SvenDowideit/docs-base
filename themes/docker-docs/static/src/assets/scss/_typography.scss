@@ -10,3 +10,28 @@ h5 {
 li {
   line-height: 2;
 }
+
+blockquote {
+  margin-left: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-left: 3px solid #0b8cb8;
+  p {
+    color: #0B8CB8;
+    margin-bottom: 0;
+  }
+}
+
+#content {
+  h1 {
+    color: #1a171b;
+    &:after {
+      content: '';
+      display: block;
+      height: 2px;
+      background: #1a171b;
+      width: 10rem;
+      margin: 1rem auto;
+    }
+  }
+}
