@@ -28,24 +28,54 @@ $(function() {
   });
 
   var docsContainer = $('#docs');
-  var navDocsCollapsed = localStorage.getItem('nav-docs-collapsed');
-  var navPageContentCollapsed = localStorage.getItem('nav-page-content-collapsed');
+  var docsNavClass = 'docs-nav-collapsed';
+  var pageContentClass = 'table-of-contents-nav-collapsed';
 
-  function setState(name, state) {
-    localStorage.setItem(name, state);
+  var Navigation = {
+
+    storedState: function(navClass) {
+      if (localStorage.getItem(navClass) != null) {
+        return localStorage.getItem(navClass);
+      }
+      return 'open';
+    },
+
+    pageState: function(navClass) {
+      if (docsContainer.hasClass(navClass)) {
+        return 'collapsed';
+      } else {
+        return 'open';
+      }
+    },
+
+    setState: function(key, value) {
+      localStorage.setItem(key, value);
+    },
+
+    initialState: function(navClass) {
+      if (Navigation.storedState(navClass) == 'open') {
+        Navigation.setState(navClass, 'open');
+      } else {
+        docsContainer.addClass(navClass);
+      }
+    }
+
   };
+
+  Navigation.initialState(docsNavClass);
+  Navigation.initialState(pageContentClass);
 
   $('.nav-docs-wrapper').on('click', '.toggle-nav-size', function(event) {
     event.preventDefault();
-    docsContainer.toggleClass('docs-nav-collapsed').promise().done(function() {
-      setState('nav-docs-collapsed', docsContainer.hasClass('docs-nav-collapsed'));
+    docsContainer.toggleClass(docsNavClass).promise().done(function() {
+      Navigation.setState(docsNavClass, Navigation.pageState(docsNavClass));
     });
   });
 
   $('.nav-page-content').on('click', '.toggle-nav-size', function(event) {
     event.preventDefault();
-    docsContainer.toggleClass('table-of-contents-nav-collapsed').promise().done(function() {
-      setState('nav-page-content-collapsed', docsContainer.hasClass('table-of-contents-nav-collapsed'));
+    docsContainer.toggleClass(pageContentClass).promise().done(function() {
+      Navigation.setState(pageContentClass, Navigation.pageState(pageContentClass));
     });
   });
 
