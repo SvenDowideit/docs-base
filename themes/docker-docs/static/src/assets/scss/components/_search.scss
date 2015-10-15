@@ -86,7 +86,8 @@ div.gsc-input-box {
   }
 
   td.gsc-search-button {
-    padding: 15px;
+    width: 25px;
+    height: 25px;
     margin: 0;
     border: none;
     background: url(/dist/assets/images/icon-search-white.svg) center center no-repeat;
@@ -94,8 +95,6 @@ div.gsc-input-box {
     top: 50%;
     left: rem-calc(10);
     margin-top: -15px;
-    width: 0;
-    height: 0;
     outline: none;
     @extend %primary-transition;
     &:focus,
@@ -127,3 +126,4 @@ div.gsc-input-box {
     display: none;
   }
 }
+
