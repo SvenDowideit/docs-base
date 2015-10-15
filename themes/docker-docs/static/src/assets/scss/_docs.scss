@@ -67,3 +67,30 @@ nav ul.tabs {
         padding-right: 0;
     }
 }
+
+.content-wrapper {
+  width: 60%;
+  .search &,
+  .home & {
+    width: 80%;
+  }
+}
+
+.nav-page-content,
+.nav-docs-wrapper {
+  width: 20%;
+}
+
+#docs.docs-nav-collapsed:not(.table-of-contents-nav-collapsed),
+#docs.table-of-contents-nav-collapsed:not(.docs-nav-collapsed) {
+  .content-wrapper {
+    width: 70%;
+  }
+}
+
+#docs {
+  .table-of-contents,
+  .columns {
+    @extend %primary-transition;
+  }
+}
