@@ -19,7 +19,7 @@ the public.
 As part of our ongoing security efforts, <a href="http://blog.docker.com/2015/10/security-release-docker-1-8-3-1-6-2-cs7"
 target="_blank">a vulnerability was discovered</a> that affects the way content
 is stored and retrieved within the Docker Engine. Today we are releasing a
-security update that fixes this issue. The <a href="https://github.com/docker/docker/blob/master/CHANGELOG.md#161-2015-10-12"
+security update that fixes this issue. The <a href="https://github.com/docker/docker/blob/master/CHANGELOG.md#183-2015-10-12"
 target="_blank">change log for Docker Engine 1.8.3</a> has a complete list of
 all the changes incorporated into the release.
 
