@@ -80,8 +80,8 @@ nav ul.tabs {
   width: 20%;
 }
 
-#docs.docs-nav-collapsed:not(.table-of-contents-nav-collapsed),
-#docs.table-of-contents-nav-collapsed:not(.docs-nav-collapsed) {
+#docs:not(.single-sidebar).docs-nav-collapsed:not(.table-of-contents-nav-collapsed),
+#docs:not(.single-sidebar).table-of-contents-nav-collapsed:not(.docs-nav-collapsed) {
   .content-wrapper {
     width: 70%;
   }

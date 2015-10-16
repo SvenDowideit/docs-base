@@ -22,16 +22,16 @@ div.gsc-input-box {
 }
 
 .search-large {
+  height: rem-calc(86);
   td.gsc-search-button {
     margin: 0;
     border: none;
     background: transparent url(/dist/assets/images/icon-search-blue.svg) center center no-repeat;
     position: absolute;
-    top: 50%;
+    top: 15px;
     right: 50px;
-    margin-top: rem-calc(-25);
-    width: rem-calc(25);
-    height: rem-calc(25);
+    width: 35px;
+    height: 35px;
     outline: none;
     cursor: pointer;
     @extend %primary-transition;
@@ -98,6 +98,8 @@ div.gsc-input-box {
 }
 
 .search-small {
+  height: rem-calc(86);
+
   table {
     margin-bottom: 0;
   }

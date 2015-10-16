@@ -367,6 +367,7 @@ $(function() {
       } else {
         docsContainer.addClass(navClass);
       }
+      $('body').removeClass('nav-loading');
     }
 
   };
