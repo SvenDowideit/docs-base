@@ -137,8 +137,8 @@ $docker-teal: $docker-blue;
 
 // We use these to control various global styles
 // $body-bg: $white;
-   $body-font-color: #7A8491;
-// $body-font-family: $font-family-sans-serif;
+   $body-font-color: #1a171b;
+   $body-font-family: $font-family-sans-serif-secondary;
    $body-font-weight: 300;
 // $body-font-style: normal;
 
@@ -208,10 +208,10 @@ $docker-teal: $docker-blue;
 // $include-html-type-classes: $include-html-classes;
 
 // We use these to control header font styles
-// $header-font-family: $body-font-family;
-   $header-font-weight: 300;
+  $header-font-family: $font-family-sans-serif;
+  $header-font-weight: 300;
 // $header-font-style: normal;
-   $header-font-color: $primary-color;
+  $header-font-color: $primary-color;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
@@ -258,10 +258,10 @@ $docker-teal: $docker-blue;
 // We use these to style <code> tags
 // $code-color: $oil;
 // $code-font-family: $font-family-monospace;
-// $code-font-weight: $font-weight-normal;
-$code-background-color: scale-color($docker-gray, $lightness: 90%);
+// $code-font-weight: 300;
+  $code-background-color: #e7f4f7;
 // $code-border-size: 1px;
-$code-border-style: none;
+  $code-border-style: none;
 // $code-border-color: scale-color($code-background-color, $lightness: -10%);
 // $code-padding: rem-calc(2) rem-calc(5) rem-calc(1);
 
