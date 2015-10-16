@@ -137,9 +137,11 @@ nav ul.tabs {
 }
 
 .js .preload {
-  .nav-docs,
-  .table-of-contents-wrap {
-    display: none;
+  .nav-docs-wrapper,
+  .nav-page-content {
+    * {
+      visibility: hidden;
+    }
   }
 }
 
