@@ -48,21 +48,25 @@ div.gsc-input-box {
   ::-webkit-input-placeholder {
     color: #0b8cb8;
     font-size: rem-calc(30);
+    font-family: $font-family-sans-serif;
   }
 
   :-moz-placeholder {
     color: #0b8cb8;
     font-size: rem-calc(30);
+    font-family: $font-family-sans-serif;
   }
 
   ::-moz-placeholder {
     color: #0b8cb8;
     font-size: rem-calc(30);
+    font-family: $font-family-sans-serif;
   }
 
   :-ms-input-placeholder {
     color: #0b8cb8;
     font-size: rem-calc(30);
+    font-family: $font-family-sans-serif;
   }
 
 }
@@ -150,5 +154,74 @@ div.gsc-input-box {
   .gsib_b {
     display: none;
   }
+
+  ::-webkit-input-placeholder {
+    color: white;
+    font-weight: 200;
+    font-size: rem-calc(25);
+  }
+
+  :-moz-placeholder {
+    color: white;
+    font-weight: 200;
+    font-size: rem-calc(25);
+  }
+
+  ::-moz-placeholder {
+    color: white;
+    font-weight: 200;
+    font-size: rem-calc(25);
+  }
+
+  :-ms-input-placeholder {
+    color: white;
+    font-weight: 200;
+    font-size: rem-calc(25);
+  }
+
 }
 
+.gsc-resultsbox-visible {
+  div.gsc-result {
+    padding: 0;
+    margin: 0;
+  }
+  .gsc-table-result {
+    tr td {
+      padding: 0;
+    }
+  }
+}
+
+div.gsc-control-wrapper-cse {
+  font-family: $font-family-sans-serif-secondary;
+  line-height: 1;
+}
+
+div.gsc-refinementsArea {
+  padding-bottom: 10px;
+}
+
+table.gsc-above-wrapper-area-container {
+  margin: 0;
+}
+
+div.gsc-option-menu-container .gsc-inline-block {
+  padding-right: 5rem;
+}
+
+.gsc-selected-option-container {
+  line-height: 26px !important;
+}
+
+td.gsc-getlink-container {
+  padding: 0;
+  .gsc-getlink-box {
+    min-width: 40px;
+    padding: 0;
+  }
+  img {
+    vertical-align: top;
+    max-width: none;
+  }
+}
