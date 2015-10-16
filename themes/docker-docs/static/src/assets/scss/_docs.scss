@@ -131,8 +131,18 @@ nav ul.tabs {
 }
 
 #docs {
-  .nav-docs-wrapper,
-  .nav-page-content {
+  .columns {
     transition: width .3s ease;
   }
+}
+
+.js .preload {
+  .nav-docs,
+  .table-of-contents-wrap {
+    display: none;
+  }
+}
+
+.preload * {
+  transition: none !important;
 }
