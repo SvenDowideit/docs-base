@@ -34,9 +34,9 @@ div.gsc-input-box {
     height: 35px;
     outline: none;
     cursor: pointer;
-    @extend %primary-transition;
     &:focus,
     &:hover {
+      @extend %primary-transition;
       transform: scale(1.25, 1.25);
     }
   }
@@ -98,7 +98,7 @@ div.gsc-input-box {
 }
 
 .search-small {
-  height: rem-calc(86);
+  height: rem-calc(48);
 
   table {
     margin-bottom: 0;
@@ -127,9 +127,9 @@ div.gsc-input-box {
     left: rem-calc(10);
     margin-top: -15px;
     outline: none;
-    @extend %primary-transition;
     &:focus,
     &:hover {
+      @extend %primary-transition;
       transform: scale(1.25, 1.25);
     }
   }

@@ -1,28 +1,31 @@
 .main-header {
-	padding: 12px 0;
-	overflow: visible;
-	position: relative;
-	z-index: 90;
-	background: #fff;
-	.logo {
-		margin-top: 20px;
-		max-width: 200px;
-		@media #{$small-only} {
-			display: block;
-			margin: auto;
-			margin-top: 0;
-			max-width: 175px;
-		}
-		@media #{$medium-only} {
-			display: block;
-			margin: auto;
-			margin-top: 0;
-			max-width: 175px;
-		}
-		@media #{$large-up} {
-			margin-left: -14px;
-		}
-	}
+  padding: rem-calc(12) 0;
+  overflow: visible;
+  position: relative;
+  z-index: 90;
+  background: #fff;
+  @media #{$small} {
+  	padding: rem-calc(20) 0;
+  }
+  .logo {
+    margin-top: 20px;
+    max-width: 200px;
+    @media #{$small-only} {
+     display: block;
+     margin: auto;
+     margin-top: 0;
+     max-width: 175px;
+   }
+   @media #{$medium-only} {
+     display: block;
+     margin: auto;
+     margin-top: 0;
+     max-width: 175px;
+   }
+   @media #{$large-up} {
+     margin-left: -14px;
+   }
+ }
 }
 
 .left-off-canvas-toggle {
@@ -36,6 +39,7 @@
 }
 
 .get-started-cta {
+  background-color: #86d801 !important;
 	position: absolute;
 	right: 0.9375rem;
 	top: 22px;

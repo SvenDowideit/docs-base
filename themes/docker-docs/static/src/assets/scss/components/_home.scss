@@ -1,6 +1,7 @@
 .hero {
   padding: rem-calc(50) 0 rem-calc(100) 0;
   text-align: center;
+
   h1 {
     font-weight: 400;
   }
@@ -26,8 +27,9 @@
 }
 
 .products-list {
-  padding: 1rem 0;
-  @include block-grid(1);
+  padding: 1rem 2rem !important;
+  margin: auto !important;
+  @include block-grid(2);
   @media #{$medium-up} {
     @include block-grid(2);
   }
@@ -44,11 +46,15 @@
 .product-tile {
   display: block;
   padding: 0.5rem;
-  @extend %primary-transition;
   border: 1px solid transparent;
+  @extend %primary-transition;
   img {
     width: 60%;
+    @media #{$medium-up} {
+      width: 45%;
+    }
   }
+
   &:hover {
     border: 1px solid darken($docker-bg, 8%);
   }

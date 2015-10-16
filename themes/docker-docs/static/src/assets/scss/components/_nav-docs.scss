@@ -1,10 +1,12 @@
 #docs {
-  .nav-docs {
-    @media #{$small-only} {
-      display: none;
+  .nav-docs-wrapper {
+    @media #{$small-up} {
+      visibility: hidden;
+      height: 0;
     }
-    @media #{$medium-only} {
-      display: none;
+    @media #{$large} {
+      visibility: visible;
+      height: auto;
     }
   }
 }
@@ -105,7 +107,6 @@
 }
 
 .docs-nav-collapsed {
-  @extend %primary-transition;
   .nav-docs {
     position: relative;
     #multiple {
@@ -144,11 +145,9 @@
     }
   }
   .nav-docs-wrapper {
-      @extend %primary-transition;
       width: 10%;
   }
   .content-wrapper {
-    @extend %primary-transition;
     width: 80%;
   }
 }
@@ -158,5 +157,11 @@
     .content-wrapper {
       width: 90%;
     }
+  }
+}
+
+.left-off-canvas-menu {
+  .toggle-nav-size {
+    display: none;
   }
 }
