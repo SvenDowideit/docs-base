@@ -7,6 +7,7 @@
 	@media #{$medium-only} {display: none;}
 	> li {
 		position: relative;
+    margin-left: 0.8rem;
 		ul {
 			position: absolute;
 			margin: 0;
