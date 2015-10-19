@@ -1,5 +1,5 @@
 .hero {
-  padding: rem-calc(50) 0 rem-calc(100) 0;
+  padding: rem-calc(50) 1rem rem-calc(100);
   text-align: center;
   h1 {
     font-weight: 400;
@@ -29,8 +29,8 @@
   margin: auto !important;
   padding-left: 0.5rem !important;
   padding-right: 0.5rem !important;
-  @include block-grid(2);
-  @media #{$medium-up} {
+  @include block-grid(1);
+  @media #{$medium} {
     @include block-grid(2);
   }
   @media #{$large-up} {

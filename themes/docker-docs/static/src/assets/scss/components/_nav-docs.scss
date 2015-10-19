@@ -147,7 +147,10 @@
 #docs.single-sidebar {
   &.docs-nav-collapsed {
     .content-wrapper {
-      width: 90%;
+      width: 100%;
+      @media #{$large} {
+        width: 90%;
+      }
     }
   }
 }
