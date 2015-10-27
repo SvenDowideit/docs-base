@@ -21,11 +21,6 @@ relativeURLs = true
 	identifier = "mn_install"
 	weight = 1
 [[menu.main]]
-	name = "Docker Engine"
-	identifier = "smn_engine"
-	parent = "mn_install"
-	weight = 1
-[[menu.main]]
 	name = "Linux"
 	identifier = "smn_linux"
 	parent = "smn_engine"
@@ -227,4 +222,3 @@ relativeURLs = true
 	parent = "mn_versions"
 	url = "http://docs.docker.com/v1.4/"
 	weight = 3
-
