@@ -2,27 +2,22 @@
   .nav-docs-wrapper {
     @media #{$small-up} {
       visibility: hidden;
-      height: 0;
     }
     @media #{$large} {
       visibility: visible;
-      height: auto;
     }
   }
 }
 
 .nav-docs {
-  background: #575759;
   padding-left: 0;
-  padding-right: 0;
+  padding-right: 1.5rem;
   #multiple {
     margin-top: 0;
     section {
-      border-bottom: 1px solid #9c9d9f;
       font-family: $font-family-sans-serif-secondary;
     }
     article > div > article > button {
-      background: lighten(#575759, 10);
       font-weight: 300 !important;
     }
     article {
@@ -32,8 +27,7 @@
         font-size: rem-calc(14);
         display: block;
         padding: rem-calc(10) rem-calc(10) rem-calc(10) 2.5rem;
-        color: white;
-        font-weight: 100;
+        color: $body-font-color;
         &.active {
           color: $docker-blue;
           font-weight: 400 !important;
@@ -43,9 +37,9 @@
     button {
       font-family: $font-family-sans-serif-secondary;
       font-size: rem-calc(14);
-      background: #575759;
+      background: transparent;
+      color: $body-font-color;
       outline: none;
-      font-weight: 100 !important;
       width: 100%;
       margin: 0;
       text-align: left;

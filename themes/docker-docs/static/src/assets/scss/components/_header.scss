@@ -1,11 +1,11 @@
 .main-header {
-  padding: rem-calc(20) 0;
+  padding: rem-calc(20) 0 rem-calc(20) rem-calc(20);
   overflow: visible;
   position: relative;
   z-index: 90;
   background: #fff;
-  @media #{$large} {
-    padding: rem-calc(14) 0 rem-calc(15);
+  > .row {
+    margin: 0;
   }
   .logo {
     margin-top: 13px;
@@ -40,14 +40,14 @@
 
 .get-started-cta {
   background-color: #86d801 !important;
-	position: absolute;
-	right: 0.9375rem;
-	top: 22px;
-	z-index: 99;
-	@media #{$large-up} {
-		display: none;
-	}
-	@media #{$small-only} {
-		display: none;
-	}
+  position: absolute;
+  right: 0.9375rem;
+  top: 22px;
+  z-index: 99;
+  @media #{$large-up} {
+    display: none;
+  }
+  @media #{$small-only} {
+    display: none;
+  }
 }
