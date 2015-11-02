@@ -1,13 +1,8 @@
 #!/bin/bash  
 set -e
 
-echo "test to check the markdown files start with the Hugo metadata preamble"
-shopt -s globstar
+echo "running markdownlint"
+/usr/local/bin/markdownlint /docs/content/
 
-for f in /docs/content/**/*.md ; do
-  echo "$f"
-  sed '/+++/,/+++/!d' "$f" | grep 'title ='
-done
-
-# make sure Hugo is happy
+echo "running a Hugo build"
 hugo --config=config.toml --log=true --stepAnalysis=true

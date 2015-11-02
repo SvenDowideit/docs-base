@@ -9,6 +9,7 @@ relativeURLs = true
 [blackfriday]
   fractions = false
   plainIdAnchors = true
+  gitHubLinkEval = true
 
 # Menu configuration should come last in this file;
 # leave at least one blank line at the end
@@ -18,11 +19,6 @@ relativeURLs = true
 [[menu.main]]
 	name = "Install"
 	identifier = "mn_install"
-	weight = 1
-[[menu.main]]
-	name = "Docker Engine"
-	identifier = "smn_engine"
-	parent = "mn_install"
 	weight = 1
 [[menu.main]]
 	name = "Linux"
@@ -226,4 +222,3 @@ relativeURLs = true
 	parent = "mn_versions"
 	url = "http://docs.docker.com/v1.4/"
 	weight = 3
-

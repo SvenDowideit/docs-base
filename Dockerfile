@@ -24,10 +24,22 @@ RUN apt-get update \
 # TODO: Test to see if the above holds true
 RUN pip install awscli==1.4.4 pyopenssl==0.12
 
-ENV HUGO_VERSION 0.14
-RUN curl -sSL https://github.com/spf13/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_linux_amd64.tar.gz \
-	| tar -v -C /usr/local/bin -xz --strip-components 1 \
-	&& mv /usr/local/bin/hugo_${HUGO_VERSION}_linux_amd64 /usr/local/bin/hugo
+#ENV HUGO_VERSION 0.14
+#RUN curl -sSL https://github.com/spf13/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_linux_amd64.tar.gz \
+#	| tar -v -C /usr/local/bin -xz --strip-components 1 \
+#	&& mv /usr/local/bin/hugo_${HUGO_VERSION}_linux_amd64 /usr/local/bin/hugo
+
+# Using a pre-build of hugo 0.15 a not yet merged patch
+RUN curl -sSL -o /usr/local/bin/hugo https://github.com/docker/hugo/releases/download/test-2/hugo
+RUN chmod 755 /usr/local/bin/hugo
+RUN /usr/local/bin/hugo version
+
+ADD https://github.com/docker/markdownlint/releases/download/v0.1/markdownlint /usr/local/bin/markdownlint
+RUN chmod 755 /usr/local/bin/markdownlint
+
+ADD https://github.com/docker/linkcheck/releases/download/v0.3/linkcheck /usr/local/bin/linkcheck
+RUN chmod 755 /usr/local/bin/linkcheck
+
 
 #######################
 # Copy the content and theme to the container
