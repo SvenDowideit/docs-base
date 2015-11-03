@@ -42,15 +42,3 @@
     {{end}}
   </nav>
 </aside>
-<script>
-  $(document).ready(function () {
-    var $activeLink = $('#multiple [data-link].active');
-    var $accordions = $activeLink.parents('article[data-accordion]');
-    $($accordions.get().reverse()).each(function (index, accordion) {
-      var $accordion = $(accordion);
-      var $content = $accordion.find('[data-content]');
-      $accordion.addClass('open');
-      $content.css({'max-height': '100%'});
-    });
-  });
-</script>
