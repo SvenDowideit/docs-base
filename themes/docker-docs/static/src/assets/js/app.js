@@ -303,7 +303,7 @@ $(document).foundation({
   var $activeLink = $('#multiple [data-link].active');
   var $accordions = $activeLink.parents('article[data-accordion]');
 
-  var foo = $($accordions.get().reverse()).each(function(index, accordion) {
+  $($accordions.get().reverse()).each(function(index, accordion) {
     var $accordion = $(accordion);
     var $content = $accordion.find('[data-content]');
     $accordion.addClass('open');
