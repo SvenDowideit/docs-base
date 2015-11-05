@@ -17,7 +17,10 @@ RUN apt-get update \
 		subversion-tools\
 		vim-tiny \
 		ssed \
-		curl
+		curl \
+	&& apt-get clean \
+	&& rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
 
 # Required to publish the documentation.
 # The 1.4.4 version works: the current versions fail in different ways
