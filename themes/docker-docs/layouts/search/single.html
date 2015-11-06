@@ -1,23 +1,13 @@
 {{ partial "header.html" . }}
-<div id="docs" class="row single-sidebar">
-	<div class="nav-docs-wrapper collapse columns">
-		{{ partial "navbar.html" . }}
+<div id="docs">
+	<div class="row">
+		<div class="small-12 collapse columns">			
+			<h1>Search Results</h1>
+			<section class="search-results">
+				<gcse:searchresults-only resultsUrl="/search" enableAutoComplete="true"></gcse:searchresults>
+			</section>
+		</div>
 	</div>
-	<div class="content-wrapper collapse columns">
-    <section class="hero">
-      <h1 class="text-center">Search Results</h1>
-      <div class="row">
-        <div class="medium-8 large-6 small-centered columns">
-          <div class="search-large">
-            <gcse:searchbox resultsUrl="/search" enableAutoComplete="true"></gcse:searchbox>
-          </div>
-        </div>
-      </section>
-      <section class="search-results">
-        <gcse:searchresults resultsUrl="/search" enableAutoComplete="true"></gcse:searchresults>
-      </section>
-    </div>
-  </div>
 </div>
 {{ partial "container-footer.html" . }}
 {{ partial "footer.html" . }}

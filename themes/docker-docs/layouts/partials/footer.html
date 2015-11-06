@@ -14,7 +14,7 @@
 <script>
   var addPlaceholder = function() {
     $('.search-large input.gsc-input').attr("placeholder", "Search for Anything");
-    $('.search-small input.gsc-input').attr("placeholder", "Search");
+    $('.search-small input.gsc-input, .search-global input.gsc-input').attr("placeholder", "Search");
 
     $('.gsc-search-box').on('click', 'td.gsc-search-button', function(event) {
       event.preventDefault();

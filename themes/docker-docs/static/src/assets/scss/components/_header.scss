@@ -3,13 +3,16 @@
   overflow: visible;
   position: relative;
   z-index: 90;
-  background: #fff;
+  background: $docker-blue;
+  li > a {
+    color: white;
+  }
   > .row {
     margin: 0;
   }
   .logo {
-    margin-top: 13px;
-    max-width: 200px;
+    width: rem-calc(80);
+    display: block;
     @media #{$small-only} {
      display: block;
      margin: auto;

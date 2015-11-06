@@ -82,23 +82,36 @@ nav ul.tabs {
 }
 
 .content-wrapper {
-  width: 60%;
-  height: 100vh;
-  padding: 0 1rem 5rem 0;
+  width: 100%;
+  padding-left: 0;
+  border-left: none;
   &:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: -100%;
-    left: 100%;
-    background: #575759;
+    background: transparent;
+  }
+  @media #{$large} {
+    width: 60%;
+    min-height: 100vh;
+    padding: 0 1rem 5rem 1rem;
+    border-left: 1px solid lighten($docker-gray, 50%);
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: -100%;
+      left: 100%;
+      background: #45474b;
+    }
   }
 }
 
 .nav-page-content {
-  width: 40%;
+  display: none;
+  @media #{$large} {
+    display: block;
+    width: 40%;
+  }
 }
 
 #docs {
@@ -121,23 +134,20 @@ nav ul.tabs {
   }
 }
 
-
 .nav-docs-wrapper {
   width: rem-calc(290);
-  position: absolute;
-  top: rem-calc(117);
+  padding-top: 1rem + rem-calc(117);
+  height: calc(100vh);
+  overflow: scroll;
+  position: fixed;
+  top: 0;
   left: 0;
-  padding-top: 1rem;
   .sticky-sidebar & {
-    position: fixed;
-    top: 0;
-    left: 0;
+    padding-top: 1rem;
   }
 }
-
 .sticky-wrapper {
   position: absolute;
   top: 0;
   left: 0;
-  width: rem-calc(290);
 }

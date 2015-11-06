@@ -26,19 +26,9 @@ blockquote {
   h1 {
     font-family: $font-family-sans-serif;
     color: $body-font-color;
-    text-align: center;
-    &:after {
-      content: '';
-      display: block;
-      height: 2px;
-      background: $body-font-color;
-      width: 10rem;
-      margin: 1rem auto;
-    }
   }
   h2 {
     font-family: $font-family-sans-serif;
-    text-align: center;
     margin-bottom: 1rem;
   }
   h3 {

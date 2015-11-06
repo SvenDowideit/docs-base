@@ -1,5 +1,20 @@
 ul.nav-global {
-  margin-bottom: 0 !important;
+  margin: 0;
+  .search {
+    position: relative;
+    width: rem-calc(200);
+  }
+  @media screen and (max-width: rem-calc(1180)) {
+    padding-top: 0 !important;
+    .search {
+      position: absolute;
+      top: rem-calc(43);
+      right: 0;
+    }
+  }
+  :root & {
+    padding-top: 1.1rem;
+  }
   float: right;
   @include inline-list;
   li {

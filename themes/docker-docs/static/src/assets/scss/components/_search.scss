@@ -227,3 +227,88 @@ td.gsc-getlink-container {
     max-width: none;
   }
 }
+
+.search-global {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @media #{$large} {
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  td.gsc-search-button {
+    margin: 0;
+    border: none;
+    background: transparent url(/dist/assets/images/icon-search-blue.svg) center center no-repeat;
+    position: absolute;
+    top: 8px;
+    right: 25px;
+    width: 20px;
+    height: 20px;
+    outline: none;
+    cursor: pointer;
+    &:focus,
+    &:hover {
+      @extend %primary-transition;
+      transform: scale(1.25, 1.25);
+    }
+  }
+  input.gsc-search-button {
+    visibility: hidden;
+    height: 0;
+  }
+
+  .gsc-input {
+    input.gsc-input {
+      margin: 0 !important;
+      height: auto !important;
+      width: rem-calc(180) !important;
+      padding: rem-calc(9) 0 rem-calc(8) rem-calc(8) !important;
+      line-height: rem-calc(15);
+      font-size: rem-calc(15) !important;
+      font-weight: 300;
+      // @media screen and (max-width: rem-calc(1180)) {
+      //   width: rem-calc(500) !important;
+      // }
+    }
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  ::-webkit-input-placeholder {
+    color: #0b8cb8;
+    font-size: rem-calc(15);
+    font-family: $font-family-sans-serif;
+  }
+
+  :-moz-placeholder {
+    color: #0b8cb8;
+    font-size: rem-calc(15);
+    font-family: $font-family-sans-serif;
+  }
+
+  ::-moz-placeholder {
+    color: #0b8cb8;
+    font-size: rem-calc(15);
+    font-family: $font-family-sans-serif;
+  }
+
+  :-ms-input-placeholder {
+    color: #0b8cb8;
+    font-size: rem-calc(20);
+    font-family: $font-family-sans-serif;
+  }
+
+}
+
+.search-results {
+  .gsc-control-cse {
+    padding: 0;
+  }
+}
