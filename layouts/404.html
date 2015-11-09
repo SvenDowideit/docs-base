@@ -143,12 +143,13 @@
 
 
 <div id="docs" class="row">
-    <div class="large-9 columns">
+    <div class="large-12 columns">
       <section id="main">
         <article id="content">
 	  <div>
-		     <h1 id="title">{{ .Title }}</h1>
-			 <span>Sorry, the page you requested is not there.</span>
+          <h1 style="padding-top:15px;" id="title">{{ .Title }}</h1>
+          <h2 style="color:#3A4E55;">The page you wanted cannot be found or is no longer available.</h2>
+		  <p>Can we help you find what you're looking for? Use the <a href="{{ .Site.BaseURL }}index.html">sitemap to navigate</a> directly or send email to <a href="mailto:docs@docker.com">docs@docker.com</a> for additional help.</p>
 	   </div>
         </article>
 		  </section>
