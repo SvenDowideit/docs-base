@@ -6,12 +6,13 @@
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
     <meta name="keywords" content="{{ with .Keywords }}{{ . }}{{ else }}{{ with .Site.Params.keywords }}{{ . }}{{ end }}{{ end }}">
     <title>{{.Title }} </title>
-    <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
-    <link rel="stylesheet" href="/dist/assets/css/app.css" />
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.6/animate.min.css">
-    <link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="{{ .Site.BaseURL }}images/favicon.png" type="image/png">
+	<link rel="stylesheet" href="{{ .Site.BaseURL  }}dist/assets/css/app.css" />
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.6/animate.min.css">
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/custom.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="/dist/assets/js/modernizr.js"></script>
+	<script src="{{ .Site.BaseURL }}dist/assets/js/modernizr.js"></script>
+	<style>.main-footer { margin-top: 36px }</style>
 </head>
 <body>
   <div class="off-canvas-wrap" data-offcanvas>
@@ -31,7 +32,7 @@
       <header class="main-header">
         <div class="row">
           <div class="large-3 columns">
-            <a href="/"><img class="logo" src="/dist/assets/images/logo.png"></a>
+			  <a href="{{ .Site.BaseURL }}"><img class="logo" src="{{ .Site.BaseURL }}dist/assets/images/logo.png"></a>
           </div>
           <div class="large-9 columns">
             <ul class="nav-global">
@@ -40,7 +41,7 @@
               <li><a href="https://docs.docker.com/">Docs</a></li>
               <li><a href="http://blog.docker.com/">Blog</a></li>
               <li><a href="https://hub.docker.com/">Docker Hub</a></li>
-              <li><a class="button" href="/mac/started/">Get Started</a></li>
+              <li><a class="button" href="{{ .Site.BaseURL }}mac/started/">Get Started</a></li>
             </ul>
             <ul class="nav-main">
               <li><a href="https://www.docker.com/products">Products</a>
@@ -138,3 +139,21 @@
       </aside>
       <!-- close the off-canvas menu -->
       <a class="exit-off-canvas"></a>
+
+
+
+<div id="docs" class="row">
+    <div class="large-12 columns">
+      <section id="main">
+        <article id="content">
+	  <div>
+          <h1 style="padding-top:15px;" id="title">{{ .Title }}</h1>
+          <h2 style="color:#3A4E55;">The page you wanted cannot be found or is no longer available.</h2>
+		  <p>Can we help you find what you're looking for? Use the <a href="{{ .Site.BaseURL }}index.html">sitemap to navigate</a> directly or send email to <a href="mailto:docs@docker.com">docs@docker.com</a> for additional help.</p>
+	   </div>
+        </article>
+		  </section>
+    </div>
+</div>
+{{ partial "container-footer.html" . }}
+{{ partial "footer.html" . }}
