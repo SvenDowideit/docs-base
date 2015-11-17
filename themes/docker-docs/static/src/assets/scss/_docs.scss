@@ -82,72 +82,51 @@ nav ul.tabs {
 }
 
 .content-wrapper {
-  width: 100%;
-  padding-left: 0;
+  background: white;
+  float: left;
+  width: 60%;
   border-left: none;
-  &:after {
-    background: transparent;
-  }
+  padding: 0 1rem 5rem 1rem;
   @media #{$large} {
-    width: 60%;
     min-height: 100vh;
-    padding: 0 1rem 5rem 1rem;
     border-left: 1px solid lighten($docker-gray, 50%);
-    &:after {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: -100%;
-      left: 100%;
-      background: #45474b;
-    }
-  }
-}
-
-.nav-page-content {
-  display: none;
-  @media #{$large} {
-    display: block;
-    width: 40%;
-  }
-}
-
-#docs {
-  display: flex;
-  flex-flow: row wrap;
-  .content-wrapper {
-    order: 1;
-  }
-  .nav-page-content {
-    order: 0;
-  }
-  .toggle-nav-size {
-    display: none;
-  }
-  @media #{$large} {
-    display: block;
-    .toggle-nav-size {
-      display: block;
-    }
   }
 }
 
 .nav-docs-wrapper {
   width: rem-calc(290);
-  padding-top: 1rem + rem-calc(117);
+  padding-top: 1rem;
   height: calc(100vh);
+  float: left;
   overflow: scroll;
-  position: fixed;
-  top: 0;
-  left: 0;
   .sticky-sidebar & {
+    position: fixed;
+    top: 0;
+    left: 0;
     padding-top: 1rem;
   }
 }
+
 .sticky-wrapper {
-  position: absolute;
+  position: relative;
   top: 0;
-  left: 0;
+}
+
+#multiple {
+  nav.nav-products {
+    border-bottom: 1px solid lighten($docker-gray, 50%);
+    margin-bottom: 2rem;
+    h5 {
+      color: #1a171b;
+      margin-bottom: 0;
+    }
+    button {
+      &:last-child {
+        padding-bottom: 2rem;
+      }
+    }
+    a {
+      color: #1a171b;
+    }
+  }
 }

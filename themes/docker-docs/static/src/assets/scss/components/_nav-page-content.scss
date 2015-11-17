@@ -1,8 +1,33 @@
+.nav-page-content {
+  display: none;
+  .sticky-wrapper {
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  @media #{$large} {
+    display: block;
+  }
+}
+
 .table-of-contents-wrap {
+  width: rem-calc(290);
   font-family: $font-family-sans-serif;
   color: white;
+  padding-top: 1rem + rem-calc(117);
+  overflow: scroll;
+  background: #45474b;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  .sticky-sidebar & {
+    position: fixed;
+    padding-top: 1rem;
+  }
   .table-of-contents {
-    padding: 1rem 0 0 1.5rem;
+    padding: 0 2rem;
     visibility: visible;
   }
   h2 {

@@ -336,6 +336,10 @@ $(document).foundation({
     event.preventDefault();
   });
 
+  $('[data-control]').on('click', 'a', function(event) {
+    event.stopImmediatePropagation();
+  });
+
   //
   // Sticky Header
   //
@@ -361,7 +365,7 @@ $(document).foundation({
       scrollDirection = 'up';
     }
 
-    if (scrollDirection == 'up' && $body.hasClass('sticky-sidebar') && (scrollMarker - $window.scrollTop() >= 117 || $window.scrollTop() < 117)) {
+    if (scrollDirection == 'up' && $body.hasClass('sticky-sidebar') && ($window.scrollTop() <= 117)) {
       $body.removeClass('sticky-sidebar');
     } else if (scrollDirection == 'down' && $body.not('.sticky-sidebar') && $window.scrollTop() - scrollMarker >= 117 && $window.scrollTop() >= 117) {
       $body.addClass('sticky-sidebar');
