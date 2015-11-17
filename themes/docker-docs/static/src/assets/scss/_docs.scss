@@ -84,10 +84,11 @@ nav ul.tabs {
 .content-wrapper {
   background: white;
   float: left;
-  width: 60%;
   border-left: none;
+  width: 100%;
   padding: 0 1rem 5rem 1rem;
   @media #{$large} {
+    width: 60%;
     min-height: 100vh;
     border-left: 1px solid lighten($docker-gray, 50%);
   }

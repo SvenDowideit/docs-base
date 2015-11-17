@@ -1,10 +1,8 @@
 #docs {
   .nav-docs-wrapper {
-    @media #{$small-up} {
-      visibility: hidden;
-    }
+    display: none;
     @media #{$large} {
-      visibility: visible;
+      display: block;
     }
   }
 }
