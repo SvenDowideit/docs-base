@@ -26,7 +26,7 @@ RUN curl -sSL -o /usr/local/bin/hugo https://github.com/docker/hugo/releases/dow
 RUN chmod 755 /usr/local/bin/hugo
 RUN /usr/local/bin/hugo version
 
-ADD https://github.com/docker/markdownlint/releases/download/v0.1/markdownlint /usr/local/bin/markdownlint
+ADD https://github.com/docker/markdownlint/releases/download/v0.9.2/markdownlint /usr/local/bin/markdownlint
 RUN chmod 755 /usr/local/bin/markdownlint
 
 ADD https://github.com/docker/linkcheck/releases/download/v0.3/linkcheck /usr/local/bin/linkcheck
