@@ -19,5 +19,9 @@ cd docs
 docker pull $(grep FROM Dockerfile | sed s/FROM//)
 docker build -t "$BUILD_TAG:$ghprbActualCommit" .
 # lots more Dockerfile changes needed to improve this.
-docker run --rm "$BUILD_TAG:$ghprbActualCommit"
-docker rmi "$BUILD_TAG:$ghprbActualCommit"
+docker run --name "$BUILD_TAG-$ghprbActualCommit" "$BUILD_TAG:$ghprbActualCommit"
+docker cp "$BUILD_TAG$ghprbActualCommit:/docs/*junit.xml" .
+
+
+docker rm -vf "$BUILD_TAG$ghprbActualCommit"  || true
+docker rmi "$BUILD_TAG:$ghprbActualCommit" || true
