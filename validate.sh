@@ -2,7 +2,7 @@
 set -e
 
 echo "running markdownlint"
-/usr/local/bin/markdownlint /docs/content/
+/usr/local/bin/markdownlint /docs/content/ "$PROJECT"
 
 echo "running a Hugo build"
 hugo --config=config.toml --log=true --stepAnalysis=true

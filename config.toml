@@ -5,6 +5,7 @@ title = "Docker Docs"
 theme = "hugo-foundation"
 canonifyurls = false
 relativeURLs = true
+sourceRelativeLinks = true
 
 [blackfriday]
   fractions = false
