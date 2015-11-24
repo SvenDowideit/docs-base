@@ -178,6 +178,12 @@ relativeURLs = true
 	identifier = "mn_versions"
 	weight = 10
 [[menu.main]]
+  	name = "Version 1.8"
+  	identifier = "smn_eightteen"
+  	parent = "mn_versions"
+  	url = "http://docs.docker.com/v1.8/"
+  	weight = -2
+[[menu.main]]
 	name = "Version 1.7"
 	identifier = "smn_seventeen"
 	parent = "mn_versions"
