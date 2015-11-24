@@ -19,5 +19,5 @@ cd docs
 docker pull $(grep FROM Dockerfile | sed s/FROM//)
 docker build -t "$BUILD_TAG:$ghprbActualCommit" .
 # lots more Dockerfile changes needed to improve this.
-docker run --rm "$BUILD_TAG:$ghprbActualCommit" /usr/local/bin/markdownlint /docs/content/
+docker run --rm "$BUILD_TAG:$ghprbActualCommit"
 docker rmi "$BUILD_TAG:$ghprbActualCommit"
