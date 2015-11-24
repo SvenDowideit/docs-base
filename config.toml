@@ -181,29 +181,29 @@ relativeURLs = true
   	name = "Version 1.8"
   	identifier = "smn_eightteen"
   	parent = "mn_versions"
-  	url = "http://docs.docker.com/v1.8/"
+  	url = "https://docs.docker.com/v1.8/"
   	weight = -2
 [[menu.main]]
 	name = "Version 1.7"
 	identifier = "smn_seventeen"
 	parent = "mn_versions"
-	url = "http://docs.docker.com/v1.7/"
+	url = "https://docs.docker.com/v1.7/"
 	weight = -1
 [[menu.main]]
 	name = "Version 1.6"
 	identifier = "smn_sixteen"
 	parent = "mn_versions"
-	url = "http://docs.docker.com/v1.6/"
+	url = "https://docs.docker.com/v1.6/"
 	weight = 1
 [[menu.main]]
 	name = "Version 1.5"
 	identifier = "smn_fifteen"
 	parent = "mn_versions"
-	url = "http://docs.docker.com/v1.5/"
+	url = "https://docs.docker.com/v1.5/"
 	weight = 2
 [[menu.main]]
 	name = "Version 1.4"
 	identifier = "smn_fourteen"
 	parent = "mn_versions"
-	url = "http://docs.docker.com/v1.4/"
+	url = "https://docs.docker.com/v1.4/"
 	weight = 3
