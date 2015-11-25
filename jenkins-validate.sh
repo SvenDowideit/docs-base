@@ -3,7 +3,7 @@
 set -e 
 
 # Clear out old results
-rm *junit.xml
+rm -f *junit.xml
 
 export PR_BRANCH_BASE=$(git show-branch --sha1-name --current --merge-base origin/$ghprbTargetBranch)
 echo "$PR_BRANCH_BASE..$ghprbActualCommit"
@@ -31,3 +31,5 @@ docker cp "$JOBCONTAINER:/docs/*junit.xml" .
 
 docker rm -vf "$JOBCONTAINER"  || true
 docker rmi "$JOBIMAGE" || true
+
+more *junit.xml | cat
