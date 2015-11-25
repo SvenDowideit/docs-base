@@ -2,6 +2,9 @@
 
 set -e 
 
+# Clear out old results
+rm *junit.xml
+
 export PR_BRANCH_BASE=$(git show-branch --sha1-name --current --merge-base origin/$ghprbTargetBranch)
 echo "$PR_BRANCH_BASE..$ghprbActualCommit"
 
@@ -14,14 +17,17 @@ else
 	exit 0
 fi
 
+JOBIMAGE="$BUILD_TAG:$ghprbActualCommit"
+JOBCONTAINER="$BUILD_TAG-$ghprbActualCommit"
+
 git log --format=oneline "$PR_BRANCH_BASE..$ghprbActualCommit"
 cd docs
 docker pull $(grep FROM Dockerfile | sed s/FROM//)
-docker build -t "$BUILD_TAG:$ghprbActualCommit" .
+docker build -t "$JOBIMAGE" .
 # lots more Dockerfile changes needed to improve this.
-docker run --name "$BUILD_TAG-$ghprbActualCommit" "$BUILD_TAG:$ghprbActualCommit"
-docker cp "$BUILD_TAG$ghprbActualCommit:/docs/*junit.xml" .
+docker run --name "$JOBCONTAINER" "$JOBIMAGE"
+docker cp "$JOBCONTAINER:/docs/*junit.xml" .
 
 
-docker rm -vf "$BUILD_TAG$ghprbActualCommit"  || true
-docker rmi "$BUILD_TAG:$ghprbActualCommit" || true
+docker rm -vf "$JOBCONTAINER"  || true
+docker rmi "$JOBIMAGE" || true
