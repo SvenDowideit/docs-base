@@ -1,25 +1,31 @@
 #!/bin/bash  
 
+JUNITFILE="/validate.junit.xml"
+
 # run(jobname, command)
 function run() {
+	echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 	echo "running $1"
-	"$2"
+	"$@"
 	ERRORS=$?
 	echo "ERRORS = $ERRORS"
 	if [ $ERRORS -ne 0 ]; then
-		echo "<testsuite><testcase classname='$1' name='Tests'><failure>$ERRORS errors</failure></testcase></testsuite>" >> validate.junit.xml
-		echo "</testsuites>" >> validate.junit.xml
+		echo "<testsuite><testcase classname='$1' name='Tests'><failure>$ERRORS errors</failure></testcase></testsuite>" >> "$JUNITFILE"
+		echo "</testsuites>" >> "$JUNITFILE"
 		exit $ERRORS
 	fi
 
-	echo '<testsuite><testcase classname="$1" name="Tests"></testcase></testsuite>' >> validate.junit.xml
+	echo "<testsuite><testcase classname='$1' name='Tests'></testcase></testsuite>" >> "$JUNITFILE"
 }
 
 
-echo "<testsuites>" > validate.junit.xml
-run "markdownlint" "/usr/local/bin/markdownlint /docs/content/ $PROJECT"
-run "hugo" "hugo --config=config.toml --log=true --stepAnalysis=true"
-echo "</testsuites>" >> validate.junit.xml
+echo "<testsuites>" > "$JUNITFILE"
+run "markdownlint" "/docs/content/" "$PROJECT"
+run "hugo" --config=config.toml --log=true --stepAnalysis=true
+echo "</testsuites>" >> "$JUNITFILE"
+
+echo "$0 output written to $JUNITFILE"
+cat "$JUNITFILE"
 
 
 
