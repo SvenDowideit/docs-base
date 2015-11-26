@@ -25,13 +25,15 @@ JOBIMAGE="$BUILD_TAG:$ghprbActualCommit"
 JOBCONTAINER="$BUILD_TAG-$ghprbActualCommit"
 
 git log --format=oneline "$PR_BRANCH_BASE..$ghprbActualCommit"
-cd docs
 set -x # echo on
-docker pull $(grep FROM Dockerfile | sed s/FROM//)
-docker build -t "$JOBIMAGE" .
+docker pull $(grep FROM docs/Dockerfile | sed s/FROM//)
+docker build -t "$JOBIMAGE" docs
 # lots more Dockerfile changes needed to improve this.
 docker run --name "$JOBCONTAINER" "$JOBIMAGE"
-docker cp "$JOBCONTAINER:/validate.junit.xml" .
+
+# some older branches may not have the xml output yet, so fornow we'll skip them
+docker cp "$JOBCONTAINER:/validate.junit.xml" . \
+	| echo '<testsuite tests="1"><testcase classname="validate" name="NoJunitFile"><skipped /></testcase></testsuite>' > junit.xml
 
 
 docker rm -vf "$JOBCONTAINER"  || true
