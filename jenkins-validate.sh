@@ -26,10 +26,11 @@ docker pull $(grep FROM Dockerfile | sed s/FROM//)
 docker build -t "$JOBIMAGE" .
 # lots more Dockerfile changes needed to improve this.
 docker run --name "$JOBCONTAINER" "$JOBIMAGE"
-docker cp "$JOBCONTAINER:/docs/*junit.xml" .
+docker cp "$JOBCONTAINER:/docs/validate.junit.xml" .
 
 
 docker rm -vf "$JOBCONTAINER"  || true
 docker rmi "$JOBIMAGE" || true
 
+# Show what we're sending to Jenkins/GH in the console log
 more *junit.xml | cat
