@@ -29,7 +29,7 @@ set -x # echo on
 docker pull $(grep FROM docs/Dockerfile | sed s/FROM//)
 docker build -t "$JOBIMAGE" docs
 # lots more Dockerfile changes needed to improve this.
-docker run --name "$JOBCONTAINER" "$JOBIMAGE"
+docker run --name "$JOBCONTAINER" "$JOBIMAGE" || true
 
 # some older branches may not have the xml output yet, so fornow we'll skip them
 docker cp "$JOBCONTAINER:/validate.junit.xml" . \
