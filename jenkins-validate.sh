@@ -33,7 +33,7 @@ docker run --name "$JOBCONTAINER" "$JOBIMAGE"
 
 # some older branches may not have the xml output yet, so fornow we'll skip them
 docker cp "$JOBCONTAINER:/validate.junit.xml" . \
-	| echo '<testsuite tests="1"><testcase classname="validate" name="NoJunitFile"><skipped /></testcase></testsuite>' > junit.xml
+	|| echo '<testsuite tests="1"><testcase classname="validate" name="NoJunitFile"><skipped /></testcase></testsuite>' > junit.xml
 
 
 docker rm -vf "$JOBCONTAINER"  || true
