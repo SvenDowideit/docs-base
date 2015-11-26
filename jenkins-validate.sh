@@ -1,6 +1,10 @@
 #!/bin/bash
 
-set -e 
+set -e
+
+# Some defaults so we can run outside Jenkins
+echo "target branch: ${ghprbTargetBranch:=master}"
+echo "head commit: ${ghprbActualCommit:=$(git rev-parse --verify HEAD)}"
 
 # Clear out old results
 rm -f *junit.xml
@@ -22,6 +26,7 @@ JOBCONTAINER="$BUILD_TAG-$ghprbActualCommit"
 
 git log --format=oneline "$PR_BRANCH_BASE..$ghprbActualCommit"
 cd docs
+set -x # echo on
 docker pull $(grep FROM Dockerfile | sed s/FROM//)
 docker build -t "$JOBIMAGE" .
 # lots more Dockerfile changes needed to improve this.
