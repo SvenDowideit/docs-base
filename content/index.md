@@ -15,8 +15,8 @@ keywords = ["Docker, documentation, manual, guide, reference, api"]
     <td class="splash-031e">
     <p>
     **Docker Engine** or "Docker" creates and runs Docker containers. Install Docker
-    on <a href="/installation/ubuntulinux/"/>Ubuntu</a>, <a href="/installation/mac"/>Mac OS
-    X</a>, or <a href="/installation/windows"/>Windows</a>. Or use the **Install** menu to choose
+    on <a href="/engine/installation/ubuntulinux/"/>Ubuntu</a>, <a href="/engine/installation/mac"/>Mac OS
+    X</a>, or <a href="/engine/installation/windows"/>Windows</a>. Or use the **Install** menu to choose
     from others.
     </p> </td>
     <td class="splash-031e"><p>**Kitematic** is the desktop GUI for Docker. <a href="/kitematic/"/>Install Kitematic<a>.</p></td>
