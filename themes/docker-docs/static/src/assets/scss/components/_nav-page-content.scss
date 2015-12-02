@@ -37,17 +37,6 @@
 }
 
 #TableOfContents {
-  transition: all 1s;
-  ul > li > a + ul {
-    transition: all 200ms;
-    height: 0;
-    visibility: hidden;
-    transform: scale(1, 0);
-  }
-  .open {
-    visibility: visible;
-    transform: scale(1, 1);
-  }
   a {
     color: white;
     font-size: rem-calc(14);
@@ -57,7 +46,6 @@
     line-height: 1.5;
   }
   > ul > li > a {
-    // color: $docker-gray;
     font-size: rem-calc(16);
     font-weight: 400;
   }
