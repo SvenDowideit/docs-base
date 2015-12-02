@@ -1,9 +1,7 @@
 {{ partial "header.html" . }}
 <div id="docs">
-  <div class="sticky-wrapper">
-    <div class="nav-docs-wrapper">
-      {{ partial "engine-navbar.html" . }}
-    </div>
+  <div class="nav-docs-wrapper">
+    {{ partial "engine-navbar.html" . }}
   </div>
   <div class="main-wrapper">
     <div class="content-wrapper">
@@ -13,9 +11,9 @@
         </article>
       </section>
     </div>
-    <div id="toc" class="nav-page-content">
-      {{ partial "nav-page-content.html" . }}
-    </div>
+  </div>
+  <div id="toc" class="nav-page-content">
+    {{ partial "nav-page-content.html" . }}
   </div>
 </div>
 {{ partial "container-footer.html" . }}

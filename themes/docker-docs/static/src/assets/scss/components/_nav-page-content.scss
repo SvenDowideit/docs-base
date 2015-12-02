@@ -1,18 +1,12 @@
 .nav-page-content {
   display: none;
-  .sticky-wrapper {
-    position: absolute !important;
-    top: 0;
-    right: 0;
-    bottom: 0;
-  }
   @media #{$large} {
     display: block;
   }
 }
 
 .table-of-contents-wrap {
-  width: rem-calc(290);
+  width: $sidebar-width;
   font-family: $font-family-sans-serif;
   color: white;
   padding-top: 1rem + rem-calc(117);
@@ -22,10 +16,6 @@
   top: 0;
   right: 0;
   bottom: 0;
-  .sticky-sidebar & {
-    position: fixed;
-    padding-top: 1rem;
-  }
   .table-of-contents {
     padding: 0 2rem;
     visibility: visible;
@@ -47,6 +37,17 @@
 }
 
 #TableOfContents {
+  transition: all 1s;
+  ul > li > a + ul {
+    transition: all 200ms;
+    height: 0;
+    visibility: hidden;
+    transform: scale(1, 0);
+  }
+  .open {
+    visibility: visible;
+    transform: scale(1, 1);
+  }
   a {
     color: white;
     font-size: rem-calc(14);

@@ -1,11 +1,15 @@
 <aside class="nav-docs">
   <nav id="multiple" data-accordion-group>
+    {{ partial "product-navbar.html" . }}
     {{ $currentNode := . }}
     {{ range .Site.Menus.main }}
     <section data-accordion>
       {{ if .HasChildren }}
       <article data-accordion>
-        <button data-control>{{ .Pre }} {{ .Name }}</button>
+        <button data-control class="split-button">
+          <a href="{{ .URL }}">{{ .Pre }} {{ .Name }}</a>
+          <span></span>
+        </button>
         <div data-content>
           {{ range .Children }}
           {{if .HasChildren}}
