@@ -1,0 +1,49 @@
+<aside class="nav-docs">
+  <section id="multiple" class="tutmenu" data-accordion-group>
+    FOOBAR
+    {{ partial "product-navbar.html" . }}
+    {{ $currentNode := . }}
+    {{ range .Site.Menus.swarm }}
+    <section data-accordion>
+      {{ if .HasChildren }}
+      <article data-accordion>
+        <button data-control class="split-button">
+          <a href="{{ .URL }}">{{ .Pre }} {{ .Name }}</a>
+          <span></span>
+        </button>
+        <div data-content>
+          {{ range .Children }}
+          {{if .HasChildren}}
+          <article data-accordion>
+            <button data-control>{{ .Pre }} {{ .Name }}</button>
+            <div data-content>
+              {{ range .Children }}
+              {{if .HasChildren}}
+              <article data-accordion>
+                <button data-control>{{ .Pre }} {{ .Name }}</button>
+                <div data-content>
+                  {{ range .Children }}
+                  <a data-link href="{{ .URL }}" class="{{if $currentNode.IsMenuCurrent "swarm" . }} active{{end}}">{{ .Pre }} {{ .Name }}</a>
+                  {{ end }}
+                </div>
+              </article>
+              {{else}}
+              <a data-link href="{{ .URL }}" class="{{if $currentNode.IsMenuCurrent "swarm" . }} active{{end}}">{{ .Pre }} {{ .Name }}</a>
+              {{end}}
+
+              {{end}}
+            </div>
+          </article>
+          {{else}}
+          <a data-link href="{{ .URL }}" class="{{if $currentNode.IsMenuCurrent "swarm" . }} active{{end}}">{{ .Pre }} {{ .Name }}</a>
+          {{end}}
+          {{end}}
+        </div>
+      </article>
+      {{else}}
+      <a data-link href="{{ .URL }}" class="{{if $currentNode.IsMenuCurrent "swarm" . }} active{{end}}">{{ .Pre }} {{ .Name }}</a>
+      {{end}}
+    </section>
+    {{end}}
+  </section>
+</aside>
