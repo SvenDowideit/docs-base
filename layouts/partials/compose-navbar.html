@@ -2,7 +2,7 @@
   <nav id="multiple" data-accordion-group>
     {{ partial "product-navbar.html" . }}
     {{ $currentNode := . }}
-    {{ range .Site.Menus.engine }}
+    {{ range .Site.Menus.compose }}
     <section data-accordion>
       {{ if .HasChildren }}
       <article data-accordion>
@@ -22,25 +22,25 @@
                 <button data-control>{{ .Pre }} {{ .Name }}</button>
                 <div data-content>
                   {{ range .Children }}
-                  <a data-link href="{{ .URL }}" class="{{if $currentNode.IsMenuCurrent "engine" . }} active{{end}}">{{ .Pre }} {{ .Name }}</a>
+                  <a data-link href="{{ .URL }}" class="{{if $currentNode.IsMenuCurrent "compose" . }} active{{end}}">{{ .Pre }} {{ .Name }}</a>
                   {{ end }}
                 </div>
               </article>
               {{else}}
-              <a data-link href="{{ .URL }}" class="{{if $currentNode.IsMenuCurrent "engine" . }} active{{end}}">{{ .Pre }} {{ .Name }}</a>
+              <a data-link href="{{ .URL }}" class="{{if $currentNode.IsMenuCurrent "compose" . }} active{{end}}">{{ .Pre }} {{ .Name }}</a>
               {{end}}
 
               {{end}}
             </div>
           </article>
           {{else}}
-          <a data-link href="{{ .URL }}" class="{{if $currentNode.IsMenuCurrent "engine" . }} active{{end}}">{{ .Pre }} {{ .Name }}</a>
+          <a data-link href="{{ .URL }}" class="{{if $currentNode.IsMenuCurrent "compose" . }} active{{end}}">{{ .Pre }} {{ .Name }}</a>
           {{end}}
           {{end}}
         </div>
       </article>
       {{else}}
-      <a data-link href="{{ .URL }}" class="{{if $currentNode.IsMenuCurrent "engine" . }} active{{end}}">{{ .Pre }} {{ .Name }}</a>
+      <a data-link href="{{ .URL }}" class="{{if $currentNode.IsMenuCurrent "compose" . }} active{{end}}">{{ .Pre }} {{ .Name }}</a>
       {{end}}
     </section>
     {{end}}
