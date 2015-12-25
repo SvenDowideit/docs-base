@@ -1,0 +1,49 @@
+ul.nav-global {
+  margin: 0;
+  .search {
+    position: relative;
+    width: rem-calc(200);
+  }
+  @media screen and (max-width: rem-calc(1180)) {
+    padding-top: 0 !important;
+    .search {
+      position: absolute;
+      top: rem-calc(43);
+      right: 0;
+    }
+  }
+  :root & {
+    padding-top: 1.1rem;
+  }
+  float: right;
+  @include inline-list;
+  li {
+    margin-left: 1rem;
+  }
+  a {
+    font-family: $font-family-sans-serif-secondary;
+    font-size: rem-calc(14);
+    font-weight: 300;
+    color: #7a8491;
+    padding: rem-calc(5) rem-calc(5);
+    margin-bottom: rem-calc(5);
+    @extend %primary-transition;
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+  a.button {
+    background: #86d801;
+    padding: rem-calc(10) rem-calc(30);
+    color: #fff;
+    &:hover {
+      background: darken($secondary-color, 10%);
+    }
+  }
+  @media #{$small-only} {
+    display: none;
+  }
+  @media #{$medium-only} {
+    display: none;
+  }
+}

@@ -1,0 +1,52 @@
+.nav-page-content {
+  display: none;
+  @media #{$large} {
+    display: block;
+  }
+}
+
+.table-of-contents-wrap {
+  width: $sidebar-width;
+  font-family: $font-family-sans-serif;
+  color: white;
+  padding-top: 1rem + rem-calc(117);
+  overflow: scroll;
+  background: #45474b;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  .table-of-contents {
+    padding: 0 2rem;
+    visibility: visible;
+  }
+  h2 {
+    font-weight: 300;
+    color: white;
+    font-size: rem-calc(20);
+  }
+  .toggle-nav-size {
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+    font-size: 0 !important;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: 0;
+  }
+}
+
+#TableOfContents {
+  a {
+    color: white;
+    font-size: rem-calc(14);
+  }
+  li {
+    list-style: none;
+    line-height: 1.5;
+  }
+  > ul > li > a {
+    font-size: rem-calc(16);
+    font-weight: 400;
+  }
+}

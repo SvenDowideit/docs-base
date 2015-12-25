@@ -1,4 +1,4 @@
-#!/bin/bash  
+#!/bin/bash
 
 JUNITFILE="/validate.junit.xml"
 
@@ -26,6 +26,3 @@ echo "</testsuites>" >> "$JUNITFILE"
 
 echo "$0 output written to $JUNITFILE"
 cat "$JUNITFILE"
-
-
-

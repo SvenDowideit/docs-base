@@ -1,0 +1,115 @@
+.tabs.vertical {
+  max-width: 100%;
+  width: 100%;
+}
+
+nav ul.tabs {
+  li {
+    list-style: none;
+    position: relative;
+    & > ul {
+      transition: max-height 0.5s ease-out;
+      max-height: 0px;
+      overflow: hidden;
+    }
+    &:hover > ul {
+      max-height: 500px;
+      transition: max-height 0.6s ease-in;
+    }
+    a {
+      background-color: #103f5a;
+      display: block;
+      line-height: 20px;
+      color: white;
+      padding: 10px 15px;
+      transition: background 300ms ease;
+      &:hover {
+        background-color: #242424;
+      }
+    }
+  }
+  &.second-level,
+  &.third-level,
+  &.fourth-level {
+    max-height: 0;
+  }
+  &.second-level a {
+    background-color: #1e4d68;
+  }
+  &.third-level a {
+    background-color: #2b5c78;
+  }
+  &.fourth-level a {
+    background-color: #3f6f8a;
+  }
+}
+
+#docs.row {
+  max-width: 90rem;
+}
+
+.collapse {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.row {
+  &.content {
+    max-width: 100%;
+    .large-3 {
+      padding-left: 0;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 939px) {
+  .large-3 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.main-wrapper {
+  width: 100%;
+  @include clearfix;
+}
+
+.content-wrapper {
+  background: white;
+  float: left;
+  border-left: none;
+  padding: 0 1rem 5rem 1rem;
+  @media #{$large} {
+    width: calc(100% - (18.125rem*2));
+    min-height: 100vh;
+    border-left: 1px solid lighten($docker-gray, 50%);
+  }
+}
+
+.nav-docs-wrapper {
+  width: $sidebar-width;
+  padding-top: 1rem;
+  height: calc(100vh);
+  float: left;
+  overflow: scroll;
+}
+
+#multiple {
+  nav.nav-products {
+    border-bottom: 1px solid lighten($docker-gray, 50%);
+    margin-bottom: 2rem;
+    h5 {
+      color: #1a171b;
+      margin-bottom: 0;
+    }
+    button {
+      &:last-child {
+        padding-bottom: 2rem;
+      }
+    }
+    a {
+      color: #1a171b;
+    }
+  }
+}

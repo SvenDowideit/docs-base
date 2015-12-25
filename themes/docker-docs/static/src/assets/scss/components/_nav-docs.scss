@@ -1,0 +1,167 @@
+#docs {
+  .nav-docs-wrapper {
+    display: none;
+    @media #{$large} {
+      display: block;
+    }
+  }
+}
+
+.preload {
+  #multiple {
+    visibility: hidden;
+  }
+}
+
+.nav-docs {
+  padding: 0;
+  #multiple {
+    margin-top: 0;
+    section {
+      font-family: $font-family-sans-serif-secondary;
+    }
+    article > div > article > button {
+      font-weight: 300 !important;
+    }
+    article, section {
+      font-family: $font-family-sans-serif-secondary;
+      a {
+        font-weight: normal;
+        font-family: $font-family-sans-serif-secondary;
+        font-size: rem-calc(14);
+        display: block;
+        padding: rem-calc(5) rem-calc(10) rem-calc(5) rem-calc(20);
+        color: $body-font-color;
+        &.active {
+          color: $docker-blue;
+          font-weight: 400 !important;
+        }
+      }
+    }
+    button {
+      font-family: $font-family-sans-serif-secondary;
+      font-size: rem-calc(14);
+      background: transparent;
+      color: $body-font-color;
+      outline: none;
+      width: 100%;
+      margin: 0;
+      text-align: left;
+      padding: rem-calc(10)
+    }
+  }
+  .split-button {
+    position: relative;
+    z-index: 1;
+    a {
+      padding-left: 0 !important;
+      position: relative;
+      display: inline-block !important;
+      z-index: 2;
+    }
+    span {
+      z-index: 1;
+      display: block;
+      position: absolute;
+      right: 1.5rem;
+      top: 0;
+      font-size: 25px;
+      font-weight: 200;
+      color: #444;
+      height: 100%;
+      width: 100%;
+      background: url('/dist/assets/images/arrow.svg') center right no-repeat;
+      background-size: 10px 15px;
+    }
+  }
+  .toggle-nav-size {
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+    font-size: 0 !important;
+    svg {
+      color: $secondary-color;
+      width: rem-calc(20);
+      height: rem-calc(20);
+      position: absolute;
+      right: 1rem;
+      bottom: 1rem;
+    }
+  }
+}
+
+&.nav-tutorials {
+  a {
+    font-family: $font-family-sans-serif-secondary;
+    font-size: rem-calc(14);
+    display: block;
+    padding: rem-calc(5) rem-calc(10) rem-calc(5) rem-calc(20);
+    color: $body-font-color;
+    &.active {
+      color: $docker-blue;
+      font-weight: 400 !important;
+    }
+  }
+}
+
+.docs-nav-collapsed {
+  .nav-docs {
+    position: relative;
+    #multiple {
+      padding-bottom: 10rem;
+      .toggle-nav-size {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: transparent;
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+      section {
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+      }
+      button,
+      a {
+        font-size: 0;
+      }
+      .open > div {
+        display: none;
+      }
+      [data-accordion] > [data-control]:after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+      }
+    }
+  }
+  .nav-docs-wrapper {
+      width: 10%;
+  }
+  .content-wrapper {
+    width: 80%;
+  }
+}
+
+#docs.single-sidebar {
+  &.docs-nav-collapsed {
+    .content-wrapper {
+      width: 100%;
+      @media #{$large} {
+        width: 90%;
+      }
+    }
+  }
+}
+
+.left-off-canvas-menu {
+  .toggle-nav-size {
+    display: none;
+  }
+}

@@ -1,0 +1,13 @@
+{{ partial "header.html" . }}
+<div id="docs">
+	<div class="row">
+		<div class="small-12 collapse columns">			
+			<h1>Search Results</h1>
+			<section class="search-results">
+				<gcse:searchresults-only resultsUrl="/search" enableAutoComplete="true"></gcse:searchresults>
+			</section>
+		</div>
+	</div>
+</div>
+{{ partial "container-footer.html" . }}
+{{ partial "footer.html" . }}

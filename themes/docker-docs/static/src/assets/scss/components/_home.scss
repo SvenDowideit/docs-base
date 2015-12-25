@@ -1,0 +1,74 @@
+.hero {
+  padding: rem-calc(50) 1rem rem-calc(100);
+  text-align: center;
+  h1 {
+    font-weight: 400;
+  }
+  .cta {
+    margin-top: 1rem;
+    h3 {
+      font-size: rem-calc(36);
+      font-weight: 100;
+    }
+    .button {
+      font-family: $font-family-sans-serif;
+      font-size: rem-calc(28);
+      font-weight: 100;
+      background: #384d55;
+      padding-top: rem-calc(10);
+      padding-bottom: rem-calc(13);
+      box-shadow: 4px 4px 0 0 darken($primary-color, 5);
+    }
+  }
+  input {
+    line-height: 1;
+  }
+}
+
+.products-list {
+  margin: auto !important;
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+  @include block-grid(1);
+  @media #{$medium} {
+    @include block-grid(2);
+  }
+  @media #{$large-up} {
+    @include block-grid(4);
+  }
+}
+
+li.product-tile {
+  margin-bottom: 2rem;
+  text-align: center;
+  display: block;
+  padding: 1rem;
+  border: 1px solid transparent;
+  @extend %primary-transition;
+  > a {
+    display: block;
+    &:hover {
+      h3 {
+        color: darken($docker-blue, 10%);
+      }
+      svg {
+        color: lighten($docker-gray, 50%);
+      }
+    }
+  }
+  svg {
+    display: block;
+    width: 8rem;
+    margin: auto;
+    color: $docker-gray;
+  }
+  &:hover {
+    border: 1px solid darken($docker-bg, 8%);
+  }
+  p {
+    color: $body-font-color;
+  }
+  .link {
+    color: $secondary-color;
+  }
+}
