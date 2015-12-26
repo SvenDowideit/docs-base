@@ -14,12 +14,18 @@
           {{ range .Children }}
           {{if .HasChildren}}
           <article data-accordion>
-            <button data-control>{{ .Pre }} {{ .Name }}</button>
+            <button data-control style="margin-left: .75em;" class="split-button">
+              <a href="{{ .URL }}">{{ .Pre }} {{ .Name }}</a>
+              <span></span>
+            </button>
             <div data-content>
               {{ range .Children }}
               {{if .HasChildren}}
               <article data-accordion>
-                <button data-control>{{ .Pre }} {{ .Name }}</button>
+                <button data-control class="split-button">
+                  <a href="{{ .URL }}">{{ .Pre }} {{ .Name }}</a>
+                  <span></span>
+                </button>
                 <div data-content>
                   {{ range .Children }}
                   <a data-link href="{{ .URL }}" class="{{if $currentNode.IsMenuCurrent "compose" . }} active{{end}}">{{ .Pre }} {{ .Name }}</a>
@@ -27,7 +33,7 @@
                 </div>
               </article>
               {{else}}
-              <a data-link href="{{ .URL }}" class="{{if $currentNode.IsMenuCurrent "compose" . }} active{{end}}">{{ .Pre }} {{ .Name }}</a>
+              <a data-link href="{{ .URL }}" style="margin-left: 1.25em;" class="{{if $currentNode.IsMenuCurrent "compose" . }} active{{end}}">{{ .Pre }} {{ .Name }}</a>
               {{end}}
 
               {{end}}
