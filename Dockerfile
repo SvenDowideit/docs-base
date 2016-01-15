@@ -15,14 +15,16 @@ RUN apt-get update \
 # TODO: Test to see if the above holds true
 RUN pip install awscli==1.4.4 pyopenssl==0.12
 
-# We can go back to using the official version when hugo 0.15 is released with our PR merged.
-#ENV HUGO_VERSION 0.14
+# We can go back to using the official version when hugo 0.16 is released with our PR merged.
+#ENV HUGO_VERSION 0.16
 #RUN curl -sSL https://github.com/spf13/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_linux_amd64.tar.gz \
 #	| tar -v -C /usr/local/bin -xz --strip-components 1 \
 #	&& mv /usr/local/bin/hugo_${HUGO_VERSION}_linux_amd64 /usr/local/bin/hugo
 
-# Using a pre-build of hugo 0.15 a not yet merged patch
-RUN curl -sSL -o /usr/local/bin/hugo https://github.com/docker/hugo/releases/download/test-2/hugo
+# Using a pre-build of hugo 0.16 with extra debug code
+# see https://github.com/docker/hugo/tree/debug-1.6-pre2
+ENV HUGO_VERSION v0.16-debug2
+RUN curl -sSL -o /usr/local/bin/hugo https://github.com/docker/hugo/releases/download/${HUGO_VERSION}/hugo
 RUN chmod 755 /usr/local/bin/hugo
 RUN /usr/local/bin/hugo version
 
