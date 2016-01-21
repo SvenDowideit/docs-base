@@ -18,7 +18,9 @@ if git diff --name-only "$PR_BRANCH_BASE..$ghprbActualCommit" | grep "^docs/" ;t
 else 
 	echo "no docs changes"
 	echo '<testsuite tests="1"><testcase classname="markdownlint" name="NoDocChanges"><skipped /></testcase></testsuite>' > junit.xml
-	exit 0
+	if [ -z ${FORCE} ]; then
+		exit 0
+	fi
 fi
 
 JOBIMAGE="$BUILD_TAG:$ghprbActualCommit"
@@ -35,6 +37,8 @@ docker run --name "$JOBCONTAINER" "$JOBIMAGE" || true
 docker cp "$JOBCONTAINER:/validate.junit.xml" . \
 	|| echo '<testsuite tests="1"><testcase classname="validate" name="NoJunitFile"><skipped /></testcase></testsuite>' > junit.xml
 
+docker cp "$JOBCONTAINER:/docs/markdownlint.summary.txt" . \
+	|| echo "No "markdownlint.summary.txt" file found"
 
 docker rm -vf "$JOBCONTAINER"  || true
 docker rmi "$JOBIMAGE" || true
