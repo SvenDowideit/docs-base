@@ -12,3 +12,5 @@ verbose = true
   fractions = false
   plainIdAnchors = true
   gitHubLinkEval = true
+  sourceRelativeLinksEval = true
+
