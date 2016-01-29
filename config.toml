@@ -9,6 +9,7 @@ verbose = true
 
 [blackfriday]
   fractions = false
+  smartDashes = false
   plainIdAnchors = true
   sourceRelativeLinksEval = true
 
