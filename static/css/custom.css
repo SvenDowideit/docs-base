@@ -37,26 +37,42 @@ a {
   font-variant-ligatures: common-ligatures;
 }
 
-pre {
-    margin-bottom: 1.5rem;
-}
 body {
   color: #050E1A; !important
   text-shadow:0 0 5px transparent;
   font-variant-ligatures: common-ligatures;
 }
 
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ffcb94;
+  margin-bottom: 1.5rem;
+}
 code {
   background-color: #f8f8f8;
+  white-space: nowrap;
 }
 
+pre > code {
+  white-space: pre;
+  border: none;
+}
+
+blockquote {
+	padding-left: 0;
+}
 blockquote, blockquote p {
   line-height: 1.6;
   color: #0296C9;
 }
 
+blockquote p {
+  border-left: 3px solid #0296C9;
+  padding-left: 1rem;
+}
+
 div#buildinfo {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 #multiple {
