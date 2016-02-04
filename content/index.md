@@ -14,13 +14,12 @@ keywords = ["Docker, documentation, manual, guide, reference, api"]
   <tr>
     <td class="splash-031e">
     <p>
-    **Docker Engine** or "Docker" creates and runs Docker containers. Install Docker
-    on <a href="/engine/installation/ubuntulinux/"/>Ubuntu</a>, <a href="/engine/installation/mac"/>Mac OS
-    X</a>, or <a href="/engine/installation/windows"/>Windows</a>. Or use the **Install** menu to choose
-    from others.
+    **Docker Engine** provides the core functions you need to create Docker images and run Docker containers. Install Engine
+    on <a href="engine/installation/linux/ubuntulinux/"/>Ubuntu</a> or see the <a href="/engine/installation/"/>full list of others</a> to choose from.
     </p> </td>
-    <td class="splash-031e"><p>**Kitematic** is the desktop GUI for Docker. <a href="/kitematic/"/>Install Kitematic<a>.</p></td>
-</tr> 
+    <td class="splash-031e"><p>**Docker Toolbox** delivers all the Docker tools such as Engine, Machine, Compose, and <a href="/kitematic/"/>Kitematic</a> to your <a href="/engine/installation/mac"/>Mac OS
+    X</a> or <a href="/engine/installation/windows"/>Windows</a> desktop.
+</tr>
 <tr>
     <td class="splash-031e"><p>
     **Docker Hub** is our hosted registry service for managing your images. There
@@ -40,7 +39,7 @@ for your team, see the <a href="/docker-trusted-registry/">overview</a>.
     </td>
     <td class="splash-031e"><p>
     **Docker Swarm** is used to host clustering and container scheduling. <a
-    href="/swarm/install-w-machine/">Deploy your own "swarm"</a> today in just a
+    href="/swarm/get-swarm/">Deploy your own "swarm"</a> today in just a
     few short steps.
     </p></td>
   </tr>
@@ -57,9 +56,12 @@ for your team, see the <a href="/docker-trusted-registry/">overview</a>.
   </tr>
 </table>
 
-#### **You may notice the docs look different**
+#### **New Navigation!**
 
-You also may find a few broken links or other wonkiness. We are working on fixing
-these things. We appreciate your patience while we go through our growing pains.
+You'll notice we have a new arrangement of the documentation navigation, it is
+now organized by Docker product. This is a step toward more changes to our docs
+look-and-feel coming soon in the near future. If you have comments good or bad,
+please email the <a href="mailto:feedback@docker.com">feedback to us</a>, we
+will be happy to hear from you.
 
 ![](https://docs.docker.com/images/docker-friends.png)
