@@ -31,7 +31,7 @@ verbose = true
 [[menu.main]]
 	name = "API reference"
 	parent = "docker-cloud"
-  url = "http://docs.docker.com/apidocs/docker-cloud/"
+  url = "/apidocs/docker-cloud/"
 	weight = 90
 
 
