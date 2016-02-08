@@ -26,6 +26,16 @@ verbose = true
 	weight = 8
 
 #
+# Component projects is a menu for Registry/Notary etc.
+#
+[[menu.main]]
+	name = "API reference"
+	parent = "docker-cloud"
+  url = "/apidocs/docker-cloud/"
+	weight = 90
+
+
+#
 # About
 #
 [[menu.main]]
