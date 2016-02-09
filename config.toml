@@ -10,7 +10,7 @@ verbose = true
 [blackfriday]
   fractions = false
   smartDashes = false
-  plainIdAnchors = true
+  plainIDAnchors = true
   sourceRelativeLinksEval = true
 
 # Menu configuration should come last in this file;
