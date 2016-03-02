@@ -16,11 +16,7 @@ verbose = true
 # Menu configuration should come last in this file;
 # leave at least one blank line at the end
 #
-[[menu.main]]		
-   name = "API reference"
-   parent = "docker-cloud"
-   url = "/apidocs/docker-cloud/"
-   weight = 90
+
 #
 # Component projects is a menu for Registry/Notary etc.
 #
