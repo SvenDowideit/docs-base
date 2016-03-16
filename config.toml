@@ -9,7 +9,8 @@ relativeURLs = true
 [blackfriday]
   fractions = false
   plainIdAnchors = true
-  gitHubLinkEval = true
+  sourceRelativeLinksEval = true
+  sourceRelativeLinksProjectFolder = "/docs"
 
 # Menu configuration should come last in this file;
 # leave at least one blank line at the end
