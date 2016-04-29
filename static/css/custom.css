@@ -43,13 +43,16 @@ body {
   font-variant-ligatures: common-ligatures;
 }
 
-pre {
+pre, code {
   background-color: #f8f8f8;
+  font-variant-ligatures: no-common-ligatures;
+}
+
+pre {
   border: 1px solid #ffcb94;
   margin-bottom: 1.5rem;
 }
 code {
-  background-color: #f8f8f8;
   white-space: nowrap;
 }
 
