@@ -5,5 +5,5 @@ wrappedNode(label: 'linux && x86_64') {
   stage "checkout"
   checkout scm
   stage "test"
-  sh "make test"
+  sh "docker run --rm docs/base:latest"
 }
