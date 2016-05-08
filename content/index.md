@@ -56,12 +56,4 @@ p {margin-bottom:.25rem;}
   </tr>
 </table>
 
-#### **New Navigation!**
-
-You'll notice we have a new arrangement of the documentation navigation, it is
-now organized by Docker product. This is a step toward more changes to our docs
-look-and-feel coming soon in the near future. If you have comments good or bad,
-please email the <a href="mailto:feedback@docker.com">feedback to us</a>, we
-will be happy to hear from you.
-
 ![](https://docs.docker.com/images/docker-friends.png)
