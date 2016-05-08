@@ -23,15 +23,15 @@ RUN pip install awscli==1.4.4 pyopenssl==0.12
 
 # Using a pre-build of hugo 0.16
 ENV HUGO_VERSION 0.16-pre3
-RUN curl -sSL -o /usr/local/bin/hugo https://github.com/docker/hugo/releases/download/${HUGO_VERSION}/hugo
-RUN chmod 755 /usr/local/bin/hugo
-RUN /usr/local/bin/hugo version
+RUN curl -sSL -o /usr/local/bin/hugo https://github.com/docker/hugo/releases/download/${HUGO_VERSION}/hugo \
+ && chmod 755 /usr/local/bin/hugo \
+ && /usr/local/bin/hugo version
 
-ADD https://github.com/docker/markdownlint/releases/download/v0.9.5/markdownlint /usr/local/bin/markdownlint
-RUN chmod 755 /usr/local/bin/markdownlint
+RUN curl -sSL -o /usr/local/bin/markdownlint https://github.com/docker/markdownlint/releases/download/v0.9.5/markdownlint \
+ && chmod 755 /usr/local/bin/markdownlint
 
-ADD https://github.com/docker/linkcheck/releases/download/v0.3/linkcheck /usr/local/bin/linkcheck
-RUN chmod 755 /usr/local/bin/linkcheck
+RUN curl -sSL -o /usr/local/bin/linkcheck https://github.com/docker/linkcheck/releases/download/v0.3/linkcheck \
+ && chmod 755 /usr/local/bin/linkcheck
 
 
 #######################
