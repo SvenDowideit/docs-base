@@ -21,12 +21,12 @@ div#docs.row {
 
 .toc ul > li > ul > li > ul > li > ul >li { display: none; }
 
-nav#TableOfContents ul{
+nav#TableOfContents ul {
   list-style: none;
 }
 
-nav#TableOfContents li{
-  line-height:1.5rem;
+nav#TableOfContents li {
+  line-height: 1.5rem;
 }
 
 /* END: Styling for Table of Contents */
@@ -114,16 +114,6 @@ div#buildinfo {
   line-height: 1;
 }
 
-[data-control],
-[data-content] > * {
-  /*padding: 10px;*/
-}
- 
-/*[data-content] [data-accordion] {
-  border: 0;
-  padding: 0;
-}*/
-
 [data-accordion] [data-control] {
   color: #556473;
   width: 100%;
@@ -150,7 +140,6 @@ div#buildinfo {
   width: 100%;
   text-align: left;
   font-size: 16px;
-  /*background-color: #E6EDF4;*/
   margin: 0;
   margin-bottom: 0.3rem;
   padding: 0.3rem;
@@ -187,8 +176,8 @@ div#buildinfo {
 
 [data-accordion].open > [data-control]:after {
   -webkit-transform: rotate(-180deg); 
-  -ms-transform: rotate(-180deg); 
-  transform: rotate(-180deg); 
+      -ms-transform: rotate(-180deg); 
+          transform: rotate(-180deg); 
 }
 
 .tutmenu [data-accordion] [data-link] {
@@ -206,9 +195,26 @@ div#buildinfo {
   cursor: default;
 }
 
-.tutorialTable  {border-collapse:collapse;border-spacing:0;}
-.tutorialTable td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tutorialTable th{font-family:Arial, sans-serif;font-size:14px;font-weight:emphasis;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tutorialTable {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.tutorialTable td,
+.tutorialTable th
+{
+  border-style: solid;
+  border-width: 1px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+
+.tutorialTable th {
+  font-weight: emphasis;
+}
 
 
 .tutorial {
@@ -277,7 +283,7 @@ table#splashTable{
   line-height: 1.5rem;
   margin-top: .5rem;
   margin-bottom: 1rem;
-   width: 100%;
+  width: 100%;
 }
 table#splashTable td{
   vertical-align: top;
