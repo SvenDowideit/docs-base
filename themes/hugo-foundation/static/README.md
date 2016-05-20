@@ -10,25 +10,11 @@ You'll need to have the following items installed before continuing.
 
 ## Getting Started
 
-Clone the project using git clone. 
+From the docs-base directory, run:
 
-Next, navigate into the directory:
-```
-cd docker-marketing
-```
+    $ make build-theme
 
-Install all the dependincies (if `npm install` fails, you might need to run it as `sudo`):
-```
-npm install
-bower install
-```
-
-While you're working on your project, run:
-```
-grunt
-```
-
-This will assemble all the pages and compile the Sass. You're all set to start working!
+This will build everything in `src` and put it in `dist`.
 
 ## Directory Structure
 

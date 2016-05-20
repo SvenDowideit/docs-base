@@ -69,3 +69,6 @@ markdownlint:
 htmllint:
 		docker exec -it docker-docs-tools /usr/local/bin/linkcheck http://127.0.0.1:8000
 
+build-theme:
+	cd themes/hugo-foundation/static && docker build -t docs-base-theme . && docker run --rm -v $(CURDIR)/themes/hugo-foundation/static/dist:/usr/src/app/dist docs-base-theme
+
