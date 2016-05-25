@@ -22,7 +22,7 @@ RUN pip install awscli==1.4.4 pyopenssl==0.12
 #	&& mv /usr/local/bin/hugo_${HUGO_VERSION}_linux_amd64 /usr/local/bin/hugo
 
 # Using a pre-build of hugo 0.16
-ENV HUGO_VERSION 0.16-pre3
+ENV HUGO_VERSION 0.16-pre4
 RUN curl -sSL -o /usr/local/bin/hugo https://github.com/docker/hugo/releases/download/${HUGO_VERSION}/hugo \
  && chmod 755 /usr/local/bin/hugo \
  && /usr/local/bin/hugo version
