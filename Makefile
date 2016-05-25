@@ -58,10 +58,6 @@ docs-build:
 #	echo "$(GITCOMMIT)" > GITCOMMIT
 	docker build -t "$(DOCKER_DOCS_IMAGE)" .
 
-oss-test: docs-build
-	docker tag "$(DOCKER_DOCS_IMAGE)" docs/base:latest
-	docker build -t docs/base:oss oss-projects
-
 leeroy: docs-build
 	# the jenkins task also bind mounts in the current dir into `/src`, so we don't need different Dockerfiles for each repo
 	docker run --rm -t --name docs-pr$BUILD_NUMBER \
