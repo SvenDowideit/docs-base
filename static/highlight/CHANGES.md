@@ -46,7 +46,7 @@ Other notable changes:
 [webworkers]: https://github.com/isagalaev/highlight.js#web-workers
 [Jeremy Hull]: https://github.com/sourrust
 [#348]: https://github.com/isagalaev/highlight.js/issues/348
-[sg]: http://highlightjs.readthedocs.org/en/latest/style-guide.html
+[sg]: https://highlightjs.readthedocs.io/en/latest/style-guide.html
 [issues]: https://github.com/isagalaev/highlight.js/issues
 [Nebuleon Fumika]: https://github.com/Nebuleon
 [prince]: https://github.com/prince-0203
@@ -314,7 +314,7 @@ New languages in this release:
 - *ERB* (Ruby in HTML) by [Lucas Mazza][]
 - *Roboconf* by [Vincent Zurczak][]
 
-[b]: http://highlightjs.readthedocs.org/en/latest/building-testing.html
+[b]: https://highlightjs.readthedocs.io/en/latest/building-testing.html
 [Jeremy Hull]: https://github.com/sourrust
 [ik]: https://twitter.com/IvanKleshnin/status/514041599484231680
 [Max Mikhailov]: https://github.com/seven-phases-max
@@ -444,7 +444,7 @@ Other improvements:
 - Various improvements to Objective-C definition by [Matt Diephouse][].
 - Fixed highlighting of generics in Java.
 
-[ll]: http://highlightjs.readthedocs.org/en/latest/api.html#listlanguages
+[ll]: https://highlightjs.readthedocs.io/en/latest/api.html#listlanguages
 [Sindre Sorhus]: https://github.com/sindresorhus
 [Heiko August]: https://github.com/auge8472
 [Nikolay Lisienko]: https://github.com/neor-ru
@@ -537,10 +537,10 @@ Miscellaneous improvements:
 - Big overhaul of relevance counting for a number of languages. Please do report
   bugs about mis-detection of non-trivial code snippets!
 
-[API reference]: http://highlightjs.readthedocs.org/en/latest/api.html
+[API reference]: https://highlightjs.readthedocs.io/en/latest/api.html
 
-[cr]: http://highlightjs.readthedocs.org/en/latest/css-classes-reference.html
-[api docs]: http://highlightjs.readthedocs.org/en/latest/api.html
+[cr]: https://highlightjs.readthedocs.io/en/latest/css-classes-reference.html
+[api docs]: https://highlightjs.readthedocs.io/en/latest/api.html
 [variants]: https://groups.google.com/d/topic/highlightjs/VoGC9-1p5vk/discussion
 [beginKeywords]: https://github.com/isagalaev/highlight.js/commit/6c7fdea002eb3949577a85b3f7930137c7c3038d
 [php-html]: https://twitter.com/highlightjs/status/408890903017689088
@@ -694,7 +694,7 @@ Other notable changes:
 - Also Oleg Efimov did a great job of moving all the docs for language and style
   developers and contributors from the old wiki under the source code in the
   "docs" directory. Now these docs are nicely presented at
-  <http://highlightjs.readthedocs.org/>.
+  <https://highlightjs.readthedocs.io/>.
 
 [ng]: https://github.com/nathan11g
 [dd]: https://github.com/drdrang
