@@ -1,12 +1,12 @@
 +++
 draft = true
-title = "Test index page"
-advisory = "Custom text"
+title = "BETA Test index page"
+advisory = "beta"
 description = "test index page"
 keywords = ["docker, documentation, about, technology, understanding,  release"]
 [menu.main]
 parent = "mn_test"
 +++
 
-# test index page
+# beta test index page
 

@@ -1,4 +1,14 @@
 {{ partial "header.html" . }}
+<style>
+.advisory {
+    padding: 40px 0 0 10px;
+    padding-top: 40px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    color: #F04124;
+}
+</style>
 <div id="docs" class="row">
     <div class="large-3 columns">
         {{ partial "navbar.html" . }}
@@ -6,6 +16,19 @@
     <div class="large-6 columns">
       <section id="main">
         <article id="content">
+	{{ if isset $.Params "advisory" }}
+		<p class="advisory"><strong>Advisory</strong>:
+		{{ if eq $.Params.advisory "rc"  }}
+				 The Swarm management feature included in Docker Engine 1.12 is a release candidate feature and might be subject to non backward-compatible changes. Some functionality may change before the feature becomes generally available.
+	{{ else }}
+			{{ if eq $.Params.advisory "beta" }}
+				Docker for Mac is currently in public beta. Some functionality may change before the product becomes generally available.
+			{{ else }}
+				{{ $.Params.advisory }}
+			{{ end }}
+		{{ end }}
+		</p>
+	{{ end }}
           {{ .Content }}
         </article>
 		  </section>
