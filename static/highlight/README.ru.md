@@ -114,15 +114,15 @@ Highlight.js распространяется под лицензией BSD. П�
 Официальный сайт билиотеки расположен по адресу <https://highlightjs.org/>.
 
 Более подробная документация по API и другим темам расположена на
-<http://highlightjs.readthedocs.org/>.
+<https://highlightjs.readthedocs.io/>.
 
 Авторы и контрибьютора перечислена в файле [AUTHORS.ru.txt][9] file.
 
-[1]: http://highlightjs.readthedocs.org/en/latest/api.html#inithighlightingonload
-[2]: http://highlightjs.readthedocs.org/en/latest/api.html#highlightblock-block
-[3]: http://highlightjs.readthedocs.org/en/latest/api.html#configure-options
+[1]: https://highlightjs.readthedocs.io/en/latest/api.html#inithighlightingonload
+[2]: https://highlightjs.readthedocs.io/en/latest/api.html#highlightblock-block
+[3]: https://highlightjs.readthedocs.io/en/latest/api.html#configure-options
 [4]: https://highlightjs.org/download/
-[5]: http://highlightjs.readthedocs.org/en/latest/building-testing.html
-[8]: http://highlightjs.readthedocs.org/en/latest/css-classes-reference.html
+[5]: https://highlightjs.readthedocs.io/en/latest/building-testing.html
+[8]: https://highlightjs.readthedocs.io/en/latest/css-classes-reference.html
 [9]: https://github.com/isagalaev/highlight.js/blob/master/AUTHORS.ru.txt
 [10]: https://github.com/isagalaev/highlight.js/blob/master/LICENSE
