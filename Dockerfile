@@ -1,19 +1,14 @@
 #
 # See the top level Makefile in https://github.com/docker/docker for usage.
 #
-FROM debian:jessie
+FROM ubuntu:16.04
 MAINTAINER Docker Docs <docs@docker.com>
 
 RUN apt-get update \
-	&& apt-get install -y gettext git wget libssl-dev make python-dev python-pip python-setuptools subversion-tools vim-tiny ssed curl libffi-dev \
+	&& apt-get install -y gettext git wget libssl-dev make python-dev python-pip python-setuptools subversion-tools vim-tiny ssed curl libffi-dev awscli \
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-
-# Required to publish the documentation.
-# The 1.4.4 version works: the current versions fail in different ways
-# TODO: Test to see if the above holds true
-RUN pip install awscli==1.4.4 pyopenssl
 
 # We can go back to using the official version when hugo 0.16 is released with our PR merged.
 #ENV HUGO_VERSION 0.16
