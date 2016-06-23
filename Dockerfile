@@ -9,6 +9,7 @@ RUN apt-get update \
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
+EXPOSE 8000
 
 # We can go back to using the official version when hugo 0.16 is released with our PR merged.
 #ENV HUGO_VERSION 0.16
@@ -33,10 +34,10 @@ RUN curl -sSL -o /usr/local/bin/linkcheck https://github.com/docker/linkcheck/re
 # Copy the content and theme to the container
 #######################
 WORKDIR /docs
-COPY . /docs
-RUN chmod 755 /docs/validate.sh
-
-EXPOSE 8000
 
 # default to validating the docs build
 CMD ["/docs/validate.sh"]
+COPY validate.sh /docs
+RUN chmod 755 /docs/validate.sh
+
+COPY . /docs

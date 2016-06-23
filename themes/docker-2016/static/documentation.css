@@ -1,0 +1,236 @@
+/* FIXUP allcss.css */
+/* @media screen and (max-width: 1199px) */
+.dockercon16 section.title_section, header.main-header::after {
+    background-position: initial;
+}
+/* Notes */
+#DockerDocumentation p {
+    margin-bottom: 1.25rem;
+}
+#DockerDocumentation strong,
+#DockerDocumentation  b {
+    font-weight: 500;
+    line-height: inherit;
+}
+#DockerDocumentation blockquote {
+    font-size: 16px;
+    border-left: 4px solid #6db9d1;
+    padding: 6px;
+    background-color: #f5f5f5;
+}
+#DockerDocumentation blockquote p {
+    color: black;
+    padding-left: 20px;
+}
+#DockerDocumentation blockquote p strong {
+    color: #6db9d1;
+    /* most Note's have a non-strong ':' display: block;*/
+}
+#DockerDocumentation code {
+  border-width: 0;
+  background-color: #f5f5f5;
+}
+#DockerDocumentation thead {
+  background: rgb(200, 230, 239);
+}
+#DockerDocumentation thead th {
+    color: black;
+    font-weight: normal;
+    font-size: 1rem;
+}
+#DocumentationText {
+      padding: 20px !important;
+}
+#DocumentationText h2 {
+  font-size: 38px;
+}
+#DockerDocumentation h1,
+#DockerDocumentation h2,
+#DockerDocumentation h3,
+#DockerDocumentation h4,
+#DockerDocumentation h5,
+#DockerDocumentation h6 {
+    color: #155A74;
+    font-weight: normal;
+}
+#DocumentationText,
+#TableOfContentsSection {
+    color: black;
+}
+#DocumentationText a,
+#TableOfContentsSection a {
+    color: #008AB5;
+}
+/* reset away from #008AB5 */
+#DocumentationText .darkblue-btn {
+    color: #ffffff;
+    margin-top: 15px;
+}
+#DocumentationText table {
+    margin: 1.25rem 0;
+}
+/* ========== Start sidebarnav ========== */
+div.docsidebarnav_section.affix {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+}
+div.docsidebarnav_section.affix ul {
+    margin: 0 0 1.5rem 0;
+}
+.docsidebarnav_section {
+    left: 0;
+    padding: 0;
+}
+.docsidebarnav_section ul{
+    list-style: none;
+    padding: 0;
+    margin: -25px 0 1.5rem 0;
+    position: absolute;
+    left: 0;
+    background-color: #eff7f9;
+    padding: 0;
+    width: 270px;
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+}
+.docsidebarnav_section ul li{
+    display: block;
+}
+.docsidebarnav_section ul li a{
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Geomanist', sans-serif;
+    display: block;
+    width: 100%;
+    padding: 10px 0 10px 50px;
+    line-height: 15px;
+    border-radius: 0;
+    background-color: #eff7f9;
+    color: #386E7F;
+    font-weight: normal;
+    font-style: normal;
+}
+.docsidebarnav_section ul li a:hover {
+    color: #eff7f9;
+    background-color: #386E7F;
+}
+.docsidebarnav_section ul li a,
+.docsidebarnav_section ul li a:hover,
+.docsidebarnav_section ul li a:focus
+{
+  border-bottom: 1px solid #e7f2f7;
+  text-decoration: none;
+}
+.docsidebarnav_section ul li a.active {
+  cursor: default;
+}
+/* ========== End sidebarnav ========== */
+.docsidebarnav_section a.expand-menu,
+.docsidebarnav_section a.expand-menu:hover {
+    background-color: #0081aa;
+    color: #ffffff;
+}
+.docsidebarnav_section a.expand-menu.active {
+    background-color: #6db9d1;
+}
+  .docsidebarnav_section .caret {float: right;
+    margin-right: 10px;
+    margin-top: 5px;}
+  .docsidebarnav_section.affix ul,
+  .docsidebarnav_section ul {position: initial;margin:initial !important;}
+  .nav-sub .currentPage,
+  .nav-sub .currentPage:hover {
+    color: #386E7F;
+    background-color: #ffffff !important;
+    border-right: 4px solid #6db9d1;
+    font-weight: 500;
+  }
+  .menu-closed .nav-sub {height: 0 !important;}
+  .menu-open .nav-sub {height: auto;}
+  div>.nav-sub>li {
+    margin: 0;
+  }
+  .docsidebarnav_section ul li a,
+  .nav-sub li a {padding-left: 1em;}
+  .nav-sub li li a {padding-left: 1.5em;}
+  .nav-sub li li li a {padding-left: 2em;}
+  .nav-sub li li li li a {padding-left: 2.5em;}
+  .nav-sub li li li li li a {padding-left: 3em;}
+#DocumentationText pre {
+      margin: 20px 0 20px !important;
+      padding: 10px;
+}
+#DockerDocumentation li p {
+  margin-bottom: 0;
+}
+.docsidebarnav_section .menu-icon {
+  float: right;
+  color: #60a7be;
+}
+.menu-open .menu-icon:after {
+    content: "\e260";
+    margin: 0 5px;
+    font-family: 'Glyphicons Halflings';
+}
+.menu-closed .menu-icon:after {
+    content: "\e259";
+    margin: 0 5px;
+    font-family: 'Glyphicons Halflings';
+}
+.glyphicon-menu-down:before {
+  content: "\e259";
+}
+.glyphicon-menu-up:before {
+  content: "\e260";
+}
+
+/* TableOfContents */
+.tableofcontents_section {
+  padding: 0;
+}
+#TableOfContentsSection {
+  margin: 0;
+  padding: 0 !important;
+  background-color: #f5fdff;
+}
+
+#TableOfContentsSection li a,
+#TableOfContentsSection .heading {
+  font-size: 14px;
+  font-style: normal;
+  margin: 0;
+  padding: 10px 0 10px 15px;
+  display: block;
+  line-height: 15px;
+}
+#TableOfContentsSection .heading {
+  background-color: #6db9d1;
+  color: #ffffff;
+}
+#TableOfContentsSection ​#TableOfContents {
+  background-color: #F5FDFF;
+  margin: 0;
+  padding: 15px;
+}
+#TableOfContentsSection #TableOfContents ul {
+    list-style: none;
+    padding: 0;
+    left: 0;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+    margin-left: 0.30rem;
+    font-size: 14px;
+}
+​​nav#TableOfContents > ul {
+  margin-left: 0 !important;
+}
+.advisory {
+color: #F04124;
+    margin: -20px -20px 20px -20px;
+    padding: 20px;
+    border-left: 4px solid;
+}
