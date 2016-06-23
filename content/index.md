@@ -1,59 +1,146 @@
 +++
-title = "Welcome to the Docker Docs!"
+title = "Welcome to the Docker Documentation"
 description = "Home page for Docker's documentation"
 keywords = ["Docker, documentation, manual, guide, reference, api"]
 +++
 
-# Welcome Friends to the Docker Docs!
-<style type="text/css">
-.splashTable {border:0;background:none;padding:0;}
-td {vertical-align:top;background:none;padding-top:0px;padding-bottom: 0;border-style:none;border-width:0px;overflow:hidden;word-break:normal;}
-p {margin-bottom:.25rem;}
-.splash-031e {padding-left:10px;padding-right:10px;}
-.splashIcon {float:left;vertical-align:middle;margin:10px;}
-</style>
-<table id="splashTable">
-  <tr>
-    <td class="splash-031e" colspan=2><p><img class="splashIcon" src="/icons/toolbox-color.png"> **Docker Toolbox** delivers all the Docker tools such as Engine, Machine, and Compose to your <a href="/engine/installation/mac"/>Mac OS
-    X</a> or <a href="/engine/installation/windows"/>Windows</a> desktop. This is a great way to set up a local development environment.</p>
-    </td>
-  </tr>
-  <tr>
-    <td class="splash-031e">
-    <p>
-    **Docker Engine** provides the core functions you need to create Docker images and run Docker containers. Install Engine
-    on <a href="engine/installation/linux/ubuntulinux/"/>Ubuntu</a> or see the <a href="/engine/installation/"/>full list of supported platforms</a>.
-    </p> </td>
-    <td class="splash-031e"><p>
-    **Docker Machine** automates container provisioning on your network or in
-    the cloud. Install Machine on <a href="/machine/install-machine/">Windows, Mac OS X, or Linux</a>.</p>
-    </td>
-  </tr>
-  <tr>
-    <td class="splash-031e"><p>
-    **Docker Swarm** is used to host clustering and container scheduling. <a
-    href="/swarm/get-swarm/">Deploy your own "swarm"</a> today in just a
-    few short steps.
-    </p></td>
-    <td class="splash-031e"><p>
-    **Docker Compose** defines multi-container applications. You can install
-    Docker Compose <a href="/compose/install/">on Ubuntu, Mac OS X, and other
-    systems</a>.<p></td>
-  </tr>
-  <tr>
-    <td class="splash-031e"><p>
-    **Docker Hub** is our hosted registry service for managing your images.     Docker Hub and Docker Cloud use free Docker ID. <a href="https://hub.docker.com/">Sign up here</a>!</p></td>
-    <td><p>
-    **Docker Cloud** is our hosted service for building, testing, and deploying Docker images to your hosts. Check out our <a href="/docker-cloud/getting-started/">Getting Started tutorial</a> and deploy your first service!</p></td>
-  </tr>
-  <tr>
-    <td class="splash-031e"><p>
-    **Docker Trusted Registry** (DTR) supplies a private dedicated image registry. To learn about DTR for your team, see the <a href="/docker-trusted-registry/">overview</a>.
-    </p></td>
-    <td class="splash-031e"><p>
-    **Docker Universal Control Plane** (UCP) helps you deploy and manage Dockerized applications on-premises, behind your firewall. To learn about see the <a href="/ucp/overview/">overview</a>.
-    </p></td>
-  </tr>
-</table>
+# Welcome to the Docker Documentation
 
-![](https://docs.docker.com/images/docker-friends.png)
+<ul class="items widthcol3 media">
+
+<li>
+<div class="media_image">
+	<a href="/docker-for-mac/"/><img src="/assets/images/small-mac.png" alt="Docker for Mac"></a>
+</div>
+	<div class="media_content">
+	<div data-mh="mh_docker_projects">
+	<h3><a href="/engine/installation/mac/"/>Docker for Mac</a></h3>
+		<p>A native application using the OS X sandbox security model which delivers all Docker tools to your Mac.</p>
+	</div>
+	</div>
+</li>
+
+<li>
+<div class="media_image">
+	<a href="/docker-for-windows/"/><img src="/assets/images/small-windows.png" alt="Docker for Windows"></a>
+</div>
+	<div class="media_content">
+	<div data-mh="mh_docker_projects">
+	<h3><a href="/engine/installation/windows/"/>Docker for Windows</a></h3>
+		<p>A native Windows application which delivers all Docker tools to your Windows computer.</p>
+	</div>
+	</div>
+</li>
+
+<li>
+<div class="media_image">
+	<a href="/engine/installation/linux/"/><img src="/assets/images/small-linux.png" alt="Docker for Linux"></a>
+</div>
+	<div class="media_content">
+	<div data-mh="mh_docker_projects">
+	<h3><a href="/engine/installation/linux/"/>Docker for Linux</a></h3>
+		<p>Install Docker on a computer which already has a Linux distribution installed.</p>
+	</div>
+	</div>
+</li>
+
+</ul>
+
+<ul class="items widthcol2 media">
+<li>
+<div class="media_image">
+	<a href="/engine/installation/"><img src="/assets/images/Engine_icon.png" alt="Docker Engine"></a>
+</div>
+	<div class="media_content">
+	<div data-mh="mh_docker_projects">
+	<h3><a href="/engine/installation/">Docker Engine</a></h3>
+		<p>
+    Create Docker images and run Docker containers.</p>
+    <p>
+		As of v1.12.0-rc1, Engine includes <a href="/engine/swarm/">swarm mode</a> container orchestration features.</p>
+	</div>
+	</div>
+</li>
+
+<li>
+<div class="media_image">
+	<a href="/compose/overview/"><img src="/assets/images/Compose_icon.png" alt="Docker Compose"></a>
+</div>
+	<div class="media_content">
+	<div data-mh="mh_docker_projects">
+	<h3><a href="/compose/overview/">Docker Compose</a></h3>
+		<p>
+    Defines applications built using multiple containers.</p>
+	</div>
+	</div>
+</li>
+
+<li>
+<div class="media_image">
+	<a href="/docker-hub/overview/"><img src="/assets/images/Hub_icon.png" alt="Docker Hub"></a>
+</div>
+	<div class="media_content">
+	<div data-mh="mh_docker_projects">
+	<h3><a href="/docker-hub/overview/">Docker Hub</a></h3>
+		<p>
+    A hosted registry service for managing and building images.</p>
+	</div>
+	</div>
+</li>
+
+<li>
+<div class="media_image">
+	<a href="/docker-cloud/overview/"><img src="/assets/images/Cloud_icon.png" alt="Docker Cloud"></a>
+</div>
+	<div class="media_content">
+	<div data-mh="mh_docker_projects">
+	<h3><a href="/docker-cloud/overview/">Docker Cloud</a></h3>
+		<p>
+    A hosted service for building, testing, and deploying Docker images to your hosts.</p>
+	</div>
+	</div>
+</li>
+
+<li>
+<div class="media_image">
+	<a href="/docker-trusted-registry/"><img src="/assets/images/Trusted_Registry_icon.png" alt="Docker Trusted Registry"></a>
+</div>
+	<div class="media_content">
+	<div data-mh="mh_docker_projects">
+	<h3><a href="/docker-trusted-registry/">Docker Trusted Registry</a></h3>
+		<p>
+    (DTR) stores and signs your images.</p>
+	</div>
+	</div>
+</li>
+
+<li>
+<div class="media_image">
+	<a href="/ucp/overview/"><img src="/assets/images/UCP_icon.png" alt="Docker Universal Control Plane"></a>
+</div>
+	<div class="media_content">
+	<div data-mh="mh_docker_projects">
+	<h3><a href="/ucp/overview/">Docker Universal Control Plane</a></h3>
+		<p>
+    (UCP) Manage a cluster of on-premises Docker hosts as if they were a single machines.
+    </p>
+	</div>
+	</div>
+</li>
+
+<li>
+<div class="media_image">
+	<a href="/machine/install-machine/"><img src="/assets/images/Machine_icon.png" alt="Docker Machine"></a>
+</div>
+	<div class="media_content">
+	<div data-mh="mh_docker_projects">
+	<h3><a href="/machine/install-machine/">Docker Machine</a></h3>
+		<p>
+    Automate container provisioning on your network or in
+    the cloud. Available for Windows, Mac OS X, or Linux.</p>
+	</div>
+	</div>
+</li>
+
+
+</ul>

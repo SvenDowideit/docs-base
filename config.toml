@@ -2,10 +2,17 @@ baseurl = "http://localhost/"
 contentdir = "content"
 languageCode = "en-us"
 title = "Docker Docs"
-theme = "hugo-foundation"
+theme = "docker-2016"
 canonifyurls = false
 relativeURLs = true
 verbose = true
+googleAnalytics = "GTM-WLGFZV"
+
+enableRobotsTXT = true
+disableSitemap = true
+
+# the index.xml files
+disableRSS = true
 
 [blackfriday]
   fractions = false
@@ -41,44 +48,50 @@ verbose = true
 	identifier = "mn_versions"
 	weight = 10
 [[menu.main]]
+  	name = "Version 1.11"
+  	identifier = "smn_eleven"
+  	parent = "mn_versions"
+  	url = "http://docs.docker.com/v1.11/"
+  	weight = -11
+[[menu.main]]
   	name = "Version 1.10"
   	identifier = "smn_ten"
   	parent = "mn_versions"
   	url = "http://docs.docker.com/v1.10/"
-  	weight = -1
+  	weight = -10
 [[menu.main]]
 	name = "Version 1.9"
 	identifier = "smn_nineteen"
 	parent = "mn_versions"
 	url = "http://docs.docker.com/v1.9/"
-	weight = 1
+	weight = -9
 [[menu.main]]
 	name = "Version 1.8"
 	identifier = "smn_eightteen"
 	parent = "mn_versions"
 	url = "http://docs.docker.com/v1.8/"
-	weight = 2
+	weight = -8
 [[menu.main]]
 	name = "Version 1.7"
 	identifier = "smn_seventeen"
 	parent = "mn_versions"
 	url = "http://docs.docker.com/v1.7/"
-	weight = 3
+	weight = -7
 [[menu.main]]
 	name = "Version 1.6"
 	identifier = "smn_sixteen"
 	parent = "mn_versions"
 	url = "http://docs.docker.com/v1.6/"
-	weight = 4
+	weight = -6
 [[menu.main]]
 	name = "Version 1.5"
 	identifier = "smn_fifteen"
 	parent = "mn_versions"
 	url = "http://docs.docker.com/v1.5/"
-	weight = 5
+	weight = -5
 [[menu.main]]
 	name = "Version 1.4"
 	identifier = "smn_fourteen"
 	parent = "mn_versions"
 	url = "http://docs.docker.com/v1.4/"
-	weight = 6
+	weight = -4
