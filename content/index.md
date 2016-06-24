@@ -9,36 +9,36 @@ keywords = ["Docker, documentation, manual, guide, reference, api"]
 <ul class="items widthcol3 media">
 
 <li>
-<div class="media_image">
-	<a href="/docker-for-mac/"/><img src="/assets/images/small-mac.png" alt="Docker for Mac"></a>
-</div>
+	<div class="media_image">
+		<a href="/docker-for-mac/"><img src="/assets/images/small-mac.png" alt="Docker for Mac"></a>
+	</div>
 	<div class="media_content">
 	<div data-mh="mh_docker_projects">
-	<h3><a href="/engine/installation/mac/"/>Docker for Mac</a></h3>
+	<h3><a href="/engine/installation/mac/">Docker for Mac</a></h3>
 		<p>A native application using the OS X sandbox security model which delivers all Docker tools to your Mac.</p>
 	</div>
 	</div>
 </li>
 
 <li>
-<div class="media_image">
-	<a href="/docker-for-windows/"/><img src="/assets/images/small-windows.png" alt="Docker for Windows"></a>
-</div>
+	<div class="media_image">
+		<a href="/docker-for-windows/"><img src="/assets/images/small-windows.png" alt="Docker for Windows"></a>
+	</div>
 	<div class="media_content">
 	<div data-mh="mh_docker_projects">
-	<h3><a href="/engine/installation/windows/"/>Docker for Windows</a></h3>
+	<h3><a href="/engine/installation/windows/">Docker for Windows</a></h3>
 		<p>A native Windows application which delivers all Docker tools to your Windows computer.</p>
 	</div>
 	</div>
 </li>
 
 <li>
-<div class="media_image">
-	<a href="/engine/installation/linux/"/><img src="/assets/images/small-linux.png" alt="Docker for Linux"></a>
-</div>
+	<div class="media_image">
+		<a href="/engine/installation/linux/"><img src="/assets/images/small-linux.png" alt="Docker for Linux"></a>
+	</div>
 	<div class="media_content">
 	<div data-mh="mh_docker_projects">
-	<h3><a href="/engine/installation/linux/"/>Docker for Linux</a></h3>
+	<h3><a href="/engine/installation/linux/">Docker for Linux</a></h3>
 		<p>Install Docker on a computer which already has a Linux distribution installed.</p>
 	</div>
 	</div>
