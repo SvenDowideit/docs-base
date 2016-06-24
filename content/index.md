@@ -14,7 +14,7 @@ keywords = ["Docker, documentation, manual, guide, reference, api"]
 	</div>
 	<div class="media_content">
 	<div data-mh="mh_docker_projects">
-	<h3><a href="/engine/installation/mac/">Docker for Mac</a></h3>
+	<h3><a href="/docker-for-mac/">Docker for Mac</a></h3>
 		<p>A native application using the OS X sandbox security model which delivers all Docker tools to your Mac.</p>
 	</div>
 	</div>
@@ -26,7 +26,7 @@ keywords = ["Docker, documentation, manual, guide, reference, api"]
 	</div>
 	<div class="media_content">
 	<div data-mh="mh_docker_projects">
-	<h3><a href="/engine/installation/windows/">Docker for Windows</a></h3>
+	<h3><a href="/docker-for-windows/">Docker for Windows</a></h3>
 		<p>A native Windows application which delivers all Docker tools to your Windows computer.</p>
 	</div>
 	</div>
