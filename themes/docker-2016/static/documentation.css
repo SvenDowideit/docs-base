@@ -69,6 +69,18 @@
 #DocumentationText table {
     margin: 1.25rem 0;
 }
+
+a.anchorLink {
+    margin-left: 5px;
+    visibility: hidden;
+}
+h1:hover > a.anchorLink,
+h2:hover > a.anchorLink,
+h3:hover > a.anchorLink
+{
+    visibility: visible;
+}
+
 /* ========== Start sidebarnav ========== */
 div.docsidebarnav_section.affix {
     position: fixed;
