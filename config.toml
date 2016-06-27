@@ -9,7 +9,7 @@ verbose = true
 googleAnalytics = "GTM-WLGFZV"
 
 enableRobotsTXT = true
-disableSitemap = true
+disableSitemap = false
 
 # the index.xml files
 disableRSS = true
