@@ -13,7 +13,7 @@ rc = "The Swarm mode feature included in Docker Engine 1.12 is a release candida
 docker4mac-beta = "Docker for Mac is currently in public beta. Some functionality may change before the product becomes generally available."
 docker4win-beta = "Docker for Windows is currently in public beta. Some functionality may change before the product becomes generally available."
 
-swarm = "These documents refer to Docker Swarm cluster mangement features. For information on Docker Engine 1.12 swarm mode, see [Swarm mode overview](/engine/swarm)."
+swarm = "See [Swarm mode overview](/engine/swarm/) for the orchestration features introduced in Docker Engine 1.12. Only refer to the Docker Swarm documents below for information on the standalone Swarm product."
 
 engine = "This site contains documentation for the v1.12 release candidate version of Docker Engine. For the Docker Engine v1.11 docs, see [https://docs.docker.com/v1.11/](/v1.11/). Docker for Mac and Docker for Windows are currently in Beta."
 
