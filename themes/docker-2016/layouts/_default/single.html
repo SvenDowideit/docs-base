@@ -16,6 +16,62 @@
             </div>
             <div class="hidden-xs hidden-sm col-md-2 tableofcontents_section">
                 <section class="section" id="TableOfContentsSection">
+<style>
+
+.title_section .search-form{
+	max-width: 420px;
+    width: 100%;
+    margin: auto;
+    display: block;
+    position: relative;
+    padding: 0;
+    margin-bottom: 0px;
+}
+.title_section .search-form .search-field {
+    NOwidth: 280px;
+    NOmargin: auto;
+    height: 54px;
+    margin: 0px;
+    background-color: #fff;
+    border: none;
+    /* text-indent: 80px; */
+    transition: opacity 400ms;
+    color: #9098a2;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 0;
+}
+.title_section .search-form .search-submit {
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    top: 0px;
+    /* left: .8rem; */
+    right: 0px;
+    border: 0;
+    text-indent: -9999px;
+    background-color: transparent;
+    background-image: url("https://blog.docker.com/wp-content/themes/whale_roots/assets/img/search-icon.png");
+    /* background-size: 38px 38px; */
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* border-right: 1px solid #e1e1e1; */
+    outline: none;
+    background-color: #fff;
+    border-radius: 0;
+}
+</style>
+		    <span class="title_section">
+<div style="width:0px;overflow:hidden;height:0px;"> <!-- if you use display:none here, it doesn't work-->
+    <gcse:search></gcse:search>
+</div>
+<form id="searchbox_003491890938373187377:vymj4ehxxwk" action="" class="search-form form-inline ng-pristine ng-valid">
+    <input value="003491890938373187377:vymj4ehxxwk" name="cx" type="hidden"/>
+    <input value="FORID:11" name="cof" type="hidden"/>
+    <input class="search-field form-control" id="st-search-input" value="" name="q" placeholder="Search the Documentation" type="search">
+    <button type="submit" class="search-submit btn btn-default">Search</button>
+</form>
+		    </span>
                     <span class="heading">On this page</span>
                     {{ .TableOfContents }}
                 </section>
@@ -32,5 +88,15 @@
 <i class="bar"></i>
 <i class="moby"></i>
 </div>
-
+<script>
+  (function() {
+    var cx = '003491890938373187377:vymj4ehxxwk';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
 {{ partial "footer.html" . }}
