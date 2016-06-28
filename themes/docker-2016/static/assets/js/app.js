@@ -277,6 +277,7 @@ $("#RepoSlider.ui-slider-pips .ui-slider-label").on( "click", function(e) {
 	CmSupport.prop('checked', false).prop('disabled', false);
 	CrSupport.prop('checked', false);
 });
+/* SVEN SAYS NO
 $(window).on('load', RepoPlans(RepoSlider.slider('value')));
 function RepoPlans(RepoSliderValue) {
 	RepoSliderVal = RepoSliderValue;
@@ -531,6 +532,7 @@ $(".government_partners_tabs ul a").click(function(event) {
         $(this).parent().addClass("current").siblings().removeClass("current");
         $(tab).addClass("current").fadeIn().siblings('.government_partners').removeClass("current").hide();
 	});
+*/
  /* ===================== 1 Mar =====================*/
 $(".find_a_partner_section ul.partners_list li.no_info a.cbp-singlePageInline.cbp-nocontent").click(function() {
 		var asdasd=	$(this);

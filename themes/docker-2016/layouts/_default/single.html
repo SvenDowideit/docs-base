@@ -8,18 +8,26 @@
             <div class="col-xs-12 col-sm-3 col-md-2 docsidebarnav_section">
                 {{ partial "navbar.html" . }}
             </div>
-            <div class="col-xs-12 col-sm-9 col-md-8">
+            <div class="col-xs-12 col-sm-9 col-md-{{ if .Params.notoc }}10{{else}}8{{end}}">
                 <section class="section" id="DocumentationText">
 {{ partial "advisory.html" . }}
                     {{ .Content }}
                 </section>
             </div>
+{{ if not .Params.notoc }}
             <div class="hidden-xs hidden-sm col-md-2 tableofcontents_section">
                 <section class="section" id="TableOfContentsSection">
+		    <span class="title_section">
+  <form class="search-form form-inline ng-pristine ng-valid" action="/search/">
+    <input class="search-field form-control" id="st-search-input" value="" name="q" placeholder="Search the Documentation" type="search">
+    <button type="submit" class="search-submit btn btn-default">Search</button>
+  </form>
+		    </span>
                     <span class="heading">On this page</span>
                     {{ .TableOfContents }}
                 </section>
             </div>
+{{ end }}
         </div>
     </div>
 </div>
@@ -32,5 +40,4 @@
 <i class="bar"></i>
 <i class="moby"></i>
 </div>
-
 {{ partial "footer.html" . }}
