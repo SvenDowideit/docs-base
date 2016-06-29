@@ -159,13 +159,16 @@
     margin-left: -15px;
     margin-right: -15px;
 }
+/* SVEN SAYS NO
 body h1,body h2,body h3,body h4,body h5,body h6, a.button, a.btn{
 	font-family: 'Geomanist Book', sans-serif;
 }
+*/
 body, body p{
 	font-family: 'Geomanist', sans-serif;
 	font-weight:normal;
 }
+/* SVEN SAYS NO
 span, label, ul, li{
 	font-family: 'Geomanist', sans-serif;
 	font-weight:normal;
@@ -183,6 +186,7 @@ body .dockercon16, body .dockercon16 p{
 	font-family: 'Geomanist', sans-serif;
 	font-weight:normal;
 }
+*/
 a.button {
     margin-left: 10px;
 }

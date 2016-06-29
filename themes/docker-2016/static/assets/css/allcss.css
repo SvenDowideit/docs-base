@@ -9088,6 +9088,7 @@ th.hide-for-touch {
         display: none !important
     }
 }
+/* SVEN SAYS NO
 h1,
 h2,
 h3,
@@ -9099,6 +9100,7 @@ li {
     letter-spacing: 0.02rem;
     font-weight: 200
 }
+*/
 li {
     line-height: 2
 }
