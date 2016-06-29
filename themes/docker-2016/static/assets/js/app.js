@@ -12,11 +12,30 @@ wow = new WOW(
     live:         true        // default
   }
 )
+$(document).ready(loadRetina);
+$(window).resize(loadRetina);
+function loadRetina() { 
+    if(window.devicePixelRatio > 1) {
+        $('html,body').addClass('retina-display');
+    } else {
+       $('html,body').removeClass('retina-display');
+    }
+}
+function isRetina(){
+	 return ((window.matchMedia && (window.matchMedia('only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 75.6dpcm)').matches || window.matchMedia('only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)').matches)) || (window.devicePixelRatio && window.devicePixelRatio >= 2)) && /(iPad|iPhone|iPod)/g.test(navigator.userAgent);
+}
+if(isRetina()){
+	$('html').addClass('is_retina');
+}
+else {
+	$('html').addClass('is_not_retina');
+}
+
 wow.init();
 $('section.section h2').each(function() {
 	if ($(this).siblings('p').size() > 0){ } else { $(this).addClass('marginBottom40'); }
 });
-
+$("div.dockercon16").children().last().append("<i class='footer_mobypadding'> </i>");
 if (!$('.dockercon16 section').hasClass('title_section')){
 	$('.main-header').addClass('backgroundimage');
 }
@@ -39,8 +58,10 @@ if (!$('.dockercon16 section').hasClass('title_section')){
 jQuery.each( jQuery.browser, function( i, val ) {
   $('html').addClass(i, val);
 });
-/* SVEN SAYS NO
-$(document).on('click', 'a[href*="#"]:not(.noanchor , .find_a_partner_section .cbp-caption-defaultWrap, .strategic_alliances_tabs li a, .docker_captian_section .cbp-caption-defaultWrap, .government_partners_tabs li a)', function() {
+$('#job-content a.apply_button').on('click', function() {
+      $.smoothScroll({scrollTarget: '#application'});
+  });
+$(document).on('click', 'a[href*="#"]:not(.noanchor , .find_a_partner_section .cbp-caption-defaultWrap, .strategic_alliances_tabs li a, .docker_captian_section .cbp-caption-defaultWrap, .government_partners_tabs li a, #job-content a)', function() {
       if ( this.hash && this.pathname === location.pathname ) {
         $.bbq.pushState( '#/' + this.hash.slice(1) );
         return false;
@@ -64,7 +85,6 @@ $(document).on('click', 'a[href*="#"]:not(.noanchor , .find_a_partner_section .c
       });
       $(window).trigger('hashchange');
     });
-END SVEN */
 (function($) {
   $('.bsr-item-detail').hide();
   $('.bsr-item').on('click', function(e) {
@@ -128,8 +148,7 @@ $(window).load(function() {
 	$(window).trigger("resize");
 });
 $(window).resize(function() {
-	$('body>.off-canvas-wrap').css('min-height', $(window).height() - ($('.main-footer').outerHeight(true)));
-	$(".plan_name2 , .plan_name3").height($(".plan_name1").outerHeight(true));
+	$('body>.off-canvas-wrap').css('min-height', $(window).height() - ($('.main-footer').outerHeight(true) + $('section.title_section').outerHeight(true) + 200));
 	var maxHeight_title = -1;
 	maxHeight_title = maxHeight_title > $(".ibm_solutions .title").height() ? maxHeight_title : $(".ibm_solutions .title").height();
 	$(".ibm_solutions .title").height(maxHeight_title);
@@ -196,15 +215,6 @@ $(window).load(function() {
      $(this).height(maxHeight_use_cases_overview_p);
    });
 });
-$(document).ready(loadRetina);
-$(window).resize(loadRetina);
-function loadRetina() { 
-    if(window.devicePixelRatio > 1) {
-        $('html,body').addClass('retina-display');
-    } else {
-       $('html,body').removeClass('retina-display');
-    }
-}
 $(".plans_tabs ul a").click(function(event) {
         event.preventDefault();
 		var tab = $(this).attr("href");
@@ -232,12 +242,6 @@ if ($(window).width() > 1199) {
 		$(".faqs_section .faqs-group").height($(".faqs-group .col-xs-12").outerHeight(true) + $(".faqs-group .col-xs-12").outerHeight(true) + 70);
 	}
 	
-	$('.serverplan_boxs').each(function() {
-		$(this).children('.col-sm-4').matchHeight();
-	});
-	$('.plans_section .cloud_plan_boxs').each(function() {
-		$(this).children('.col-xs-12').matchHeight();
-	});
 
 var sliderRepoMap = [1, 5, 10, 20, 50, 100, 250]
 ,	RepoSlider = $( "#RepoSlider" )
@@ -269,7 +273,6 @@ var sliderRepoMap = [1, 5, 10, 20, 50, 100, 250]
 		rest: "label",
 		labels: sliderRepoMap
 	});
-/* SVEN SAYS NO
 $("#RepoSlider.ui-slider-pips .ui-slider-label").on( "click", function(e) {
 	CmSupport.prop('checked', false).prop('disabled', false);
 	CrSupport.prop('checked', false);
@@ -399,7 +402,7 @@ $(".nolinkhere").on('click', function(e) {
 $('.ibm_solutions').each(function() {
 		$(this).children('.ibm_solution').matchHeight();
 		});
- END SVEN */		
+		
 $(window).load(function() {
 	var isoOptions = {
 		itemSelector : '.events_region',
@@ -480,7 +483,7 @@ $('a[href="#toptop"]').click(function () {
 			}, 800);
 			return false;
 		});
-/* SVEN SAYS NO
+
 $(window).load(function() {
   $('.resources_video_slider , .demo_product_section, .rest_apis_product_section, .customer_spotlight_section ').flexslider({
 	selector: ".slides > .slide",
@@ -501,7 +504,6 @@ $('.product_features_product_section ul.items ').each(function() {
 $('.pricing_product_section .plan_boxes').each(function() {
 		$(this).children('.plan_box').matchHeight();
 		});
-END SVEN */
 $('.GenericDev .items').each(function() {
 		$(this).children('li').matchHeight();
 		});
@@ -516,7 +518,7 @@ $('.quotes_2_slider').flexslider({
 	controlNav: false
   });
 $('.off-canvas-list li.has-submenu').prepend('<span class="asd"></span>'); 
-/* SVEN SAYS NO
+
 $(".strategic_alliances_tabs ul a").click(function(event) {
         event.preventDefault();
 		var tab = $(this).attr("href");
@@ -529,7 +531,6 @@ $(".government_partners_tabs ul a").click(function(event) {
         $(this).parent().addClass("current").siblings().removeClass("current");
         $(tab).addClass("current").fadeIn().siblings('.government_partners').removeClass("current").hide();
 	});
-END SVEN */
  /* ===================== 1 Mar =====================*/
 $(".find_a_partner_section ul.partners_list li.no_info a.cbp-singlePageInline.cbp-nocontent").click(function() {
 		var asdasd=	$(this);

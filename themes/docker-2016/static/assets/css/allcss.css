@@ -11537,12 +11537,11 @@ header .nav-global a,
     content: ""
 }
 .ie9 img[src*=".svg"] {
-    width: 100%
 }
 @media screen and (-ms-high-contrast: active),
 (-ms-high-contrast: none) {
     img[src*=".svg"] {
-        width: 100%
+    
     }
 }
 [ng-cloak] {
@@ -11552,8 +11551,6 @@ header .nav-global a,
 @media screen and (-ms-high-contrast: active),
 all and (-ms-high-contrast: none) {
     img[src*='.svg'] {
-        width: 100%;
-        height: 100%;
     }
 }
 section.section {

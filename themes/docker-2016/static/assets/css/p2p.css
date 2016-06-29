@@ -1,8 +1,8 @@
-/* ========== P360 ========== */
+/* ========== Start Extra Sytling ========== */
 /** CSS Overrides - this is temporary and should be formally added to the master scss files **/
 /** Global links **/
-a, a:active {outline: none;}
-a:hover {text-decoration: none;}
+a, a:active, a:hover, a:focus {outline: none;}
+a:hover, a:focus  {text-decoration: none;}
 /** header **/
 header .nav-global li a,
 .main-header div > .nav-main a {
@@ -13,145 +13,8 @@ header .nav-global li a:hover,
 .main-header div > .nav-main a:hover {
     color: #fff;
 }
-
-/************************ hide these elements ****************************/
+/********** hide these elements *********/
 .cta-illustration {display: none;}
-
-/************************* for orange Button only ************************************/
-.dockercon16 section.section a.button.orange-btn {
-    background-color: transparent;
-    color: #fff;
-    font-family: 'Geomanist Book', sans-serif;
-    font-size: 14px;
-    border-radius: 0;
-    padding: 14px 50px 11px 50px;
-    border: 1px solid #fff;
-}
-.dockercon16 section.whitebackground.section a.button.orange-btn {
-	background-color: transparent;
-    color: #0081AA;
-    font-family: 'Geomanist Book', sans-serif;
-    font-size: 14px;
-    border: 0;
-    border-radius: 0;
-    padding: 10px 40px;
-    border: 1px solid #0081AA;
-}
-
-
-.dockercon16 section.title_section a.button.orange-btn:hover{ 
-background: RGBA(255, 255, 255, 0.25);
-border: 1px solid #fff;
-color: #fff;
-padding: 15px 50px;
-}
-
-a.button.orange-btn:hover  {
-background: RGBA(255, 255, 255, 0.25);
-border: 1px solid #fff;
-color: #fff;
-}
-
-.dockercon16 section.section a.button.darkblue-btn, .dockercon16 section.title_section a.button.darkblue-btn {
-    background-color: #2294ca;
-    padding: 15px 70px;
-}
-.dockercon16 section.section a.button.darkblue-btn:hover, .dockercon16 section.title_section a.button.darkblue-btn:hover {
-    background: #235363;
-}
-/** outline buttons on blue **/
-.dockercon16 section.customer_and_news_section.section.GenericDev .items.media li a.button {
-    border: 1px solid #72B8D6;
-    padding: 5px 60px;
-}
-.dockercon16 section.customer_and_news_section.section.GenericDev .items.media li a.button:hover {
-    background: rgba(255, 255, 255, 0.11);
-}
-
-/** white buttons **/
-.dockercon16 section.title_section a.button.white-btn {
-padding: 14px 70px 11px 70px;
-}
-.dockercon16 section.title_section a.button.white-btn:hover {
-  background: rgba(255, 255, 255, 0.83);
-}
-.dockercon16 section.section a.button.white-btn {
-  background: RGBA(255, 255, 255, 0.25);
-  border: 1px solid #fff;
-  color: #fff;
-  padding: 15px 70px 11px;
-}
-
-.dockercon16 section.section a.button.white-btn:hover {
-    background: transparent;
-}
-.dockercon16 section.title_section a.button.white-border-btn {
-    padding: 14px 70px 11px 70px;
-}
-.dockercon16 section.title_section a.button.white-border-btn:hover {
-  background: RGBA(255, 255, 255, 0.25);
-  border: 1px solid #fff;
-  color: #fff;
-}
-
-
-/* ========== End P360 ========== */
-
-
-
-.node-type-projects .button.darkblue-btn {
-  background-color: transparent;
-  color: #E6F9FF;
-  padding: 10px 40px;
-  border: 1px solid #fff;
-}
-
-.dockercon16 section.title_section.darkblue p {
-    margin-bottom: 30px;
-}
-.dockercon16 section.section a.button.orange-btn {
-  padding: 15px 50px 14px 50px;
-}
-.dockercon16 section.section a.button.orange-btn:hover {
-  background: RGBA(255, 255, 255, 0.25);
-}
-.dockercon16 section.section a.button.darkblue-btn, .dockercon16 section.title_section a.button.darkblue-btn {
-  background-color: #2294ca;
-  padding: 15px 60px;
-}
-.dockercon16 section.title_section a.button.white-border-btn {
-    padding: 14px 70px 10px 70px;
-}
-.dockercon16 section.GenericDev .items.media.widthcol4 li a.button {
-    padding: 5px 20px;
-    min-width: 170px;/** increase min-width for these smaller buttons **/
-}
-
-/************************* for outline buttons only ************************************/
-.dockercon16 section.title_section a.button.white-border-btn {
-    padding: 14px 70px 8px 70px;
-}
-
-/************************* for toolbox only ************************************/
-.path-docker-toolbox .dockercon16 section.title_section a.button.white-btn {
-    padding: 14px 70px 11px 70px;
-    background: transparent;
-    color: #fff;
-    border: 1px solid #fff;
-}
-
-.path-docker-toolbox .dockercon16 section.title_section a.button.white-btn:hover {
-    background: RGBA(255, 255, 255, 0.25);
-    border: 1px solid #fff;
-    color: #fff;
-}
-/************************* for toolbox only ************************************/
-.dockercon16 section.projects_docker_projects_section.section a.button.darkblue-border-btn {
-    margin-top: 30px;
-}
-
-
-/* ========== Start Extra Sytling ========== */
 .main-header .logo_safari {
 display:none;
 visibility:hidden;
@@ -161,6 +24,7 @@ visibility:hidden;
 	width: 136px;
 	
 }
+/* SVEN SAYS NO
 html.safari .main-header .logo{
 display:none;
 visibility:hidden;	
@@ -172,6 +36,7 @@ html.safari .main-header .logo_safari{
 	display: block;
     visibility: visible;
 }
+*/
 section.community_section{
 	padding:50px 0;
 }
@@ -197,18 +62,36 @@ section.community_section .columns center img{
 	width: 100%;
 	max-width:700px;
 }
-.dockercon16 section.install_the_platform_section.section a.button{
+.dockercon16 section.install_the_platform_section.section a.button.darkblue-btn{
 	margin-top:30px;
-	/* color: #FFFFFF;
-    width: 270px;
-	background-color: rgba(0, 78, 103, 0.61);
-	border: none;
-    padding: 17px 40px 14px 40px; */
 }
-.dockercon16 section.install_the_platform_section.section a.button.orange-btn:hover{
-	/* background: #235363;
-    text-decoration: none;
-    border: none;
-	padding: 17px 40px 14px 40px; */
+.path-find-partner .sidebarnav_section ul{
+	margin: 0px 0 1.5rem 0;
 }
+.path-find-partner div.sidebarnav_section.affix{
+	top: 52px;
+}
+.node-type-projects .button.darkblue-btn {
+  background-color: transparent;
+  color: #E6F9FF;
+  padding: 10px 40px;
+  border: 1px solid #fff;
+}
+/********** for toolbox only *********/
+.path-docker-toolbox .dockercon16 section.title_section a.button.white-btn {
+    padding: 14px 70px 11px 70px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.path-docker-toolbox .dockercon16 section.title_section a.button.white-btn:hover {
+    background: RGBA(255, 255, 255, 0.25);
+    border: 1px solid #fff;
+    color: #fff;
+}
+/********** for project only *********/
+.dockercon16 section.projects_docker_projects_section.section a.button.darkblue-border-btn {
+    margin-top: 30px;
+} 
 /* ========== End Extra Sytling ========== */
