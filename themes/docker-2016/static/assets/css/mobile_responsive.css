@@ -1,0 +1,48 @@
+/* ========== Start Responsive Sytling ========== */
+@media screen and (max-width:1199px) {
+.dockercon16 section.title_section,header.main-header::after {
+    background-position: left -80px top;
+}
+}
+@media screen and (max-width:991px) {
+.main-header div>.nav-main>li {
+    margin-left: 16px;
+}
+}
+@media screen and (max-width:940px) {
+header .top-right-bg {
+    display: none;
+}
+}
+@media screen and (max-width:767px) {
+div.heronav_section ul {
+	display: inline-block;
+	clear: none;
+	float: none;
+	overflow: hidden;
+}
+div.heronav_section ul li {
+	float: none;
+	display: inline-block;
+}
+.dockercon16 section.section a.button, .dockercon16 section.title_section a.button {
+    margin-right: 10px;
+    margin-left: 10px;
+}.dockercon16 section.section a.button+a.button, .dockercon16 section.title_section a.button+a.button {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+}
+@media screen and (max-width:680px) {
+
+}
+@media screen and (max-width:600px) {
+
+}
+@media screen and (max-width:500px) {
+
+}
+@media screen and (max-width:480px) {
+
+}
+/* ========== End Responsive Sytling ========== */

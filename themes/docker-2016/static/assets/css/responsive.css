@@ -1,155 +1,107 @@
-/* ========== Start Pricing ========== */
-section.pricing_overview_section.GenericDev .container{
-overflow:hidden;
+div.dockercon_registation_section { position:static; }
+div.dockercon_registation_section img.dcon_logo {
+    padding-left: 40px;
 }
-section.pricing_overview_section.GenericDev .items.media{
-	margin-left: -20px;
-    margin-right: -20px;
-}
-section.pricing_overview_section.GenericDev .items.media li{
-	padding-left: 20px;
-    padding-right: 20px;
-}
-section.pricing_overview_section .items.media li .media_image{
-	width: 60px;
-	left: 20px!important;
-}
-section.pricing_overview_section .items.media li .media_content{
-	padding-left: 70px;
-}
-section.pricing_tables .plan_boxs {
-    margin: 70px 0;
-    display: block;
-	overflow:hidden;
-}
-section.pricing_tables .plan_box {
-    background-color: #fff;
-    text-align: center;
-    padding: 30px;
-	border: 1px solid #CCC;
-    border-radius: 4px;
+div.dockercon_registation_section .cross-btn {
+    color: #fff;
+    font-size: 14px;
     float: left;
-    width: 33.33%;
-	list-style: none;
-	z-index: 1;
-}
-section.pricing_tables .plan_box.standard {
-
-}
-section.pricing_tables .plan_box .plan_name {
-    padding: 0 10px;
-    line-height: normal;
-	margin-bottom:20px;
-}
-section.pricing_tables .plan_box .feature-list {
-    padding: 0 10px;
-    line-height: normal;
-    margin-bottom: 20px;
-}
-section.pricing_tables .plan_box h3 {
-    font-size: 22px;
-    color: #407997;
-    margin-bottom: 20px;
-}
-section.pricing_tables .plan_box h3 strong{
-display:block;
-}
-section.pricing_tables .plan_box h3 small {
-	display: block;
-    font-size: 14px;
-    color: #407997;
-    margin-top: 18px;
-    margin-bottom: 24px;
-}
-section.pricing_tables .plan_box p {
-    font-size: 14px;
-    color: #515656;
-    line-height: 20px;
-    margin-bottom: 0;
-    padding-bottom: 30px;
-}
-section.pricing_tables .plan_box .starting_prices {
-    font-size: 16px;
-    color: #407997;
+    height: 43px;
+    width: 260px;
+    overflow: hidden;
+    position: relative;
     font-family: 'Geomanist Book', sans-serif;
+}
+div.dockercon_registation_section .cross-btn:before {
+}
+div.dockercon_registation_section .cross-btn:after {
+    content: ' ';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 2;
     display: block;
+    border-bottom: 10px solid #00445b;
+    border-left: 260px solid transparent;
+    border-right: 0px solid transparent;
 }
-section.pricing_tables .plan_box .plan_buttons .button.full-width{
-    width: 98%;
-    margin: 0;
-	max-width: 190px;
+div.dockercon_registation_section .cross-btn > a:hover,
+div.dockercon_registation_section .cross-btn > a:focus,
+div.dockercon_registation_section .cross-btn > a:active,
+div.dockercon_registation_section .cross-btn > a:visited {
+	outline: none;
+	border: none;
+	text-decoration: none;
 }
-section.pricing_tables .plan_box ul {
-    padding: 20px 10px 10px 10px;
-	list-style: none;
-    margin: 0;
-    margin-top: 20px;
+div.dockercon_registation_section .cross-btn > a {
+    color: inherit;
+    display: inline-block;
+    background-color: #6cd7d0;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    margin-left: 20px;
+    position: relative;
+	text-decoration:none;
 }
-section.pricing_tables .plan_box ul.feature li {
-    font-size: 14px;
-    margin-bottom: 20px;
-    color: #515656;
-    font-weight: 400;
-	position:relative;
-}
-section.pricing_tables .plan_box ul.feature li strong {
-	color: #5A7E93;
-	font-weight: 500;
-}
-section.pricing_tables .plan_box ul.feature li span {
+div.dockercon_registation_section .cross-btn > a:before {
+    content: ' ';
     display: block;
-    font-size: 15px;
-    color: #5A7E93;
+    position: absolute;
+    top: -2px;
+    left: -10px;
+    width: 20px;
+    height: 50px;
+    background-color: #6cd7d0;
+    transform: rotate(380deg);
+    transform-origin: center left;
+    z-index: 0;
 }
-section.pricing_tables .plan_box ul.feature li.note {
-    margin-top: 50px;
-    margin-bottom: 0px;
-}
-section.pricing_tables .plan_box ul.feature li.note span {
+div.dockercon_registation_section .cross-btn > a:after {
+    content: ' ';
     display: block;
-    font-size: 12px;
-    line-height: 16px;
-    color: #5A7E93;
+    position: absolute;
+    top: -2px;
+    right: -110px;
+    width: 120px;
+    height: 40px;
+    background-color: #6cd7d0;
+    transform: rotate(380deg);
+    transform-origin: center left;
+    z-index: 0;
+}
+div.dockercon_registation_section .cross-btn > a > span {
+	position: relative;
+    z-index: 1;
+}
+div.dockercon_registation_section .cross-btn > a > span > i {
+    background-image: url(/sites/all/themes/docker/assets/images/dcon_video_play.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-left: 10px;
 }
 
-section.pricing_tables .plan_box ul.feature li i.tickFree{
-	background-image: url(../images/plan_box_tick.png);
-	height: 12px;
-    width: 10px;
-    display: inline-block;
-    margin-right: 5px;
-}
-section.pricing_tables.pricing_cloud_section .plan_box ul.feature li {
-    margin-bottom: 0;
-}
-/* ========== End Pricing ========== */
 
 .main-header .logo, .main-header .logo_safari {
 	margin-top: 16px;
-}
-.front .dockercon16 section.section a.button.darkblue-btn {
-	margin-left: 10px;
-	margin-right: 10px;
 }
 .main_footer .footer-nav .primary-footer-sub-nav {
     line-height: 1.6;
     margin-bottom: 1.25rem;
 }
-/*
-footer.main_footer .social-icons {
-    display: block;
-    text-align: justify;
-    text-align-last: justify;
-}
-footer.main_footer .social-icons>li {
-    flex-grow: initial;
-    display: inline-block;
-}
-footer.main_footer .social-icons>li + li {
-	
-}
-*/
+
+
 @media only screen and (max-width: 58.75em) {
+	.pricing-tables > li {
+		width: 50%;
+	}
+	.pricing-tables > li.standard {
+		border-right: 1px solid #CCC;
+	}
 	.main-header .logo, .main-header .logo_safari {
 		margin-left: 50px;
 	}
@@ -177,110 +129,8 @@ footer.main_footer .social-icons>li + li {
 		margin-right: auto;
 	}
 }
-
-
-
-
-.pricing-tables{
-	float:left;
-	padding: 0;
-	position: relative;
-	width: 100%;
-	margin-top: 50px;
-}
-.pricing-tables > li{
-    padding: 30px;
-    border: 1px solid #CCC;
-    border-radius: 4px;
-    float: left;
-	background-color: #fff;
-    list-style: none;
-    text-align: center;
-    width: 33.33%;
-	height: auto;
-	margin-bottom: 60px;
-	position: relative;
-    z-index: 1;
-}
-.pricing-tables > li .plan-name {
-    margin-bottom: 20px;
-}
-.pricing-tables > li .plan-name h3 {
-	font-size: 22px;
-    color: #407997;
-	text-transform: uppercase;
-}
-.pricing-tables > li .plan-name h3 > strong {
-	display: block;
-}
-.pricing-tables > li .plan-description {
-	font-size: 14px;
-    color: #515656;
-    line-height: 20px;
-	margin-bottom: 10px;
-}
-.pricing-tables > li .plan-description p {
-	font-size: inherit;
-    color: inherit;
-    line-height: inherit;
-    margin: 0;
-}
-.pricing-tables > li .starting-prices {
-	font-size: 16px;
-    color: #407997;
-    font-family: 'Geomanist Book', sans-serif;
-    display: block;
-	margin-bottom: 10px;
-}
-.pricing-tables > li .starting-prices p {
-    margin: 0;
-    color: inherit;
-	font-size: inherit;
-	font-family: inherit;
-    line-height: inherit;
-}
-.pricing-tables > li .plan-button { }
-.pricing-tables > li .plan-button a {
-	display: block;
-    margin: 5px auto !important;
-    max-width: 190px;
-    float: none;
-}
-.pricing-tables > li .feature-list {
-	padding: 0 10px;
-    line-height: normal;
-    margin-bottom: 20px;
-}
-.pricing-tables > li .feature-list ul {
-	padding: 20px 10px 10px 10px;
-    margin: 20px 0px 0px 0px;
-    list-style: none;
-}
-.pricing-tables > li .feature-list ul li { 
-    font-size: 14px;
-    color: #515656;
-    font-weight: 400;
-    position: relative;
-}
-.pricing-tables .note {
-    margin-top: 50px;
-	display: block;
-    font-size: 12px;
-    line-height: 16px;
-    color: #5A7E93;
-}
-.pricing-tables > li .feature-list ul li strong {
-    color: #5A7E93;
-    font-weight: 500;
-}
-.pricing-tables > li .feature-list ul li i.tickFree {
-    background-image: url(../images/plan_box_tick.png);
-    height: 12px;
-    width: 10px;
-    display: inline-block;
-    margin-right: 5px;
-}
-.pricing-tables > li.standard {
-    z-index: 2;
-    transform: perspective(1px) scale3d(1.05, 1.05, 1);
+@media only screen and (max-width: 40em) {
+    .pricing-tables > li {
+		width: 100%;
+	}
 }

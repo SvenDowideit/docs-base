@@ -141,18 +141,21 @@
 	font-weight: bold;
 	font-style: normal;
 }
+.is_not_retina .dockercon16 .retina{
+	display:none!important;
+}
+.is_retina .dockercon16 .image_simple{
+	display:none!important;
+}
 .row {
     max-width: inherit;
     width: inherit;
     margin-left: -15px;
     margin-right: -15px;
 }
-/* SVEN SAYS - if this isn't enough then there are problems */
-body {
-	font-family: 'Geomanist', sans-serif;
-	font-weight:normal;
+a:focus {
+    text-decoration: none;
 }
-/* SVEN SAYS NO
 body h1,body h2,body h3,body h4,body h5,body h6, a.button, a.btn{
 	font-family: 'Geomanist Book', sans-serif;
 }
@@ -164,16 +167,24 @@ span, label, ul, li{
 	font-family: 'Geomanist', sans-serif;
 	font-weight:normal;
 }
-body .dockercon16 h1,body .dockercon16 h2,body .dockercon16 h3,body .dockercon16 h4,body .dockercon16 h5,body .dockercon16 h6{
+body .dockercon16 h1,body .dockercon16 h4,body .dockercon16 h5,body .dockercon16 h6{
 	font-family: 'Geomanist Book', sans-serif;
+}
+body .dockercon16 h2 {
+    font-family: 'Geomanist Light', sans-serif;
+}
+body .dockercon16 h3 {
+   font-family: 'Geomanist Regular', sans-serif;
 }
 body .dockercon16, body .dockercon16 p{
 	font-family: 'Geomanist', sans-serif;
 	font-weight:normal;
 }
-*/
+a.button {
+    margin-left: 10px;
+}
 body .dockercon16 section.section {
-    padding: 60px 0;
+    padding: 120px 0;
 }
 section.GenericDev .items.displaytable {
     display: table;
@@ -289,8 +300,7 @@ text-align: left;
     border: 0;
     border-radius: 0;
 	padding: 10px 40px;
-	margin-left: 0;
-    margin-right: 0;
+
 }
 .dockercon16 section.section a.button.white-btn{
 	background-color: #ffffff;
@@ -300,8 +310,7 @@ text-align: left;
     border: 0;
     border-radius: 0;
 	padding: 10px 40px;
-	margin-left: 0;
-    margin-right: 0;
+
 }
 .dockercon16 section.title_section a.button.white-btn{
 	background-color: #fff;
@@ -311,8 +320,7 @@ text-align: left;
     border: 0;
     border-radius: 0;
 	padding: 10px 40px;
-	margin-left: 0;
-    margin-right: 0;
+
 }
 .dockercon16 section.title_section a.button.white-border-btn {
 	background-color: transparent;
@@ -322,8 +330,6 @@ text-align: left;
     border: 0;
     border-radius: 0;
 	padding: 10px 40px;
-	margin-left: 0;
-    margin-right: 0;
 	border:1px solid #fff;
 }
 .dockercon16 section.section a.button.lightblue-border-btn, .dockercon16 section.title_section a.button.lightblue-border-btn {
@@ -334,8 +340,6 @@ text-align: left;
     border: 0;
     border-radius: 0;
 	padding: 10px 40px;
-	margin-left: 0;
-    margin-right: 0;
 	border:1px solid #099BD1;
 }
 .dockercon16 section.section a.button.darkblue-border-btn, .dockercon16 section.title_section a.button.darkblue-border-btn {
@@ -346,8 +350,6 @@ text-align: left;
     border: 0;
     border-radius: 0;
 	padding: 10px 40px;
-	margin-left: 0;
-    margin-right: 0;
 	border:1px solid #0081AA;
 } 
 .dockercon16 section.section a.button.darkblue-btn,.dockercon16 section.title_section a.button.darkblue-btn {
@@ -358,8 +360,6 @@ text-align: left;
     border: 0;
     border-radius: 0;
 	padding: 10px 40px;
-	margin-left: 0;
-    margin-right: 0;
 }
 .dockercon16 section.section a.button.lightblue-btn,.dockercon16 section.title_section a.button.lightblue-btn {
 	background-color: #22CAFF;
@@ -369,8 +369,6 @@ text-align: left;
     border: 0;
     border-radius: 0;
 	padding: 10px 40px;
-	margin-left: 0;
-    margin-right: 0;
 }
 .dockercon16 section.section a.button+a.button,.dockercon16 section.title_section a.button+a.button {
 	margin-left:20px;
@@ -440,13 +438,11 @@ background: linear-gradient(to bottom,  #4686b7 0%,#499dcf 100%,#4686b7 100%); /
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4686b7', endColorstr='#499dcf',GradientType=0 ); /* IE6-9 */
 }
 section.bgblue4.section {
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#285a8c+0,4686b7+100,124b77+100 */
-background: #285a8c; /* Old browsers */
-background: -moz-linear-gradient(top,  #285a8c 0%, #124b77 100%, #124b77 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #285a8c 0%,#124b77 100%,#124b77 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #285a8c 0%,#124b77 100%,#124b77 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#285a8c', endColorstr='#124b77',GradientType=0 ); /* IE6-9 */
-
+     background: #285a8c;
+     background: -moz-linear-gradient(top, #1488C6 0%, #124b77 100%, #124b77 100%);
+     background: -webkit-linear-gradient(top, #1488C6 0%,#124b77 100%,#124b77 100%);
+     background: linear-gradient(to top, #1488C6 0%,#124b77 100%,#124b77 100%);
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1488C6', endColorstr='#124b77',GradientType=0 );
 }
 section.bgblue5.section {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5ba2db+0,4686b7+100,4abfea+100 */
@@ -456,13 +452,48 @@ background: -webkit-linear-gradient(top,  #5ba2db 0%,#4bbfe9 100%,#5ba2db 100%);
 background: linear-gradient(to bottom,  #5ba2db 0%,#4bbfe9 100%,#5ba2db 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ba2db', endColorstr='#4bbfe9',GradientType=0 ); /* IE6-9 */
 }
-footer.main_footer {
-background: #001829;
+section.bgblue3.section {
+    background: #4686b7;
+    background: -moz-linear-gradient(top, #00577B 0%, #0F8AB4 100%, #00577B 100%);
+    background: -webkit-linear-gradient(top, #00577B 0%,#0F8AB4 100%,#0F8AB4 100%);
+    background: linear-gradient(to bottom, #00577B 0%,#0F8AB4 100%,#0F8AB4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00577B', endColorstr='#0F8AB4',GradientType=0 );
 }
-
+section.bgblue4.section {
+     background: #285a8c;
+     background: -moz-linear-gradient(top, #1488C6 0%, #124b77 100%, #124b77 100%);
+     background: -webkit-linear-gradient(top, #1488C6 0%,#124b77 100%,#124b77 100%);
+     background: linear-gradient(to top, #1488C6 0%,#124b77 100%,#124b77 100%);
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1488C6', endColorstr='#124b77',GradientType=0 );
+}
+section.bgblue5.section {
+    background: #5ba2db;
+    background: linear-gradient(to bottom, #004D7B 0%,#1488C6 100%,#1488C6 100%);
+    background: -moz-linear-gradient(top, #004D7B 0%, #1488C6 100%, #1488C6 100%);
+    background: -webkit-linear-gradient(top, #004D7B 0%,#1488C6 100%,#1488C6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004D7B', endColorstr='#1488C6',GradientType=0 );
+}
+section.bottom_cta_section.blue,section.bottom_cta_section.bgblue5{
+    background: #5ba2db;
+    background: linear-gradient(to bottom, #054B62 0%,#06131e 100%,#213c51 100%);
+    background: -moz-linear-gradient(top, #054B62 0%, #06131e 100%, #213c51 100%);
+    background: -webkit-linear-gradient(top, #054B62 0%,#06131e 100%,#213c51 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#054B62', endColorstr='#06131e',GradientType=0 );
+	
+	
+	
+	
+}
+footer.main_footer {
+	background: #001829;
+}
 div.moby_footer {
     height: 12px;
 	position:relative;
+}
+footer.main_footer {
+    border-top: 10px solid #ffd601;
+    outline: 13px solid #9ce2c0;
 }
 div.moby_footer .bar{
 	position:absolute;
@@ -534,6 +565,23 @@ header .nav-global li a{
 header .nav-global li a:hover{
 	background-color: rgba(0, 0, 0, 0.2);
 	color: #fff;
+}
+.main-header div>.nav-main>li>ul {
+    transition: all ease-in .2s;
+	opacity: 0;
+	visibility: hidden;
+	display: block;
+}
+.main-header div>.nav-main>li:hover>ul {
+	opacity: 1;
+	visibility: visible;
+}
+.main-header div>.nav-main>li>a{
+	transition: all ease-in .2s;
+	font-size: 16px;
+}
+.main-header div>.nav-main>li>ul a{
+    transition: all ease-in .2s;
 }
 .main-header div>.nav-main>li.double-navstyle>ul {
 	width: 410px;
@@ -750,12 +798,20 @@ footer.main_footer div.newsletter form #Email {
 	padding-top:101px;
 }
 .dockercon16 section.title_section.darkblue h1 {
-	font-family: 'Geomanist Book', sans-serif;
+	font-family: 'Geomanist Light', sans-serif;
     margin-bottom: 25px;
 	font-size:30px;
     color: #e1f7ff;
     margin-top: 20px;
 	text-transform: uppercase;
+}
+.dockercon16 section.title_section.darkblue h3{
+	color: #e1f7ff;
+}
+.dockercon16 section.title_section.darkblue h4{
+    color: #e1f7ff;
+    font-size: 20px;
+	margin-bottom: 20px;
 }
 .dockercon16 section.title_section.darkblue p {
 	font-family: 'Geomanist', sans-serif;
@@ -766,10 +822,10 @@ footer.main_footer div.newsletter form #Email {
 .region.region-hero-sub .nav-sub .removetab-menu-item {
     display: none;
 }
+/** global navigation elements **/
 .dockercon16 div.heronav_section{
 	height: 52px;
-    background-color: #00CBCA;
-    background-color: #42626E;
+    background-color: #003E52;
 }
 .dockercon16 div.heronav_section ul{
     display: block;
@@ -777,14 +833,13 @@ footer.main_footer div.newsletter form #Email {
     text-align: center;
 }
 .dockercon16 div.heronav_section ul li{
-	margin: 4px 3px;
+	margin: 0px 3px;
     font-size: 14px;
 	font-family: 'Geomanist Book', sans-serif;
 }
 .dockercon16 div.heronav_section ul li a{
-    padding: 8px;
-    padding-left: 20px;
-    padding-right: 20px;
+	padding: 15px 40px 9px 40px;
+	
 }
 .dockercon16 div.heronav_section ul li.active {
     background-color: #628191;
@@ -888,20 +943,29 @@ section.dockercon_quotes_section .quotes_slider .flex-control-paging li a.flex-a
 	font-style: normal;
 	font-size:64px;
 	color:#FFFFFF;
+	margin-bottom: 10px;
 }
 .node-type-front-page .dockercon16 section.title_section.darkblue p {
-	font-size:16px;
-	color:#FFFFFF;
-	max-width: 340px;
+	font-size: 18px;
+    color: #FFFFFF;
+    max-width: 340px;
 }
 .node-type-front-page .dockercon16 section.title_section.darkblue img.moby {
 	z-index: 2;
     position: relative;
 }
 .node-type-front-page .dockercon16 section.title_section.darkblue a.button {
-	background-color:#004E67;
 	color:#FFFFFF;
 	width: 270px;
+	margin-top: 0px;
+	background-color: rgba(0, 78, 103, 0.61);
+	padding: 17px 40px 14px 40px;
+}
+.node-type-front-page .dockercon16 section.title_section.darkblue a.button:hover {
+    background: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+    border: none;
+	padding: 17px 40px 14px 40px;
 }
 div.dockercon_registation_section img.dcon_icon{
     position: absolute;
@@ -940,13 +1004,15 @@ div.dockercon_registation_section{
     text-align: left;
     bottom: 0;
 }
-section.customer_and_news_section.section {
-	background-color:#00445B;
+.dockercon16 section.customer_and_news_section.section {
+	background-color:#003E52;
+	padding: 50px 0!important;
 }
 .dockercon16 section.customer_and_news_section.section.GenericDev .items.media li a.button{
 	border: 2px solid #72B8D6;
     background-color: transparent;
     color: #fff;
+	text-decoration: none;
 }
 section.the_docker_solution_section.section {
 	background-color:#ffffff;
@@ -961,22 +1027,22 @@ section.customer_and_news_section .items.media li .media_image h3 {
 margin-bottom: 20px;
 }
 section.customer_and_news_section .items.media li .media_image {
-	width: 70px;
+	width: 50px;
 }
 section.customer_and_news_section .items.media li .media_content {
-    padding-left: 80px;
+    padding-left: 65px;
 }
 section.docker_solution_section .items.media li .media_image {
-	width: 60px;
+	width: 50px;
 }
 section.docker_solution_section .items.media li .media_content {
-    padding-left: 75px;
+    padding-left: 65px;
 }
 section.docker_use_cases_home_section .items.media li .media_image {
-	width: 60px;
+	width: 50px;
 }
 section.docker_use_cases_home_section .items.media li .media_content {
-    padding-left: 75px;
+    padding-left: 65px;
 }
 section.docker_footer_image_section {
 	padding: 100px 0;
@@ -1060,6 +1126,16 @@ section.career_job_openings_section .items li .fa-business-development:before {
     display: block;
     margin-top: 8px;
 }
+section.career_job_openings_section .items li .fa-business-operations:before {
+	content: "";
+	background-image: url(../images/business-operations-icon.png);
+	background-repeat: no-repeat;
+	background-size: 60px;
+	height: 60px;
+    width: 60px;
+    display: block;
+    margin-top: -4px;
+}
 section.career_job_openings_section .items.media li .media_image{
 	width: 60px;
 }
@@ -1078,10 +1154,10 @@ section.career_job_openings_section .items.media li .media_content{
 /* ========== End Careers  ========== */
 /* ========== Start Enterprise  ========== */
 section.enterprise_why_docker_section .items.media li .media_image{
-	width: 60px;
+	width: 50px;
 }
 section.enterprise_why_docker_section .items.media li .media_content{
-	padding-left: 70px;
+	padding-left: 65px;
 }
 
 section.deploy_docker_solution_section ul.items{
@@ -1089,10 +1165,10 @@ section.deploy_docker_solution_section ul.items{
     margin: auto;
 }
 section.subscription_docker_solution_section .items.media li .media_image{
-	width: 60px;
+	width: 50px;
 }
 section.subscription_docker_solution_section .items.media li .media_content{
-	padding-left: 70px;
+	padding-left: 65px;
 }
 /* ========== End Enterprise  ========== */
 /* ========== Start Products  ========== */
@@ -1155,11 +1231,11 @@ section.docker_product_section.GenericDev .items.media li{
     padding-right: 40px;
 }
 section.docker_product_section .items.media li .media_image{
-	width: 60px;
+	width: 50px;
 	left: 40px!important;
 }
 section.docker_product_section .items.media li .media_content{
-	padding-left: 70px;
+	padding-left: 65px;
 }
 section.docker_product_section .button_table {
 	display: table;
@@ -1240,11 +1316,11 @@ section.projects_items_section.GenericDev .items.media li{
     padding-right: 20px;
 }
 section.projects_items_section .items.media li .media_image{
-	width: 60px;
+	width: 50px;
 	left: 20px!important;
 }
-section.projects_items_section .items.media li .media_content{
-	padding-left: 70px;
+section.projects_items_section .items.media li .media_image+.media_content{
+	padding-left: 65px;
 }
 .node-type-projects section.bottom_cta_section.section a.button {
 	display: block;
@@ -1330,6 +1406,27 @@ section.plans_section .plans .server_plan_box h3 {
 }
 section.plans_section .plans .server_plan_box p {
 	padding-bottom: 30px;
+}
+section.pricing_overview_section.GenericDev .container{
+overflow:hidden;
+}
+section.pricing_overview_section.GenericDev .items.media{
+	margin-left: -20px;
+    margin-right: -20px;
+}
+section.pricing_overview_section.GenericDev .items.media li{
+	padding-left: 20px;
+    padding-right: 20px;
+}
+section.pricing_overview_section .items.media li .media_image{
+	width: 50px;
+	left: 20px!important;
+}
+section.pricing_overview_section .items.media li .media_content{
+	padding-left: 65px;
+}
+section.pricing_overview_section.GenericDev .items.media li a.button {
+    padding: 6px 60px;
 }
 /* ========== End Pricing ========== */
 /* ========== Start sidebarnav ========== */
@@ -1664,7 +1761,7 @@ section.government_other_resources_section   .items.media li .media_image img{
 	max-width: 50px;
 	max-height: 50px;
 }
-/* ========== End government ========== */
+/* ========== End Government ========== */
 /* ========== Start News And Press ========== */
 section.feature_news_section.section {
 padding: 30px 0!important;
@@ -1809,12 +1906,12 @@ section.use_case_item_section .items.media li{
 	padding:0!important;
 }
 section.use_case_item_section .items.media li .media_image{
-	width: 60px;
+	width: 50px;
 	text-align: center!important; 
     top: 0px;
 }
 section.use_case_item_section .items.media li .media_content{
-	padding-left: 80px;
+	padding-left: 65px;
 	display: table-cell;
     vertical-align: middle;
 	float:none!important;
@@ -1884,11 +1981,11 @@ section.partner_program_overview_section.GenericDev .items.media li{
     padding-right: 40px;
 }
 section.partner_program_overview_section .items.media li .media_image{
-	width: 60px;
+	width: 50px;
 	left: 40px!important;
 }
 section.partner_program_overview_section .items.media li .media_content{
-	padding-left: 70px;
+	padding-left: 65px;
 }
 section.partner_program_benefits_section.GenericDev .container{
 overflow:hidden;
@@ -1902,11 +1999,11 @@ section.partner_program_benefits_section.GenericDev .items.media li{
     padding-right: 20px;
 }
 section.partner_program_benefits_section .items.media li .media_image{
-	width: 60px;
+	width: 50px;
 	left: 20px!important;
 }
 section.partner_program_benefits_section .items.media li .media_content{
-	padding-left: 70px;
+	padding-left: 65px;
 }
 section.partner_program_benefits_section .program_benefits_footer p{
 	font-size: 14px;
@@ -1937,7 +2034,6 @@ section.become_partner_portal_section a.button{
     min-width: 280px;
 }
 /* ========== End Partner Program ========== */
-
 /* ========== Start customers ========== */
 section.feature_customer_section.GenericDev .container{
 overflow:hidden;
@@ -1975,10 +2071,49 @@ section.customers_logos_section .items li .helper{
 	text-align: center;
     vertical-align: middle;
     display: table-cell;
+	position: relative;
 }
-.node-type-customers-page section.customers_logos_section .items li img{
+section.customers_logos_section .items li .helper .vcenter{
+	position: absolute;
+    display: table;
+    width: 100%;
+    cursor: pointer;
+    left: 0;
+    top: 0;
+    padding: 0px 10px;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    margin: auto;
+    font-size: 22px;
+    color: #fff;
+    text-transform: uppercase;
+	opacity: 0;
+}
+section.customers_logos_section .items li  .helper img{
 	max-width: 180px;
     max-height: 100px;
+}
+section.customers_logos_section .items li .helper:hover{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #29bbec;
+}
+section.customers_logos_section .items li .helper:hover .vcenter{
+    opacity: 1;
+}
+section.customers_logos_section .items li .helper:hover img{
+	opacity: 0;
 }
 .node-type-customers-page section.dockercon_quotes_section .quotes_slider {
     max-width: 900px;
@@ -1990,61 +2125,235 @@ float: left;
 padding-left: 70%;
 }
 /* ========== End customers ========== */
-.main-header .logo_safari {
-display:none;
-visibility:hidden;
+/* ========== livedockercon  ========== */
+section.livedockercon_section{
+	background-image: url(../images/livedocker_bg_image.png)!important;
+	background-size: cover!important;
 }
-.main-header .logo{
-	width: 116px;
-	width: 136px;
+.dockercon16 section.livedockercon_section.section h2{
+	text-transform: capitalize;
+    text-align: left;
+}
+section.livedockercon_section .left{
+	text-align: left;
+    max-width: 748px;
+}
+section.livedockercon_section .left .video_container img{
+	box-shadow: 0px 6px 30px #000;
+	width: 100%;
+}
+section.livedockercon_section.section .left .video_container a.play_btn{
+	background-image: url(../images/video_icon_2453-1.png);
+}
+section.livedockercon_section .left .keynote{
+	font-size: 13px;
+    color: #fff;
+    margin-top: 30px;
+    display: block;
+}
+section.livedockercon_section .left iframe{
 	
 }
-html.safari .main-header .logo{
-display:none;
-visibility:hidden;	
+section.livedockercon_section .right{
+	margin-top: 10%;
+	text-align: left;
 }
-html.safari .main-header .logo_safari{
-	width: 116px;
-	width: 136px;
-	
+section.livedockercon_section.section .right a.button.darkblue-btn{
+	margin: 0;
+    padding: 23px 15px;
+    background-color: #1880AD;
+    width: 300px;
+    text-align: left;
+	padding-left: 130px;
+    position: relative;
+    font-size: 12px;
+}
+section.livedockercon_section.section .right a.button.darkblue-btn i{
+	background-repeat: no-repeat;
+    background-size: 100px 34px;
+    width: 100px;
+    height: 34px;
+    left: 15px;
+	top: 12px;
+    position: absolute;
+}
+section.livedockercon_section .right span{
 	display: block;
-    visibility: visible;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.51);
+    margin-bottom: 50px;
+	margin-top: 5px;
 }
-@media screen and (max-width:1199px) {
-.dockercon16 section.title_section,header.main-header::after {
-    background-position: left -80px top;
+i.livedockercon_apple {
+    background-image: url(../images/livedockercon_apple_icon.png);
 }
+i.livedockercon_win {
+    background-image: url(../images/livedockercon_win_icon.png);
+	top: 14px!important;
 }
-@media screen and (max-width:991px) {
-.main-header div>.nav-main>li {
-    margin-left: 16px;
+/* ========== End livedockercon ========== */
+/* ========== Start pricing ========== */
+.pricing-tables{
+	float:left;
+	padding: 0;
+	position: relative;
+	width: 100%;
+	margin-left: 0px;
+    margin-right: 0px;
+	margin-top: 50px;
+	margin-bottom: 60px;
 }
+.pricing-tables > li{
+    padding: 30px;
+    border: 1px solid #CCC;
+    border-radius: 0px;
+    float: left;
+	background-color: #fff;
+    list-style: none;
+    text-align: center;
+    width: 33.33%;
+	height: auto;
+	position: relative;
+    z-index: 1;
 }
-@media screen and (max-width:940px) {
-header .top-right-bg {
-    display: none;
+.pricing-tables > li .plan-name {
+    margin-bottom: 20px;
 }
+.pricing-tables > li .plan-name h3 {
+	font-size: 22px;
+    color: #407997;
+	text-transform: uppercase;
 }
-
-section.community_section{
-	padding:50px 0;
+.pricing-tables > li .plan-name h3 > strong {
+	display: block;
+    margin-top: 5px;
 }
-section.community_section .columns  iframe{
-    width: 100%;
+.pricing-tables > li .plan-description {
+	font-size: 14px;
+    color: #515656;
+    line-height: 20px;
+	margin-bottom: 10px;
 }
-section.community_section .columns  img{
-	height:100%!important;
-	width:100%!important;
+.pricing-tables > li .plan-description p {
+	font-size: inherit;
+    color: inherit;
+    line-height: inherit;
+    margin: 0;
 }
-section.community_section .columns center img{
-    height: 160px!important;
-    width: 160px!important;
-	float: left;
+.pricing-tables > li .starting-prices {
+	font-size: 16px;
+    color: #407997;
+    font-family: 'Geomanist Book', sans-serif;
+    display: block;
+	margin-bottom: 15px;
 }
-.path-customers section.banner_section.section {
- padding:0;
+.pricing-tables > li .starting-prices p {
+    margin: 0;
+    color: inherit;
+	font-size: inherit;
+	font-family: inherit;
+    line-height: inherit;
 }
-
-/*!---------------------------------------!*/
-@import url("responsive.css");
-/*!---------------------------------------!*/
+.pricing-tables > li .plan-button { }
+.pricing-tables > li .plan-button a {
+	display: block;
+    margin: 5px auto !important;
+	padding: 15px 15px !important;
+    max-width: 190px;
+    float: none;
+}
+.pricing-tables > li .feature-list {
+	padding: 0 10px;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+.pricing-tables > li .feature-list ul {
+	padding: 20px 0px 10px 0px;
+    margin: 20px 0px 0px 0px;
+    list-style: none;
+}
+.pricing-tables > li .feature-list ul li { 
+    font-size: 14px;
+    color: #515656;
+    font-weight: 400;
+    position: relative;
+	margin-bottom: 20px;
+}
+.pricing_cloud_section .pricing-tables > li .feature-list ul li { 
+	margin-bottom: 0px;
+}
+.pricing-tables .note {
+    margin-top: 50px;
+	display: block;
+    font-size: 12px;
+    line-height: 18px;
+    color: #5A7E93;
+}
+.pricing-tables > li .feature-list ul li>span {
+	display: block;
+}
+.pricing-tables > li .feature-list ul li strong {
+    color: #5A7E93;
+    font-weight: 500;
+}
+.pricing-tables > li .feature-list ul li i.tickFree {
+    background-image: url(../images/plan_box_tick.png);
+    height: 12px;
+    width: 10px;
+    display: inline-block;
+    margin-right: 5px;
+}
+.pricing-tables > li.standard {
+    /* z-index: 2;
+	box-shadow: 0px 0px 10px 6px #ddd; */
+	border-right: 0;
+    border-left: 0;
+}
+.livedockercon_section .left .video-wrapper {
+	position: relative;
+}
+.livedockercon_section .left .video_container {
+    z-index: 2;
+}
+.livedockercon_section .left iframe {
+	display:none;
+	opacity:0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+/* ========== End pricing ========== */
+/* ========== Start Products ========== */
+.node-type-product .dockercon16 section.GenericDev h3,.node-type-product .dockercon16 section.GenericDev p{
+text-align: center!important; 
+}
+.node-type-product .dockercon16 section.product_features_product_section.GenericDev .items>li h3,.node-type-product .dockercon16 section.product_features_product_section.GenericDev .items>li p{
+text-align: left!important;
+}
+.node-type-product .dockercon16 section.product_features_product_section.GenericDev .items>li .button{
+margin: auto!important;
+}
+.node-type-product .dockercon16 section.product_overview_product_section.GenericDev h3{
+    font-size: 18px;
+    color: #155A74;
+    text-transform: uppercase;
+    text-align: left;
+	margin-top: 0px;
+    margin-bottom: 8px;
+}
+.node-type-product .dockercon16 section.product_overview_product_section.GenericDev .row p{
+	font-size: 14px;
+    color: #496B81;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    text-align: left;
+}
+.node-type-product .dockercon16 section.product_overview_product_section.GenericDev .lab1,.node-type-product .dockercon16 section.product_overview_product_section.GenericDev .lab2{
+    margin-bottom: 50px;
+}
+.dockercon16 section.toolbox_overview_section.GenericDev .items>li ul li{
+	font-size: 14px;
+    color: #496B81;		
+}
+/* ========== End Products ========== */
