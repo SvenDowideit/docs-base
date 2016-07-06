@@ -537,6 +537,8 @@ header.main-header {
 	position:absolute;
 	width:100%;
 	padding: 0;
+	background-image: linear-gradient(0deg, #15A4D7 0%, #1488C6 100%);
+	height: 100px;
 }
 header.main-header::after {
   content: "";
@@ -555,7 +557,6 @@ header.main-header.backgroundimage::after {
   opacity: 1;
 }
 header .top-right-bg {
-    background-image: url(../images/top_navigation_bg_12311.png);
     background-size: 100% 45px;
     opacity: 1;
     width: 40%;
