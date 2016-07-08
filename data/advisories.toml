@@ -15,7 +15,7 @@ docker4win-beta = "Docker for Windows is currently in public beta. Some function
 
 swarm = "See [Swarm mode overview](/engine/swarm/) for the orchestration features introduced in Docker Engine 1.12. Only refer to the Docker Swarm documents below for information on the standalone Swarm product."
 
-engine = "This site contains documentation for the v1.12 release candidate version of Docker Engine. For the Docker Engine v1.11 docs, see [https://docs.docker.com/v1.11/](/v1.11/). Docker for Mac and Docker for Windows are currently in Beta."
+engine = "This site contains documentation for the v1.12 release candidate version of Docker Engine. For the Docker Engine v1.11 docs, see [https://docs.docker.com/v1.11/](https://docs.docker.com/v1.11/). Docker for Mac and Docker for Windows are currently in Beta."
 
 
 # URL based advisories
