@@ -20,7 +20,8 @@
 }
 #DockerDocumentation blockquote p {
     color: black;
-    padding-left: 20px;
+		margin: 0;
+		padding: 10px 20px;
 }
 #DockerDocumentation blockquote p strong {
     color: #6db9d1;
