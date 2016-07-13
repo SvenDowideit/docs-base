@@ -9088,7 +9088,7 @@ th.hide-for-touch {
         display: none !important
     }
 }
-/* SVEN SAYS NO
+/* SVEN SAYS NO - FISHER SAID YES */
 h1,
 h2,
 h3,
@@ -9098,9 +9098,8 @@ h6,
 p,
 li {
     letter-spacing: 0.02rem;
-    font-weight: 200
 }
-*/
+
 li {
     line-height: 2
 }
@@ -11562,7 +11561,7 @@ section.title_section {
     text-align: center;
     padding: 26px 0 22px 0;
     background-color: #27b8e8;
-    min-height: 104px;
+    min-height: 100px;
 }
 section.title_section h1 {
     color: #fff;

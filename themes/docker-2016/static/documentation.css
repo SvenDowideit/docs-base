@@ -63,6 +63,11 @@
     color: #008AB5;
 }
 /* reset away from #008AB5 */
+
+#DocumentationText a.button {
+	color: #fff;
+}
+
 #DocumentationText .darkblue-btn {
     color: #ffffff;
     margin-top: 15px;
@@ -72,14 +77,16 @@
     width: 100%;
 }
 
+/* anchor links to reveal paragraph marker on hover */
+
 a.anchorLink {
     margin-left: 5px;
     visibility: hidden;
 }
+
 h1:hover > a.anchorLink,
 h2:hover > a.anchorLink,
-h3:hover > a.anchorLink
-{
+h3:hover > a.anchorLink {
     visibility: visible;
 }
 
@@ -102,7 +109,7 @@ div.docsidebarnav_section.affix ul {
     margin: -25px 0 1.5rem 0;
     position: absolute;
     left: 0;
-    background-color: #eff7f9;
+    background-color: #fff;
     padding: 0;
     width: 270px;
     width: 100%;
@@ -112,42 +119,42 @@ div.docsidebarnav_section.affix ul {
 .docsidebarnav_section ul li{
     display: block;
 }
-.docsidebarnav_section ul li a{
+.docsidebarnav_section ul li a {
     color: #fff;
-    font-size: 14px;
-    font-family: 'Geomanist', sans-serif;
-    display: block;
+    font-size: 13px;
+    font-family: 'Geomanist Regular', sans-serif;
+    display: block; 
     width: 100%;
-    padding: 10px 0 10px 50px;
+		padding: 16px 5px 16px 20px;
     line-height: 15px;
     border-radius: 0;
-    background-color: #eff7f9;
-    color: #386E7F;
-    font-weight: normal;
-    font-style: normal;
+    background-color: #fff;
+		color: rgba(0, 0, 0, 0.7);
 }
 .docsidebarnav_section ul li a:hover {
-    color: #eff7f9;
-    background-color: #386E7F;
+		background: rgba(0, 0, 0, 0.05);
 }
 .docsidebarnav_section ul li a,
 .docsidebarnav_section ul li a:hover,
 .docsidebarnav_section ul li a:focus
 {
-  border-bottom: 1px solid #e7f2f7;
+  border-bottom: none;
   text-decoration: none;
+	border-left: 2px solid rgba(188, 181, 185, 0.3);
 }
 .docsidebarnav_section ul li a.active {
   cursor: default;
 }
 /* ========== End sidebarnav ========== */
-.docsidebarnav_section a.expand-menu,
+.docsidebarnav_section a.expand-menu {
+    background-color: #fff;
+}
+
 .docsidebarnav_section a.expand-menu:hover {
-    background-color: #0081aa;
-    color: #ffffff;
+		background: rgba(0, 0, 0, 0.05);
 }
 .docsidebarnav_section a.expand-menu.active {
-    background-color: #6db9d1;
+    background-color: #fff;
 }
   .docsidebarnav_section .caret {float: right;
     margin-right: 10px;
@@ -156,9 +163,8 @@ div.docsidebarnav_section.affix ul {
   .docsidebarnav_section ul {position: initial;margin:initial !important;}
   .nav-sub .currentPage,
   .nav-sub .currentPage:hover {
-    color: #386E7F;
-    background-color: #ffffff !important;
-    border-right: 4px solid #6db9d1;
+		color: rgb(20, 136, 198);
+		border-left: 2px solid rgb(20, 136, 198);
     font-weight: 500;
   }
   .menu-closed .nav-sub {height: 0 !important;}
@@ -181,7 +187,7 @@ div.docsidebarnav_section.affix ul {
 }
 .docsidebarnav_section .menu-icon {
   float: right;
-  color: #60a7be;
+	color: #b7b9b5;
 }
 .menu-open .menu-icon:after {
     content: "\e260";
