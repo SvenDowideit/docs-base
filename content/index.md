@@ -6,6 +6,13 @@ keywords = ["Docker, documentation, manual, guide, reference, api"]
 
 # Welcome to the Docker Documentation
 
+<span class="search-banner">
+  <form class="search-form form-inline ng-pristine ng-valid" action="/search/">
+    <input class="search-field form-control" id="st-search-input" value="" name="q" placeholder="Search the Documentation" type="search">
+    <button type="submit" class="search-submit btn btn-default">Search</button>
+  </form>
+</span>
+
 <ul class="items widthcol3 media">
 
 <li>

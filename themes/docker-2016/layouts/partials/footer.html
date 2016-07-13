@@ -89,5 +89,17 @@
 	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-WLGFZV');</script>
 	<!-- End Google Tag Manager -->
+{{ if not .Params.notoc }}
+<!-- Algolia DocSearch -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
+<script type="text/javascript"> docsearch({
+apiKey: '828e35034e76dbb6fdc5b33c03d5702f',
+indexName: 'docker',
+autoSelect: false,
+inputSelector: '#st-search-input',
+debug: false
+});
+</script>
+{{end}}
 </body>
 </html>
