@@ -23,10 +23,10 @@ RUN curl -sSL -o /usr/local/bin/hugo https://github.com/docker/hugo/releases/dow
  && chmod 755 /usr/local/bin/hugo \
  && /usr/local/bin/hugo version
 
-RUN curl -sSL -o /usr/local/bin/markdownlint https://github.com/docker/markdownlint/releases/download/2016-07-12/markdownlint \
+RUN curl -sSL -o /usr/local/bin/markdownlint https://github.com/docker/markdownlint/releases/download/2016-07-14/markdownlint \
  && chmod 755 /usr/local/bin/markdownlint
 
-RUN curl -sSL -o /usr/local/bin/linkcheck https://github.com/docker/linkcheck/releases/download/2016-07-12/linkcheck \
+RUN curl -sSL -o /usr/local/bin/linkcheck https://github.com/docker/linkcheck/releases/download/2016-07-14/linkcheck \
  && chmod 755 /usr/local/bin/linkcheck
 
 
