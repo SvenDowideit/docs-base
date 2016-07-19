@@ -17,7 +17,7 @@ keywords = ["Docker, documentation, manual, guide, reference, api"]
 
 <li>
 	<div class="media_image">
-		<a href="/docker-for-mac/"><img src="/assets/images/small-mac.png" alt="Docker for Mac"></a>
+		<a href="/docker-for-mac/"><img src="/assets/images/icon-apple@2X.png" alt="Docker for Mac"></a>
 	</div>
 	<div class="media_content">
 	<div data-mh="mh_docker_projects">
@@ -29,7 +29,7 @@ keywords = ["Docker, documentation, manual, guide, reference, api"]
 
 <li>
 	<div class="media_image">
-		<a href="/docker-for-windows/"><img src="/assets/images/small-windows.png" alt="Docker for Windows"></a>
+		<a href="/docker-for-windows/"><img src="/assets/images/icon-windows@2X.png" alt="Docker for Windows"></a>
 	</div>
 	<div class="media_content">
 	<div data-mh="mh_docker_projects">
@@ -41,7 +41,7 @@ keywords = ["Docker, documentation, manual, guide, reference, api"]
 
 <li>
 	<div class="media_image">
-		<a href="/engine/installation/linux/"><img src="/assets/images/small-linux.png" alt="Docker for Linux"></a>
+		<a href="/engine/installation/linux/"><img src="/assets/images/icon-linux@2X.png" alt="Docker for Linux"></a>
 	</div>
 	<div class="media_content">
 	<div data-mh="mh_docker_projects">
@@ -56,7 +56,7 @@ keywords = ["Docker, documentation, manual, guide, reference, api"]
 <ul class="items widthcol2 media">
 <li>
 <div class="media_image">
-	<a href="/engine/installation/"><img src="/assets/images/Engine_icon.png" alt="Docker Engine"></a>
+	<a href="/engine/installation/"><img src="/assets/images/icon-engine@2X.png" alt="Docker Engine"></a>
 </div>
 	<div class="media_content">
 	<div data-mh="mh_docker_projects">
@@ -71,7 +71,7 @@ keywords = ["Docker, documentation, manual, guide, reference, api"]
 
 <li>
 <div class="media_image">
-	<a href="/compose/overview/"><img src="/assets/images/Compose_icon.png" alt="Docker Compose"></a>
+	<a href="/compose/overview/"><img src="/assets/images/icon-compose@2X.png" alt="Docker Compose"></a>
 </div>
 	<div class="media_content">
 	<div data-mh="mh_docker_projects">
@@ -84,7 +84,7 @@ keywords = ["Docker, documentation, manual, guide, reference, api"]
 
 <li>
 <div class="media_image">
-	<a href="/docker-hub/overview/"><img src="/assets/images/Hub_icon.png" alt="Docker Hub"></a>
+	<a href="/docker-hub/overview/"><img src="/assets/images/icon-hub@2X.png" alt="Docker Hub"></a>
 </div>
 	<div class="media_content">
 	<div data-mh="mh_docker_projects">
@@ -97,7 +97,7 @@ keywords = ["Docker, documentation, manual, guide, reference, api"]
 
 <li>
 <div class="media_image">
-	<a href="/docker-cloud/overview/"><img src="/assets/images/Cloud_icon.png" alt="Docker Cloud"></a>
+	<a href="/docker-cloud/overview/"><img src="/assets/images/icon-cloud@2X.png" alt="Docker Cloud"></a>
 </div>
 	<div class="media_content">
 	<div data-mh="mh_docker_projects">
@@ -110,7 +110,7 @@ keywords = ["Docker, documentation, manual, guide, reference, api"]
 
 <li>
 <div class="media_image">
-	<a href="/docker-trusted-registry/"><img src="/assets/images/Trusted_Registry_icon.png" alt="Docker Trusted Registry"></a>
+	<a href="/docker-trusted-registry/"><img src="/assets/images/icon-registry@2X.png" alt="Docker Trusted Registry"></a>
 </div>
 	<div class="media_content">
 	<div data-mh="mh_docker_projects">
@@ -123,7 +123,7 @@ keywords = ["Docker, documentation, manual, guide, reference, api"]
 
 <li>
 <div class="media_image">
-	<a href="/ucp/overview/"><img src="/assets/images/UCP_icon.png" alt="Docker Universal Control Plane"></a>
+	<a href="/ucp/overview/"><img src="/assets/images/icon-ucp@2X.png" alt="Docker Universal Control Plane"></a>
 </div>
 	<div class="media_content">
 	<div data-mh="mh_docker_projects">
@@ -137,7 +137,7 @@ keywords = ["Docker, documentation, manual, guide, reference, api"]
 
 <li>
 <div class="media_image">
-	<a href="/machine/install-machine/"><img src="/assets/images/Machine_icon.png" alt="Docker Machine"></a>
+	<a href="/machine/install-machine/"><img src="/assets/images/icon-machine@2X.png" alt="Docker Machine"></a>
 </div>
 	<div class="media_content">
 	<div data-mh="mh_docker_projects">

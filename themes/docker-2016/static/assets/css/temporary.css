@@ -170,11 +170,6 @@ section.customer_and_news_section.section {
 }
 
 
-/****** icons ********/
-.dockercon16 section.GenericDev .items.media li .media_image {
-    opacity: 0.5;
-}
-
 /************************************** typography ****************** All headings should be Geomanist Light ***************************/
 .dockercon16 section.title_section.darkblue h1 {
     font-family: 'Geomanist Light', sans-serif;
