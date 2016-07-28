@@ -21,6 +21,6 @@ engine = "This site contains documentation for the v1.12 release candidate versi
 # URL based advisories
 # any URL that begins with "/engine/" will get the "engine" advisory
 # will be over-ridden by the `advisory` frontmatter in the topic
-[paths]
-"/engine/" = "engine"
-"/swarm/" = "swarm"
+# [paths]
+# "/engine/" = "engine"
+# "/swarm/" = "swarm"
