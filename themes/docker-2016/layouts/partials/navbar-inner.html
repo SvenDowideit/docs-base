@@ -1,7 +1,7 @@
 {{ $thispage := .thispage }}
 <ul class="nav-sub">
 {{ range .menu }}
-{{ if .HasChildren }} 
+{{ if .HasChildren }}
     <li class="leaf {{ if $thispage.HasMenuCurrent "main" . }} active{{end}} {{ if $thispage.HasMenuCurrent "main" . }} menu-open {{else}} menu-closed {{end}} ">
         <a href="" class="expand-menu {{ if $thispage.HasMenuCurrent "main" . }} active{{end}}"> {{ .Pre }} {{ .Name }} <span class="menu-icon" aria-hidden="true"></span>
  </a>
