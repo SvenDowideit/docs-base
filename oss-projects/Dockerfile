@@ -1,4 +1,5 @@
-FROM docs/base:latest
+#FROM docs/base:latest
+FROM docs/source:v1.12
 MAINTAINER Sven Dowideit <SvenDowideit@home.org.au> @SvenDowideit
 
 # Get all the open source repositories that are used to make up the docs

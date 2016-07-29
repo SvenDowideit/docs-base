@@ -41,6 +41,9 @@ test: docs-build
 docs-build:
 	docker build -t "$(DOCKER_DOCS_IMAGE)" .
 
+oss-build:
+	docker build -t "$(DOCKER_DOCS_IMAGE)-oss" oss-projects
+
 leeroy: docs-build
 	# the jenkins task also bind mounts in the current dir into `/src`, so we don't need different Dockerfiles for each repo
 	docker run --rm -t --name docs-pr$BUILD_NUMBER \
