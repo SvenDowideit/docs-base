@@ -3,8 +3,7 @@
 {{ range .menu }}
 {{ if .HasChildren }}
     <li class="leaf {{ if $thispage.HasMenuCurrent "main" . }} active{{end}} {{ if $thispage.HasMenuCurrent "main" . }} menu-open {{else}} menu-closed {{end}} ">
-        <a href="" class="expand-menu {{ if $thispage.HasMenuCurrent "main" . }} active{{end}}"> {{ .Pre }} {{ .Name }} <span class="menu-icon" aria-hidden="true"></span>
- </a>
+        <a href="" class="expand-menu {{ if $thispage.HasMenuCurrent "main" . }} active{{end}}"><span class="menu-icon" aria-hidden="true"></span> {{ .Pre }} {{ .Name }}</a>
         {{ partial "navbar-inner.html" (dict "menu" .Children "thispage" $thispage) }}
     </li>
 {{ else }}
