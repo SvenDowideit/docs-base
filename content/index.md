@@ -14,7 +14,6 @@ keywords = ["Docker, documentation, manual, guide, reference, api"]
 </span>
 
 <ul class="items widthcol3 media">
-
 <li>
 	<div class="media_image">
 		<a href="/docker-for-mac/"><img src="/assets/images/icon-apple@2X.png" alt="Docker for Mac"></a>
@@ -26,7 +25,6 @@ keywords = ["Docker, documentation, manual, guide, reference, api"]
 	</div>
 	</div>
 </li>
-
 <li>
 	<div class="media_image">
 		<a href="/docker-for-windows/"><img src="/assets/images/icon-windows@2X.png" alt="Docker for Windows"></a>
@@ -38,7 +36,6 @@ keywords = ["Docker, documentation, manual, guide, reference, api"]
 	</div>
 	</div>
 </li>
-
 <li>
 	<div class="media_image">
 		<a href="/engine/installation/linux/"><img src="/assets/images/icon-linux@2X.png" alt="Docker for Linux"></a>
@@ -50,10 +47,8 @@ keywords = ["Docker, documentation, manual, guide, reference, api"]
 	</div>
 	</div>
 </li>
-
 </ul>
-
-<ul class="items widthcol2 media">
+<ul class="items widthcol media">
 <li>
 <div class="media_image">
 	<a href="/engine/installation/"><img src="/assets/images/icon-engine@2X.png" alt="Docker Engine"></a>
@@ -64,24 +59,12 @@ keywords = ["Docker, documentation, manual, guide, reference, api"]
 		<p>
     Create Docker images and run Docker containers.</p>
     <p>
-		As of v1.12.0-rc1, Engine includes <a href="/engine/swarm/">swarm mode</a> container orchestration features.</p>
+		As of v1.12.0, Engine includes <a href="/engine/swarm/">swarm mode</a> container orchestration features.</p>
 	</div>
 	</div>
 </li>
-
-<li>
-<div class="media_image">
-	<a href="/compose/overview/"><img src="/assets/images/icon-compose@2X.png" alt="Docker Compose"></a>
-</div>
-	<div class="media_content">
-	<div data-mh="mh_docker_projects">
-	<h3><a href="/compose/overview/">Docker Compose</a></h3>
-		<p>
-    Defines applications built using multiple containers.</p>
-	</div>
-	</div>
-</li>
-
+</ul>
+<ul class="items widthcol2 media">
 <li>
 <div class="media_image">
 	<a href="/docker-hub/overview/"><img src="/assets/images/icon-hub@2X.png" alt="Docker Hub"></a>
@@ -94,7 +77,6 @@ keywords = ["Docker, documentation, manual, guide, reference, api"]
 	</div>
 	</div>
 </li>
-
 <li>
 <div class="media_image">
 	<a href="/docker-cloud/overview/"><img src="/assets/images/icon-cloud@2X.png" alt="Docker Cloud"></a>
@@ -107,7 +89,6 @@ keywords = ["Docker, documentation, manual, guide, reference, api"]
 	</div>
 	</div>
 </li>
-
 <li>
 <div class="media_image">
 	<a href="/docker-trusted-registry/"><img src="/assets/images/icon-registry@2X.png" alt="Docker Trusted Registry"></a>
@@ -120,7 +101,6 @@ keywords = ["Docker, documentation, manual, guide, reference, api"]
 	</div>
 	</div>
 </li>
-
 <li>
 <div class="media_image">
 	<a href="/ucp/overview/"><img src="/assets/images/icon-ucp@2X.png" alt="Docker Universal Control Plane"></a>
@@ -129,12 +109,11 @@ keywords = ["Docker, documentation, manual, guide, reference, api"]
 	<div data-mh="mh_docker_projects">
 	<h3><a href="/ucp/overview/">Docker Universal Control Plane</a></h3>
 		<p>
-    (UCP) Manage a cluster of on-premises Docker hosts as if they were a single machines.
+    (UCP) Manage a cluster of on-premises Docker hosts as if they were a single machine.
     </p>
 	</div>
 	</div>
 </li>
-
 <li>
 <div class="media_image">
 	<a href="/machine/install-machine/"><img src="/assets/images/icon-machine@2X.png" alt="Docker Machine"></a>
@@ -148,6 +127,35 @@ keywords = ["Docker, documentation, manual, guide, reference, api"]
 	</div>
 	</div>
 </li>
+<li>
+<div class="media_image">
+	<a href="/compose/overview/"><img src="/assets/images/icon-compose@2X.png" alt="Docker Compose"></a>
+</div>
+	<div class="media_content">
+	<div data-mh="mh_docker_projects">
+	<h3><a href="/compose/overview/">Docker Compose</a></h3>
+		<p>
+    Define applications built using multiple containers.</p>
+	</div>
+	</div>
+</li>
+</ul>
+
+<ul class="media">
+<li>
+<div class="media_image">
+	<a href="mailto:feedback@docker.com?subject=Docker%20Feedback"><img src="/assets/images/chat.png" alt="chat icon"></a>
+</div>
+	<div class="media_content">
+	<div data-mh="mh_docker_projects">
+	<h3><a href="mailto:feedback@docker.com?subject=Docker%20Feedback">Feedback!</a></h3>
+		<p>
+    Questions? Suggestions? Spot a typo?! 😱<br/>
+    Email us at <a href="mailto:feedback@docker.com?subject=Docker%20Feedback">feedback@docker.com</a>.
+    </p>
+	</div>
+	</div>
 
 
+</li>
 </ul>
