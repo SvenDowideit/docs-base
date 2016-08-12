@@ -37,7 +37,7 @@ WORKDIR /docs
 
 # default to validating the docs build
 CMD ["/docs/validate.sh"]
-COPY validate.sh /docs
+COPY validate.sh /docs/
 RUN chmod 755 /docs/validate.sh
 
 COPY . /docs
